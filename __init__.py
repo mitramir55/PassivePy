@@ -1,1 +1,1 @@
-from PassivePy.Code import Detector
+from PassivePy import Detector
