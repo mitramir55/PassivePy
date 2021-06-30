@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PassivePy.egg-info/PKG-INFO
+src/PassivePy.egg-info/SOURCES.txt
+src/PassivePy.egg-info/dependency_links.txt
+src/PassivePy.egg-info/top_level.txt
