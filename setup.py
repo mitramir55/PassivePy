@@ -10,8 +10,8 @@ setuptools.setup(
     author_email="mitra.mirshafiee@gmail.com",
     description="A package for processing large corpora and detecting passive voice.",
     long_description="Our aim with this work is to create a reliable (e.g., passive voice judgments are consistent), valid (e.g., passive voice judgments are accurate), flexible (e.g., texts can be assessed at different units of analysis), replicable (e.g., the approach can be performed by a range of research teams with varying levels of computational expertise), and scalable way (e.g., small and large collections of texts can be analyzed) to capture passive voice from different corpora for social and psychological evaluations of text. To achieve these aims, we introduce PassivePy, a fully transparent and documented Python library.",
-    long_description_content_type="markdown",
-    url="https://github.com/mitramir55/PassivePy",
+    long_description_content_type="text/markdown",
+    url="https://github.com/mitramir55",
     project_urls={
         "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
     },
