@@ -27,4 +27,12 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+
+    install_requires=['termcolor', 'tqdm', 'spacy'],
+
+    entry_points={  # Optional
+        'console_scripts': [
+            'sample=sample:!python -m spacy download en_core_web_lg',
+        ],
+    },
 )
