@@ -36,5 +36,4 @@ setuptools.setup(
     install_requires=['termcolor', 'tqdm', 'spacy'],
 
 
-    },
 )
