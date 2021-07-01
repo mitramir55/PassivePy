@@ -16,11 +16,14 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
     },
     classifiers=[
+        'Development Status :: 3 - Alpha',
         'Programming Language :: Python :: 3', 
 
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        
     ],
+    keywords='passive voice, text analysis, spacy',
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
