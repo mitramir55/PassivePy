@@ -1,1 +1,1 @@
-from PassivePy import PassivePy
+from src import PassivePy
