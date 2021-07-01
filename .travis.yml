@@ -9,7 +9,6 @@ python:
 
 install: !python -m spacy download en_core_web_lg
 
-script: tox
 
 notifications:
   email: false
