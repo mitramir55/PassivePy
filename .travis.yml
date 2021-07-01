@@ -1,0 +1,15 @@
+
+language: python
+
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9"
+
+install: !python -m spacy download en_core_web_lg
+
+script: tox
+
+notifications:
+  email: false

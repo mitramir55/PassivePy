@@ -2,6 +2,8 @@
 requires = [
     "setuptools>=42",
     "wheel",
-    "spacy"
+    "spacy",
+    "tqdm",
+    "termcolor"
 ]
 build-backend = "setuptools.build_meta"
