@@ -29,11 +29,11 @@ setup(
         
     ],
     keywords='passive voice, text analysis, spacy',
-    packages=find_packages(where='PassivePy'),  # Required
+    packages=find_packages(where='PassivePy'),  
     python_requires=">=3.6",
 
     install_requires=['termcolor', 'tqdm', 'spacy'],
-    
+
     entry_points={  
         'console_scripts': [
             '!python -m spacy download en_core_web_lg',
