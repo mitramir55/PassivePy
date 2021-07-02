@@ -1,4 +1,4 @@
-import setuptools
+
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 import pathlib
@@ -8,7 +8,7 @@ here = pathlib.Path(__file__).parent.resolve()
 # Get the long description from the README file
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
-setuptools.setup(
+setup(
     name="PassivePy",
     version="0.0.1",
     author="Mitra Mirshafiee",
@@ -29,11 +29,15 @@ setuptools.setup(
         
     ],
     keywords='passive voice, text analysis, spacy',
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=find_packages(where='PassivePy'),  # Required
     python_requires=">=3.6",
 
     install_requires=['termcolor', 'tqdm', 'spacy'],
-
+    
+    entry_points={  
+        'console_scripts': [
+            '!python -m spacy download en_core_web_lg',
+        ],
+    }
 
 )
