@@ -2,8 +2,8 @@ LICENSE
 README.md
 pyproject.toml
 setup.py
-src/PassivePy.egg-info/PKG-INFO
-src/PassivePy.egg-info/SOURCES.txt
-src/PassivePy.egg-info/dependency_links.txt
-src/PassivePy.egg-info/requires.txt
-src/PassivePy.egg-info/top_level.txt
+PassivePy.egg-info/PKG-INFO
+PassivePy.egg-info/SOURCES.txt
+PassivePy.egg-info/dependency_links.txt
+PassivePy.egg-info/requires.txt
+PassivePy.egg-info/top_level.txt
