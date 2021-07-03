@@ -10,7 +10,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name="PassivePy",
-    version="0.0.2",
+    version="0.0.3",
     author="Mitra Mirshafiee",
     author_email="mitra.mirshafiee@gmail.com",
     description="A package for processing large corpora and detecting passive voice.",
