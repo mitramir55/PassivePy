@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 import tqdm.notebook as tq
 
-class PassivePy:
+class PassivePyAnalyzer:
     
         """
             Get the data from a dataframe.
