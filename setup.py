@@ -3,10 +3,9 @@
 from setuptools import setup, find_packages
 import pathlib
 
-here = pathlib.Path(__file__).parent.resolve()
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-# Get the long description from the README file
-long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name="PassivePy",
@@ -29,6 +28,7 @@ setup(
         
     ],
     keywords='passive voice, text analysis, spacy, dependency parsing, part of speech tagging',
+    package_dir={'': 'PassivePy'},
     packages=find_packages(where='PassivePy'),  
     python_requires=">=3.6",
 
