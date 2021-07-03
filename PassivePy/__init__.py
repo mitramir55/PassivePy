@@ -1,1 +1,1 @@
-from .PassivePy import PassivePyAnalyzer
+from .PassivePy import PassivePy
