@@ -29,7 +29,7 @@ setup(
         
     ],
     keywords='passive voice, text analysis, spacy, dependency parsing, part of speech tagging',
-    packages=find_packages(where='PassivePy'),  
+    packages=find_packages(where='Source'),  
     python_requires=">=3.6",
 
     install_requires=['termcolor', 'tqdm', 'spacy>=3.0.0'],
