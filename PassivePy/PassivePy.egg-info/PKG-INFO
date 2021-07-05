@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PassivePy
-Version: 0.0.6
+Version: 0.0.7
 Summary: A package for processing large corpora and detecting passive voice.
 Home-page: https://github.com/mitramir55/PassivePy
 Author: Mitra Mirshafiee
