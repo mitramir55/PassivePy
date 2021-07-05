@@ -1,0 +1,5 @@
+spacy==3.0.6
+spacy-legacy==3.0.6
+termcolor==1.1.0
+
+tqdm @ file:///tmp/build/80754af9/tqdm_1615925068909/work
