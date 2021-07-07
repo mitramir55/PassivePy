@@ -34,7 +34,7 @@ setup(
 
     install_requires=['termcolor', 'tqdm', 'spacy>=3.0.0'],
     dependency_links=[
-        'https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0.tar.gz#egg=en_core_web_lg'
+        'https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg_3.0.0.tar.gz#egg=en_core_web_lg'
     ]
 
 )
