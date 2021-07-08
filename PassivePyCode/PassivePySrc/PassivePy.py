@@ -212,7 +212,7 @@ class PassivePyAnalyzer:
             # seperating sentences
             count_sents, all_sentences = self.detect_sents([cleaned_corpus], batch_size, n_process)
 
-            matches, passive_c, binaries = self.find_matches(self.matcher, all_sentences, batch_size, n_process)
+            matches, passive_c, binaries = self.find_matches(all_sentences, batch_size, n_process)
             
 
             s_output = pd.DataFrame(np.c_[all_sentences, binaries, matches, passive_c],
@@ -317,7 +317,7 @@ class PassivePyAnalyzer:
             # based on the document and sentence index
             sent_indices, doc_indices = self.find_doc_idx(count_sents)
 
-            matches, passive_c, binaries = self.find_matches(self.matcher, all_sentences, batch_size, n_process)
+            matches, passive_c, binaries = self.find_matches(all_sentences, batch_size, n_process)
             
 
             s_output = pd.DataFrame(np.c_[doc_indices, sent_indices, all_sentences, binaries, matches, passive_c],
@@ -377,7 +377,7 @@ class PassivePyAnalyzer:
 
             if percentage_of_passive_sentences:
 
-                s_output = self.match_sentence_level(self.matcher, df, colName, n_process = n_process,
+                s_output = self.match_sentence_level(df, colName, n_process = n_process,
                                 batch_size = batch_size, add_other_columns=add_other_columns)
                 matches = []
                 passive_c = []
@@ -423,7 +423,7 @@ class PassivePyAnalyzer:
 
 
             elif percentage_of_passive_sentences==False:
-                matches, passive_c, binaries = self.find_matches(self.matcher, cleaned_corpus, batch_size, n_process)
+                matches, passive_c, binaries = self.find_matches(cleaned_corpus, batch_size, n_process)
                 d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, passive_c],
                                         columns=['Document', 'binary', 'passive_match(es)', 'raw_passive_count' ])
 
