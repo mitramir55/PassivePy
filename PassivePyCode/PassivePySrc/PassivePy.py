@@ -8,7 +8,7 @@ import regex as re
 from itertools import chain 
 import string
 from tqdm import tqdm 
-
+import os
 import tqdm.notebook as tq
 
 class PassivePyAnalyzer:
@@ -32,8 +32,9 @@ class PassivePyAnalyzer:
             
             
             """
-        
+            os.system('pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0.tar.gz#egg=en_core_web_lg')
             self.nlp = spacy.load(spacy_model, disable=["ner"])
+            matcher = self.create_matcher()
 
         def create_matcher(self):
 
@@ -131,7 +132,7 @@ class PassivePyAnalyzer:
             verbs, we dedicated a new rule to some verbs to be detected when used with 
             an agent (by)
 
-            sentence : Natural resources are exhusted by humans.
+            sentence : Natural resources are exhausted by humans.
             dependencies : ['amod', 'nsubjpass', 'auxpass', 'ROOT', 'agent', 'pobj']
             tags : ['JJ', 'NNS', 'VBP', 'VBN', 'IN', 'NNS']
             """
@@ -146,7 +147,7 @@ class PassivePyAnalyzer:
             matcher.add("passive_rule_5", [passive_rule_5])
             matcher.add("passive_rule_6", [passive_rule_6])
 
-            print('Matcher is built.')
+            # print('Matcher is built.')
 
             return matcher
 
