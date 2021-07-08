@@ -34,7 +34,7 @@ class PassivePyAnalyzer:
             """
             os.system('pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0.tar.gz#egg=en_core_web_lg')
             self.nlp = spacy.load(spacy_model, disable=["ner"])
-            matcher = self.create_matcher()
+            self.matcher = self.create_matcher()
 
         def create_matcher(self):
 
@@ -305,7 +305,7 @@ class PassivePyAnalyzer:
 
 
         
-        def match_text(self, cleaned_corpus, matcher, batch_size=1, n_process=1):
+        def match_text(self, cleaned_corpus, batch_size=1, n_process=1):
 
             """ This function finds passive matches in one sample sentence"""
 
@@ -313,7 +313,7 @@ class PassivePyAnalyzer:
             count_sents, all_sentences = self.detect_sents([cleaned_corpus], batch_size, n_process)
 
             print(all_sentences)
-            matches, passive_c, binaries = self.find_matches(matcher, all_sentences, batch_size, n_process)
+            matches, passive_c, binaries = self.find_matches(self.matcher, all_sentences, batch_size, n_process)
             
 
             s_output = pd.DataFrame(np.c_[all_sentences, binaries, matches, passive_c],
@@ -321,7 +321,7 @@ class PassivePyAnalyzer:
             
             return s_output
 
-        def find_matches(self, matcher, corpora, batch_size, n_process):
+        def find_matches(self, corpora, batch_size, n_process):
 
             """ finds matches from each record """
 
@@ -346,7 +346,7 @@ class PassivePyAnalyzer:
                 
                 match_i = []
                 
-                all_matches = matcher(doc)
+                all_matches = self.matcher(doc)
 
 
                 # we check for duplicates and append only
@@ -386,7 +386,7 @@ class PassivePyAnalyzer:
 
 
 
-        def match_sentence_level(self, matcher, df, colName, n_process = 1,
+        def match_sentence_level(self, df, colName, n_process = 1,
                                 batch_size = 1000, add_other_columns=True):
 
             """
@@ -396,7 +396,6 @@ class PassivePyAnalyzer:
 
             Parameters
 
-            matcher: the matcher which has been initialized
             colName: name of the column with text
             level: whether the user wants corpus level or sentence level
             results
@@ -419,7 +418,7 @@ class PassivePyAnalyzer:
             # based on the document and sentence index
             sent_indices, doc_indices = self.find_doc_idx(count_sents)
 
-            matches, passive_c, binaries = self.find_matches(matcher, all_sentences, batch_size, n_process)
+            matches, passive_c, binaries = self.find_matches(self.matcher, all_sentences, batch_size, n_process)
             
 
             s_output = pd.DataFrame(np.c_[doc_indices, sent_indices, all_sentences, binaries, matches, passive_c],
@@ -450,7 +449,7 @@ class PassivePyAnalyzer:
 
 
 
-        def match_corpus_level(self, matcher, df, colName, n_process = 1,
+        def match_corpus_level(self, df, colName, n_process = 1,
             batch_size = 1000, add_other_columns=True,
             percentage_of_passive_sentences = True):
 
@@ -460,7 +459,6 @@ class PassivePyAnalyzer:
 
             Parameters
 
-            matcher: the matcher which has been initialized
             colName: name of the column with text
             level: whether the user wants corpus level or sentence level
             results
@@ -480,7 +478,7 @@ class PassivePyAnalyzer:
 
             if percentage_of_passive_sentences:
 
-                s_output = self.match_sentence_level(matcher, df, colName, n_process = n_process,
+                s_output = self.match_sentence_level(self.matcher, df, colName, n_process = n_process,
                                 batch_size = batch_size, add_other_columns=add_other_columns)
                 matches = []
                 passive_c = []
@@ -526,7 +524,7 @@ class PassivePyAnalyzer:
 
 
             elif percentage_of_passive_sentences==False:
-                matches, passive_c, binaries = self.find_matches(matcher, cleaned_corpus, batch_size, n_process)
+                matches, passive_c, binaries = self.find_matches(self.matcher, cleaned_corpus, batch_size, n_process)
                 d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, passive_c],
                                         columns=['Document', 'binary', 'passive_match(es)', 'raw_passive_count' ])
 
