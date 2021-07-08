@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="PassivePy",
-    version="0.1.0",
+    version="0.0.25",
     author="Mitra Mirshafiee",
     author_email="mitra.mirshafiee@gmail.com",
     description="A package for processing large corpora and detecting passive voice.",
@@ -33,8 +33,6 @@ setup(
     python_requires=">=3.6",
 
     install_requires=['termcolor', 'tqdm', 'spacy>=3.0.0'],
-    dependency_links=[
-        'https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg_3.0.0.tar.gz#egg=en_core_web_lg'
-    ]
+
 
 )
