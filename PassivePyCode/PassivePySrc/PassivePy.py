@@ -32,7 +32,8 @@ class PassivePyAnalyzer:
             
             
             """
-            os.system('pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0.tar.gz#egg=en_core_web_lg')
+            print('installing the requirements...')
+            os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             self.nlp = spacy.load(spacy_model, disable=["ner"])
             self.matcher = self.create_matcher()
 
