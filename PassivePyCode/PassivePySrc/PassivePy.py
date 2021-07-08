@@ -8,8 +8,10 @@ import regex as re
 from itertools import chain 
 import string
 from tqdm import tqdm 
-import os
 import tqdm.notebook as tq
+import os, sys
+
+
 
 try: 
     from PassivePyCode.PassivePySrc.PassivePyRules import create_matcher
@@ -37,7 +39,7 @@ class PassivePyAnalyzer:
             
             
             """
-            print('installing the requirements...')
+            # print('installing the requirements...')
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             self.nlp, self.matcher = create_matcher(spacy_model)
 
@@ -208,17 +210,17 @@ class PassivePyAnalyzer:
         def match_text(self, cleaned_corpus, batch_size=1, n_process=1):
 
             """ This function finds passive matches in one sample sentence"""
+            with HiddenPrints():
+                # seperating sentences
+                count_sents, all_sentences = self.detect_sents([cleaned_corpus], batch_size, n_process)
 
-            # seperating sentences
-            count_sents, all_sentences = self.detect_sents([cleaned_corpus], batch_size, n_process)
+                matches, passive_c, binaries = self.find_matches(all_sentences, batch_size, n_process)
+                
 
-            matches, passive_c, binaries = self.find_matches(all_sentences, batch_size, n_process)
-            
-
-            s_output = pd.DataFrame(np.c_[all_sentences, binaries, matches, passive_c],
-                        columns=['sentence', 'binary', 'passive_match(es)', 'raw_passive_count'])
-            
-            return s_output
+                s_output = pd.DataFrame(np.c_[all_sentences, binaries, matches, passive_c],
+                            columns=['sentence', 'binary', 'passive_match(es)', 'raw_passive_count'])
+                
+                return s_output
 
         def find_matches(self, corpora, batch_size, n_process):
 
@@ -459,4 +461,12 @@ class PassivePyAnalyzer:
             return d_output
 
 
+# for stopping the print statements in one sample sentences
+class HiddenPrints:
+    def __enter__(self):
+        self._original_stdout = sys.stdout
+        sys.stdout = open(os.devnull, 'w')
 
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout.close()
+        sys.stdout = self._original_stdout
