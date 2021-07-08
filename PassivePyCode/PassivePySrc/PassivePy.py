@@ -26,7 +26,7 @@ class PassivePyAnalyzer:
             save the output to a file
 
         """
-        def __init__(self):
+        def __init__(self, spacy_model = "en_core_web_lg"):
 
             """
             Create the Detector
@@ -38,8 +38,8 @@ class PassivePyAnalyzer:
             
             """
             print('installing the requirements...')
-            os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
-            self.nlp, self.matcher = create_matcher()
+            # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
+            self.nlp, self.matcher = create_matcher(spacy_model)
 
 
 
