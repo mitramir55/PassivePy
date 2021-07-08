@@ -10,8 +10,10 @@ import string
 from tqdm import tqdm 
 import os
 import tqdm.notebook as tq
-from PassivePyCode.PassivePySrc.PassivePyRules import create_matcher
 
+try: 
+    from PassivePyCode.PassivePySrc.PassivePyRules import create_matcher
+except: from PassivePySrc.PassivePyRules import create_matcher
 
 
 class PassivePyAnalyzer:
