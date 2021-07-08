@@ -58,7 +58,7 @@ class PassivePyAnalyzer:
             count_sents = []
             unwanted = []
             puncs = set(string.punctuation)
-            start = time.process_time()
+            # start = time.process_time()
 
             m = 0
             for record_doc in tq.tqdm(self.nlp.pipe(cleaned_corpus, batch_size=batch_size, n_process = n_process), 
@@ -134,16 +134,16 @@ class PassivePyAnalyzer:
                 all_sentences.append(sentences) 
 
             all_sentences = list(chain.from_iterable(all_sentences))
-            print(f'\n\nTotal number of sentences: {len(all_sentences)}')
+            print(f'Total number of sentences = {len(all_sentences)}')
 
 
-            end = time.process_time()
+            # end = time.process_time()
 
             # calculating the time taken
-            taken_t = round(end-start, 2)
-            if taken_t < 60:
-                print('time taken: ', taken_t, ' s')
-            else: print('time taken: ',  (taken_t)//60 , ' min ', round(taken_t%60, 1) , ' s')
+            # taken_t = round(end-start, 2)
+            # if taken_t < 60:
+             #    print('time taken: ', taken_t, ' s')
+            # else: print('time taken: ',  (taken_t)//60 , ' min ', round(taken_t%60, 1) , ' s\n')
 
             return np.array(count_sents, dtype='object'), np.array(all_sentences, dtype='object')
 
@@ -227,10 +227,10 @@ class PassivePyAnalyzer:
             """ finds matches from each record """
 
             # mark the start
-            print(colored('Starting to find passives...', 'red'))  
+            print(colored('Starting to find passives...', 'green'))  
 
             # tracking time
-            start = time.process_time()
+            # start = time.process_time()
 
             passive_c = [] # the list of outputs for the number of matches for each sentence
             matches = [] # all the matches for each record
@@ -272,16 +272,16 @@ class PassivePyAnalyzer:
 
                 i+=1
 
-            end = time.process_time()
+            # end = time.process_time()
             
             # calculating the time taken
-            taken_t = round(end-start, 2)
+            # taken_t = round(end-start, 2)
 
-            if taken_t < 60:
-                print('time taken: ', taken_t, ' s')
-            else: print('time taken: ',  (taken_t)//60 , ' min ', round(taken_t%60, 1) , ' s')
+            # if taken_t < 60:
+              #   print('time taken: ', taken_t, ' s')
+            # else: print('time taken: ',  (taken_t)//60 , ' min ', round(taken_t%60, 1) , ' s')
 
-            print('Detection is done!')
+            # print('Detection is done!')
 
             return np.array(matches, dtype='object'), np.array(passive_c, dtype='object'), np.array(binaries, dtype='object')
 
@@ -328,7 +328,7 @@ class PassivePyAnalyzer:
 
             passive_perc = len(s_output[s_output['raw_passive_count']>=1]) / len(s_output)
             
-            print(f'The percentage of passive records: {passive_perc *100:.2f}')
+            print(f'The ratio of passive records: {passive_perc *100:.2f} of total')
 
             # now we have all the matches we just have to
             # create a dataframe for the results
@@ -429,7 +429,7 @@ class PassivePyAnalyzer:
                 d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, passive_c],
                                         columns=['Document', 'binary', 'passive_match(es)', 'raw_passive_count' ])
 
-                print(f'The percentage of passive records: {passive_perc*100:.2f}')
+                print(f'The ratio of passive records: {passive_perc*100:.2f} of total.')
 
             assert len(cleaned_corpus) == len(matches) == len(passive_c)
 
