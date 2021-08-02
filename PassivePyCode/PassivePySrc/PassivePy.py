@@ -68,7 +68,7 @@ class PassivePyAnalyzer:
 
 
                 sentences = list(record_doc.sents)
-                sentences = [str(sentence) for sentence in sentences if len(sentence)>=2] 
+                sentences = [str(sentence) if len(sentence)>=2 else 'Not a Sentence' for sentence in sentences] 
                 # more than 2 to remove titles and extras
 
 
