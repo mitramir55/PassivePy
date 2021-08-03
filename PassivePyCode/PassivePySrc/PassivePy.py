@@ -10,7 +10,7 @@ import string
 from tqdm import tqdm 
 import tqdm.notebook as tq
 import os, sys
-
+import os, sys
 
 
 try: 
@@ -46,7 +46,7 @@ class PassivePyAnalyzer:
 
 
         def detect_sents(self, cleaned_corpus, batch_size, n_process):
-                         
+
             print('Detecting Sentences...')
 
             """Separates sentences from each other in each record
@@ -69,7 +69,6 @@ class PassivePyAnalyzer:
 
                 sentences = list(record_doc.sents)
                 sentences = [str(sentence) if len(sentence)>=2 else 'Not a Sentence' for sentence in sentences] 
-                # more than 2 to remove titles and extras
 
 
                 for sentence in sentences:
@@ -87,7 +86,7 @@ class PassivePyAnalyzer:
                                     unwanted.append(i)
                                     break
                             
-                
+
                     #.........................joining with the next one..........................#
                     if i != len(sentences)-1:
 
@@ -193,9 +192,7 @@ class PassivePyAnalyzer:
 
             return df_other_cols  
 
-
-
-        import os, sys
+        
 
         class HiddenPrints:
             def __enter__(self):
@@ -326,9 +323,7 @@ class PassivePyAnalyzer:
                         columns=['docId', 'sentenceId', 'sentence', 'binary', 'passive_match(es)', 'raw_passive_count'])
 
 
-            passive_perc = len(s_output[s_output['raw_passive_count']>=1]) / len(s_output)
-            
-            print(f'The ratio of passive records: {passive_perc *100:.2f} of total')
+
 
             # now we have all the matches we just have to
             # create a dataframe for the results
@@ -429,14 +424,12 @@ class PassivePyAnalyzer:
                 d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, passive_c],
                                         columns=['Document', 'binary', 'passive_match(es)', 'raw_passive_count' ])
 
-                print(f'The ratio of passive records: {passive_perc*100:.2f} of total.')
 
             assert len(cleaned_corpus) == len(matches) == len(passive_c)
 
             
 
-            passive_perc = len(d_output[d_output['raw_passive_count']>=1]) / len(d_output)
-
+            
 
             # now we have all the matches we just have to
             # create a dataframe for the results
