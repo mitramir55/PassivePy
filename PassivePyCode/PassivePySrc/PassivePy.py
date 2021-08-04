@@ -192,16 +192,6 @@ class PassivePyAnalyzer:
 
             return df_other_cols  
 
-        
-
-        class HiddenPrints:
-            def __enter__(self):
-                self._original_stdout = sys.stdout
-                sys.stdout = open(os.devnull, 'w')
-
-            def __exit__(self, exc_type, exc_val, exc_tb):
-                sys.stdout.close()
-                sys.stdout = self._original_stdout
 
 
         def match_text(self, cleaned_corpus, batch_size=1, n_process=1):
@@ -373,7 +363,8 @@ class PassivePyAnalyzer:
             cleaned_corpus = df.loc[:, colName].values.tolist()
 
             if percentage_of_passive_sentences:
-
+                
+                print(colored('Adding the analysis of the output...', 'blue'))
                 s_output = self.match_sentence_level(df, colName, n_process = n_process,
                                 batch_size = batch_size, add_other_columns=add_other_columns)
                 matches = []
@@ -382,10 +373,11 @@ class PassivePyAnalyzer:
                 percentages = []
                 count_sents = []
                 count_p_sents = []
+                ids_ = s_output.docId.unique()
 
 
-                for i in s_output.docId.unique():
-
+                for i in tq.tqdm(ids_, leave=True, position=0, total=len(ids_)):
+                    
                     rows = s_output[s_output['docId'] == i]
 
                     count_sents.append(len(rows))
@@ -394,7 +386,7 @@ class PassivePyAnalyzer:
                     percent =  count_p_s/ len(rows)
                     percentages.append(percent)
 
-
+                    if i%100: print(f'{i}th record')
 
                     if any(rows.binary) == 1:
                         binaries.append(1)
@@ -428,9 +420,6 @@ class PassivePyAnalyzer:
             assert len(cleaned_corpus) == len(matches) == len(passive_c)
 
             
-
-            
-
             # now we have all the matches we just have to
             # create a dataframe for the results
             if add_other_columns==True:
