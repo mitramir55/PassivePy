@@ -361,7 +361,7 @@ class PassivePyAnalyzer:
             df = df.reset_index(drop=True)
             # create a list of the column we will process
             cleaned_corpus = df.loc[:, colName].values.tolist()
-
+            print(colored('Adding the analysis of the output...', 'blue'))
             if percentage_of_passive_sentences:
                 
                 print(colored('Adding the analysis of the output...', 'blue'))
