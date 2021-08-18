@@ -10,3 +10,4 @@ PassivePyCode/PassivePy.egg-info/top_level.txt
 PassivePyCode/PassivePySrc/PassivePy.py
 PassivePyCode/PassivePySrc/PassivePyRules.py
 PassivePyCode/PassivePySrc/__init__.py
+PassivePyCode/PassivePySrc/sentence_level_corpus.py

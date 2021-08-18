@@ -370,6 +370,7 @@ class PassivePyAnalyzer:
                                 batch_size = batch_size, add_other_columns=add_other_columns)
                 print(colored('Adding the analysis of the output...', 'blue'))
 
+
                 matches = []
                 passive_c = []
                 binaries = []
