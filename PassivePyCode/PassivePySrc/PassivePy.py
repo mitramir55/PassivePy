@@ -56,11 +56,11 @@ class PassivePyAnalyzer:
                     '\ndependency:', token.dep_, '\ntag: ', token.tag_,
                     '\nlemma: ', token.lemma_)
 
-            if all_matches:
 
-                spans = [doc[s:e] for id_, s,e in all_matches]
-                for span in spacy.util.filter_spans(spans):
-                    print(str(span))
+            if all_matches:
+                for id_, s,e in all_matches:
+                    match_ = doc[s:e] 
+                    print(match_)
                     print(colored(self.nlp.vocab.strings[id_], 'blue'))
 
         def detect_sents(self, cleaned_corpus, batch_size, n_process):
