@@ -1,9 +1,9 @@
-def corous_level_additional_info(df, colName):
+def corous_level_additional_info(df, column_name):
 
 
     df = df.reset_index(drop=True)
     # create a list of the column we will process
-    cleaned_corpus = df.loc[:, colName].values.tolist()
+    cleaned_corpus = df.loc[:, column_name].values.tolist()
 
     # seperating sentences
     count_sents, all_sentences = self.detect_sents(cleaned_corpus, batch_size, n_process)

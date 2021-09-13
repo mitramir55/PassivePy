@@ -42,7 +42,7 @@ class PassivePyAnalyzer:
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             self.nlp, self.matcher = create_matcher(spacy_model)
 
-        def analyze_sentence(self, sentence):
+        def parse_sentence(self, sentence):
             """
             This function allows us to see the components of a sentence, 
             specifically, the POS, DEP, and lemma
@@ -52,8 +52,9 @@ class PassivePyAnalyzer:
 
             
             for token in doc:
-                print('word:', colored(token.text, 'green'), '\npos:', token.pos_,\
-                    '\ndependency:', token.dep_, 'lemma: ', token.lemma_)
+                print('word:', colored(token.text, 'green'), '\npos:', token.pos_,
+                    '\ndependency:', token.dep_, '\ntag: ', token.tag_,
+                    '\nlemma: ', token.lemma_)
 
 
             if all_matches:
@@ -184,15 +185,15 @@ class PassivePyAnalyzer:
 
 
 
-        def add_other_cols(self, df, colName, count_sents):
+        def add_other_cols(self, df, column_name, count_sents):
 
             """ creates a dataframe of all the other columns
             with the required number of repetitions for each """
 
             # create a list of all the col names
             fields = df.columns.tolist()
-            # remove colName
-            del fields[fields.index(colName)]
+            # remove column_name
+            del fields[fields.index(column_name)]
 
             other_columns = {}
             # create a df of all the other cols with 
@@ -291,7 +292,7 @@ class PassivePyAnalyzer:
 
 
 
-        def match_sentence_level(self, df, colName, n_process = 1,
+        def match_sentence_level(self, df, column_name, n_process = 1,
                                 batch_size = 1000, add_other_columns=True):
 
             """
@@ -301,7 +302,7 @@ class PassivePyAnalyzer:
 
             Parameters
 
-            colName: name of the column with text
+            column_name: name of the column with text
             level: whether the user wants corpus level or sentence level
             results
             n_process: number of cores to use can be any number
@@ -314,7 +315,7 @@ class PassivePyAnalyzer:
             """
             df = df.reset_index(drop=True)
             # create a list of the column we will process
-            cleaned_corpus = df.loc[:, colName].values.tolist()
+            cleaned_corpus = df.loc[:, column_name].values.tolist()
 
             # seperating sentences
             count_sents, all_sentences = self.detect_sents(cleaned_corpus, batch_size, n_process)
@@ -335,7 +336,7 @@ class PassivePyAnalyzer:
             # now we have all the matches we just have to
             # create a dataframe for the results
             if add_other_columns==True:
-                other_cols_df = self.add_other_cols(df, colName, count_sents)
+                other_cols_df = self.add_other_cols(df, column_name, count_sents)
                 
 
                 assert len(other_cols_df) == len(s_output)
@@ -347,12 +348,8 @@ class PassivePyAnalyzer:
                 return s_output
 
 
-            
 
-
-
-
-        def match_corpus_level(self, df, colName, n_process = 1,
+        def match_corpus_level(self, df, column_name, n_process = 1,
             batch_size = 1000, add_other_columns=True,
             percentage_of_passive_sentences = True):
 
@@ -362,7 +359,7 @@ class PassivePyAnalyzer:
 
             Parameters
 
-            colName: name of the column with text
+            column_name: name of the column with text
             level: whether the user wants corpus level or sentence level
             results
             n_process: number of cores to use can be any number
@@ -377,13 +374,13 @@ class PassivePyAnalyzer:
             
             df = df.reset_index(drop=True)
             # create a list of the column we will process
-            cleaned_corpus = df.loc[:, colName].values.tolist()
+            cleaned_corpus = df.loc[:, column_name].values.tolist()
 
 
             if percentage_of_passive_sentences:
                 
                 
-                s_output = self.match_sentence_level(df, colName, n_process = n_process,
+                s_output = self.match_sentence_level(df, column_name, n_process = n_process,
                                 batch_size = batch_size, add_other_columns=add_other_columns)
                 print(colored('Adding the analysis of the output...', 'blue'))
 
@@ -446,8 +443,8 @@ class PassivePyAnalyzer:
 
                 # create a list of all the col names
                 fields = df.columns.tolist()
-                # remove colName
-                del fields[fields.index(colName)]
+                # remove column_name
+                del fields[fields.index(column_name)]
 
                 
 

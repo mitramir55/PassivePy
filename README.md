@@ -25,10 +25,10 @@ In case of large datasets, you can also add `batch_size = ...` and `n_process=..
 
 ``` 
 # sentence level:
-df_detected_s = passivepy.match_sentence_level(df=df, colName = 'abstract_text')
+df_detected_s = passivepy.match_sentence_level(df=df, column_name = 'abstract_text')
 
 # corpus level
-df_detected_c = passivepy.match_corpus_level(df=df, colName = 'abstract_text')
+df_detected_c = passivepy.match_corpus_level(df=df, column_name = 'abstract_text')
 ```
 
 If you do not need any columns to be appended to the main dataset, simply add `add_other_columns = False`, or if you don't what the percentages to show up add `percentage_of_passive_sentences = False` in any of the following functions.
