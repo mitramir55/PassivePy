@@ -30,6 +30,44 @@ df_detected_s = passivepy.match_sentence_level(df=df, column_name = 'abstract_te
 # corpus level
 df_detected_c = passivepy.match_corpus_level(df=df, column_name = 'abstract_text')
 ```
+In the output you will have a data frame with the following columns:
+
+```
+# corpus level
+document : Records in the input data frame
+binary : Whether a passive was detected in that document
+passive_match(es) : Parts of the document detected as passive
+raw_passive_count : Number of passive voices detected in the sentence
+raw_passive_sents_count : Number of sentences with passive voice
+raw_sentence_count : Number of sentences detected in the document
+passive_sents_percentage : Proportion of passive sentences to total number of sentences
+
+# Sentence level
+docId : Initial index of the record in the input file
+sentenceId : The ith sentence in one specific record
+sentence : The detected sentence
+binary : Whether a passive was detected in that sentence
+passive_match(es) : The part of the record detected as passive voice
+raw_passive_count : Number of passive forms detected in the sentence
+
+```
+
+If you needed to analyze each token of a sentence, i.g., print out the `DEP` (dependency), `POS` (coarse-grained POS tags), `TAG` (fine-grained part of speech tags), `LEMMA` (canonical form) of a word,  you can use the `parse_sentence` method of passivepy in the following way:
+
+```
+passivepy.parse_sentence("She has been killed")
+```
+And the output will be like the sample below:
+```
+word: She 
+pos: PRON 
+dependency: nsubjpass 
+tag:  PRP 
+lemma:  she
+...
+```
+
+
 
 If you do not need any columns to be appended to the main dataset, simply add `add_other_columns = False`, or if you don't what the percentages to show up add `percentage_of_passive_sentences = False` in any of the following functions.
 
