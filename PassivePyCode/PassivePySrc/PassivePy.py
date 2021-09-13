@@ -10,7 +10,6 @@ import string
 from tqdm import tqdm 
 import tqdm.notebook as tq
 import os, sys
-import os, sys
 
 
 try: 
@@ -43,7 +42,25 @@ class PassivePyAnalyzer:
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             self.nlp, self.matcher = create_matcher(spacy_model)
 
+        def analyze_sentence(self, sentence):
+            """
+            This function allows us to see the components of a sentence, 
+            specifically, the POS, DEP, and lemma
+            """
+            doc = self.nlp(sentence)
+            all_matches = self.matcher(doc)
 
+            
+            for token in doc:
+                print('word:', colored(token.text, 'green'), '\npos:', token.pos_,\
+                    '\ndependency:', token.dep_, 'lemma: ', token.lemma_)
+
+
+            if all_matches:
+                for id_, s,e in all_matches:
+                    match_ = doc[s:e] 
+                    print(match_)
+                    print(colored(self.nlp.vocab.strings[id_], 'blue'))
 
         def detect_sents(self, cleaned_corpus, batch_size, n_process):
 

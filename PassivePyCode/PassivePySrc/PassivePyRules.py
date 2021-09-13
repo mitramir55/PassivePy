@@ -18,14 +18,13 @@ def create_matcher(spacy_model = "en_core_web_lg"):
 
     #--------------------------rules--------------------#
 
-    
-
     passive_rule_1 = [
-        {"DEP": "auxpass"},
+        {"POS":"AUX", "DEP": "aux", "OP":"*"},
+        {"POS":"AUX", "DEP": "auxpass", "OP":"+"},
         {"DEP":"neg", "TAG":"RB", "OP":"*"},
         {"DEP":"HYPH", "OP":"*"},
         {"DEP":"advmod", "TAG":"RB", "OP":"*"},
-        { "TAG":"VBN", "LEMMA":{"NOT_IN" : verbs_list}}
+        { "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}}
     ]
 
     """
@@ -48,6 +47,12 @@ def create_matcher(spacy_model = "en_core_web_lg"):
 
 
     passive_rule_3 = [
+        {"POS":"AUX", "DEP": "aux", "OP":"*"},
+        {"POS":"AUX", "DEP": "auxpass", "OP":"+"},
+        {"DEP":"neg", "TAG":"RB", "OP":"*"},
+        {"DEP":"HYPH", "OP":"*"},
+        {"DEP":"advmod", "TAG":"RB", "OP":"*"},
+        { "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}},
         {"DEP":"cc"},
         {"DEP":"advmod", "TAG":"VBN", "OP": "*", "LEMMA": {"NOT_IN":["pre"]}},
         {"DEP": "conj", "TAG": "VBN", "LEMMA":{"NOT_IN" : verbs_list}},
@@ -107,7 +112,7 @@ def create_matcher(spacy_model = "en_core_web_lg"):
 
     # ------------------adding rules to the matcher----------#
 
-    matcher.add("passive_rule_1", [passive_rule_1])
+    matcher.add("passive_rule_1", [passive_rule_1], greedy='LONGEST')
     matcher.add("passive_rule_2", [passive_rule_2])
     matcher.add("passive_rule_3", [passive_rule_3])
     matcher.add("passive_rule_4", [passive_rule_4])
