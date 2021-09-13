@@ -15,8 +15,9 @@ def create_matcher(spacy_model = "en_core_web_lg"):
                 "lead", "stun", "overrate",  "fill", "bear",
                 "complicate", "reserve", "complicate"]
 
-
     #--------------------------rules--------------------#
+
+    
 
     passive_rule_1 = [
         {"POS":"AUX", "DEP": "aux", "OP":"*"},
@@ -52,10 +53,10 @@ def create_matcher(spacy_model = "en_core_web_lg"):
         {"DEP":"neg", "TAG":"RB", "OP":"*"},
         {"DEP":"HYPH", "OP":"*"},
         {"DEP":"advmod", "TAG":"RB", "OP":"*"},
-        { "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}},
+        {"POS":"VERB", "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}},
         {"DEP":"cc"},
         {"DEP":"advmod", "TAG":"VBN", "OP": "*", "LEMMA": {"NOT_IN":["pre"]}},
-        {"DEP": "conj", "TAG": "VBN", "LEMMA":{"NOT_IN" : verbs_list}},
+        {"DEP": "conj", "LEMMA":{"NOT_IN" : verbs_list}},
         {"DEP":"pobj", "OP":"!"}
     ]
 
@@ -113,11 +114,11 @@ def create_matcher(spacy_model = "en_core_web_lg"):
     # ------------------adding rules to the matcher----------#
 
     matcher.add("passive_rule_1", [passive_rule_1], greedy='LONGEST')
-    matcher.add("passive_rule_2", [passive_rule_2])
-    matcher.add("passive_rule_3", [passive_rule_3])
-    matcher.add("passive_rule_4", [passive_rule_4])
-    matcher.add("passive_rule_5", [passive_rule_5])
-    matcher.add("passive_rule_6", [passive_rule_6])
+    matcher.add("passive_rule_2", [passive_rule_2], greedy='LONGEST')
+    matcher.add("passive_rule_3", [passive_rule_3], greedy='LONGEST')
+    matcher.add("passive_rule_4", [passive_rule_4], greedy='LONGEST')
+    matcher.add("passive_rule_5", [passive_rule_5], greedy='LONGEST')
+    matcher.add("passive_rule_6", [passive_rule_6], greedy='LONGEST')
 
     # print('Matcher is built.')
 
