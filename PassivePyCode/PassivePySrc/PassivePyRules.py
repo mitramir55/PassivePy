@@ -13,19 +13,19 @@ def create_matcher(spacy_model = "en_core_web_lg"):
     # is sometimes mistaken as a verb
     verbs_list = ["associate", "involve", "exhaust", "base", 
                 "lead", "stun", "overrate",  "fill", "bear",
-                "complicate", "reserve", "complicate"]
+                "complicate", "reserve", "complicate", "heat",
+                "screw",]
 
     #--------------------------rules--------------------#
 
     
-
     passive_rule_1 = [
         {"POS":"AUX", "DEP": "aux", "OP":"*"},
         {"POS":"AUX", "DEP": "auxpass", "OP":"+"},
         {"DEP":"neg", "TAG":"RB", "OP":"*"},
         {"DEP":"HYPH", "OP":"*"},
         {"DEP":"advmod", "TAG":"RB", "OP":"*"},
-        { "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}}
+        {"POS":"VERB", "TAG":"VBN", "LEMMA":{"NOT_IN" : verbs_list + ['be']}}
     ]
 
     """
