@@ -17,8 +17,20 @@ from PassivePySrc import PassivePy
 spacy_model = "en_core_web_lg"
 passivepy = PassivePy.PassivePyAnalyzer(spacy_model)
 ```
-
-And at last, we have can either analyze the records in sentence- or corpus-level. Your dataset can be in any format (e.g., CSV, XLSX or XLS).; however, make sure to that it has at least one column with the text that needs to be analyzed.
+Use passivepy for single sentences:
+```
+# Try changing the sentence below:
+sample_text = "The painting has been drawn."
+passivepy.match_text(sample_text)
+```
+The output will be:
+```
+sentence : the input sentence
+binary : Whether any passive voice is detected 
+passive_match(es) : The span of passive form in text
+raw_passive_count : Number of passive voices
+```
+For processing datasets, we have can either analyze the records sentence- or corpus-level. Your dataset can be in any format (e.g., CSV, XLSX or XLS).; however, make sure to that it has at least one column with the text that needs to be analyzed.
 
 In case of large datasets, you can also add `batch_size = ...` and `n_process=...` to speed up the analysis (the default for both is 1).
 
