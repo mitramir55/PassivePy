@@ -67,10 +67,12 @@ class PassivePyAnalyzer:
 
             print('Detecting Sentences...')
 
-            """Separates sentences from each other in each record
+            """
+            Separates sentences from each other in each record
              and puts them in a list along side the count of sentences in each 
-             document in another list"""
-            
+             document in another list
+             """
+            cleaned_corpus = [corpus.lower() for corpus in cleaned_corpus]
 
             all_sentences = []
             count_sents = []
