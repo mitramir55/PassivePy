@@ -37,10 +37,10 @@ In case of large datasets, you can also add `batch_size = ...` and `n_process=..
 
 ``` 
 # sentence level:
-df_detected_s = passivepy.match_sentence_level(df=df, column_name = 'abstract_text')
+df_detected_s = passivepy.match_sentence_level(df=df, column_name = 'text')
 
 # corpus level
-df_detected_c = passivepy.match_corpus_level(df=df, column_name = 'abstract_text')
+df_detected_c = passivepy.match_corpus_level(df=df, column_name = 'text')
 ```
 In the output you will have a data frame with the following columns:
 
