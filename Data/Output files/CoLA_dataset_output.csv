@@ -1,0 +1,1044 @@
+document,binary,passive_match(es),raw_passive_count,raw_passive_sents_count,raw_sentence_count,passive_sents_percentage,cola_passive_binary
+The sailors rode the breeze clear of the rocks.,0,[],0,0,1,0.0,0
+The weights made the rope stretch over the pulley.,0,[],0,0,1,0.0,0
+The mechanical doll wriggled itself loose.,0,[],0,0,1,0.0,0
+"If you had eaten more, you would want less.",0,[],0,0,1,0.0,0
+"As you eat the most, you want the least.",0,[],0,0,1,0.0,0
+"The more you would want, the less you would eat.",0,[],0,0,1,0.0,0
+"I demand that the more John eat, the more he pays.",0,[],0,0,1,0.0,0
+"Mary listens to the Grateful Dead, she gets depressed.",0,[],0,0,1,0.0,0
+"The angrier Mary got, the more she looked at pictures.",0,[],0,0,1,0.0,0
+"The higher the stakes, the lower his expectations are.",0,[],0,0,1,0.0,0
+"The more Fred is obnoxious, the less attention you should pay to him.",0,[],0,0,1,0.0,0
+John was lots more obnoxious than Fred.,0,[],0,0,1,0.0,0
+"The more people you give beer to, the more people get sick.",0,[],0,0,1,0.0,0
+"The more does Bill smoke, the more Susan hates him.",0,[],0,0,1,0.0,0
+"The more pictures of him that appear in the news, the more embarrassed John becomes.",0,[],0,0,1,0.0,0
+"Every senator seems to become more corrupt, as he talks to more lobbyists.",0,[],0,0,1,0.0,0
+Who does John visit Sally because he likes?,0,[],0,0,1,0.0,0
+Marianne did not leave.,0,[],0,0,1,0.0,0
+He could not have been working.,0,[],0,0,1,0.0,0
+He can not have been working.,0,[],0,0,1,0.0,0
+You will believe Bob.,0,[],0,0,1,0.0,0
+John has not kissed Mary.,0,[],0,0,1,0.0,0
+I said that never in my life had I seen a place like Bangor.,0,[],0,0,1,0.0,0
+Mickey looked up it.,0,[],0,0,1,0.0,0
+There tended to be a lot of discussion.,0,[],0,0,1,0.0,0
+John tried to be a good boy.,0,[],0,0,1,0.0,0
+John is eager.,0,[],0,0,1,0.0,0
+We want John to win.,0,[],0,0,1,0.0,0
+The box contained the ball from the tree.,0,[],0,0,1,0.0,0
+The tube was escaped by gas.,1,['was escaped'],1,1,1,1.0,1
+Water bubbled up out of the kettle.,0,[],0,0,1,0.0,0
+The tub leaked water.,0,[],0,0,1,0.0,0
+What the water did to the bottle was fill it.,0,[],0,0,1,0.0,0
+What the water did to the whole bottle was fill it.,0,[],0,0,1,0.0,0
+The tank leaked the fluid free.,0,[],0,0,1,0.0,0
+John lay the ball in the box.,0,[],0,0,1,0.0,0
+John owns the book.,0,[],0,0,1,0.0,0
+We persuaded Mary to leave and Sue to stay.,0,[],0,0,1,0.0,0
+"Most people probably consider, even though the courts didn't actually find, Klaus guilty of murder.",0,[],0,0,1,0.0,0
+Mary beautifully plays the violin.,0,[],0,0,1,0.0,0
+"Clearly, John probably will immediately learn French perfectly.",0,[],0,0,1,0.0,0
+Sue gave to Bill a book.,0,[],0,0,1,0.0,0
+The men will all leave.,0,[],0,0,1,0.0,0
+John went home.,0,[],0,0,1,0.0,0
+They represented seriously to the dean Mary as a genuine linguist.,0,[],0,0,1,0.0,0
+Us love they.,0,[],0,0,1,0.0,0
+It is nice to go abroad.,0,[],0,0,1,0.0,0
+Mary intended John to go abroad.,0,[],0,0,1,0.0,0
+I remembered having kissed Mary.,0,[],0,0,1,0.0,0
+"I can't believe Fred won't, either.",0,[],0,0,1,0.0,0
+"John wants to read Fred's story, and I also want to.",0,[],0,0,1,0.0,0
+"We wanted to invite someone, but we couldn't decide who to.",0,[],0,0,1,0.0,0
+"Mary will read Fred's story, and Joe will read Holly's.",0,[],0,0,1,0.0,0
+"Mary claimed that eating cabbage, Holly shouldn't.",0,[],0,0,1,0.0,0
+Mary came to be introduced by the bartender and I also came to be.,1,['introduced by the bartender'],1,1,1,1.0,0
+"If I can, I will work on it.",0,[],0,0,1,0.0,0
+"Joe's neuroses bother his patrons, and Sally does too.",0,[],0,0,1,0.0,0
+"I know which book JosÃ© didn't read for class, and which book Lilly did it for him.",0,[],0,0,1,0.0,0
+"This is the book which Bob reviewed, and this is the one which Fred won't do it.",0,[],0,0,1,0.0,0
+"I know which book Mag read, and which book Bob said that you hadn't.",0,[],0,0,1,0.0,0
+"I know which book Mag read, and which book Bob read my report that you hadn't.",0,[],0,0,1,0.0,0
+I'm sure I would like him to eat fruit more than I would cookies.,0,[],0,0,1,0.0,0
+Rusty talked about himself only after Mary did talk about him.,0,[],0,0,1,0.0,0
+Fred talked about everything before Rusty did talk about something.,0,[],0,0,1,0.0,0
+John often meets Mary.,0,[],0,0,1,0.0,0
+The problem perceives easily.,0,[],0,0,1,0.0,0
+A hundred men surrounded the fort.,0,[],0,0,1,0.0,0
+We elected me.,0,[],0,0,1,0.0,0
+Which report that John was incompetent did he submit?,0,[],0,0,1,0.0,0
+Mary has always preferred lemons to limes.,0,[],0,0,2,0.0,0
+He let the cats which were whining out.,0,[],0,0,1,0.0,0
+What did Bill buy?,0,[],0,0,1,0.0,0
+Mary saw the boy walking toward the railroad station.,0,[],0,0,1,0.0,0
+A proof that the claim had been made was given that John had lied.,1,"['had been made', 'was given']",2,1,1,1.0,1
+He attributed to a short circuit which was caused by an overloaded transducer the fire which destroyed most of my factory.,1,['was caused'],1,1,1,1.0,1
+The mayor regarded as being absurd the proposal to build a sidewalk from Dartmouth to Smith.,0,[],0,0,1,0.0,0
+I want that Bill left to remain a secret.,0,[],0,0,1,0.0,0
+I know a man who Tom drives as drives.,0,[],0,0,1,0.0,0
+"Drowning cats, which is against the law, are hard to rescue.",0,[],0,0,1,0.0,0
+Muriel said nothing else than that she had been insulted.,1,['had been insulted'],1,1,1,1.0,1
+Himself is understood by Rutherford.,1,['is understood'],1,1,1,1.0,1
+I feel that Arch will show up.,0,[],0,0,1,0.0,0
+The proof this set is recursive is difficult.,0,[],0,0,1,0.0,0
+The madrigals which Henry plays the lute and sings sound lousy.,0,[],0,0,1,0.0,0
+"Tom picked these grapes, and I washed some turnips, and Suzie will prepare these grapes.",0,[],0,0,1,0.0,0
+Where did you go and who ate what?,0,[],0,0,1,0.0,0
+Which boy's did we elect guardian's employer president?,0,[],0,0,1,0.0,0
+How sane is Peter?,0,[],0,0,1,0.0,0
+I live at the place where Route 150 crosses the River and my dad lives at the place where Route 150 crosses the Hudson River too.,0,[],0,0,1,0.0,0
+I live at the place where Route 150 crosses the Hudson River and my dad lives at it too.,0,[],0,0,1,0.0,0
+Who is she trying to make up to now?,0,[],0,0,1,0.0,0
+Wind was gotten of a plot to negotiate an honorable end to the war in Vietnam.,1,['was gotten'],1,1,1,1.0,1
+Mike talked about politics yesterday to my friends.,0,[],0,0,1,0.0,0
+It was expected by the reporters that the principal would fire some teacher.,1,['was expected'],1,1,1,1.0,1
+Which hat did Mike quip that she never wore?,0,[],0,0,1,0.0,0
+Which girl did Mike quip never wore this hat?,0,[],0,0,1,0.0,0
+We donated wire for the convicts to build cages with.,0,[],0,0,1,0.0,0
+I won't have some money.,0,[],0,0,1,0.0,0
+Do you believe the claim that somebody was looking for something?,0,[],0,0,1,0.0,0
+I won't ask you to believe that he tried to force me to give her any money.,0,[],0,0,1,0.0,0
+That Sam sometimes didn't sleep must have pleased somebody.,0,[],0,0,1,0.0,0
+I talked to Winston about himself.,0,[],0,0,1,0.0,0
+"That the fuzz wanted him worried John, but that the fuzz wanted her didn't worry Mary.",0,[],0,0,1,0.0,0
+I'll work on it if Sam will be working on it.,0,[],0,0,1,0.0,0
+I'll work on it if I can.,0,[],0,0,1,0.0,0
+Here's a knife with which for you to cut up the onions.,0,[],0,0,1,0.0,0
+"Fluffy is sick, which not everybody knows.",0,[],0,0,1,0.0,0
+Maxwell is quite a doctor.,0,[],0,0,1,0.0,0
+"The younger woman might have been tall and, and the older one definitely was, blond.",0,[],0,0,1,0.0,0
+"Sally is tall, and may be blond, and Sheila is short, and definitely is, blond.",0,[],0,0,1,0.0,0
+I have to try to finish grading some papers.,0,[],0,0,1,0.0,0
+The socks are ready for for you to put on to be planned.,1,['be planned'],1,1,1,1.0,0
+It is easy to play sonatas on this violin.,0,[],0,0,1,0.0,0
+This violin is difficult to play sonatas on.,0,[],0,0,1,0.0,0
+My mother is easy to please my father and.,0,[],0,0,1,0.0,0
+"Poor Bill, it had started to rain and he had no umbrella.",0,[],0,0,1,0.0,0
+"That the cops spoke to the janitor about it yesterday is terrible, that robbery.",0,[],0,0,1,0.0,0
+"Every student, and he wears socks, is a swinger.",0,[],0,0,1,0.0,0
+That girl was given my binoculars by him.,1,['was given'],1,1,1,1.0,1
+Bill didn't allege that Roger had eaten anything.,0,[],0,0,1,0.0,0
+Nobody who hates to eat anything should work in a delicatessen.,0,[],0,0,1,0.0,0
+Everybody around here who ever buys anything on credit talks in his sleep.,0,[],0,0,1,0.0,0
+I can't remember the name of somebody who had misgivings.,0,[],0,0,1,0.0,0
+"No writer, and no playwright, meets in Vienna.",0,[],0,0,1,0.0,0
+"No writer, nor any playwright, meets in Vienna.",0,[],0,0,1,0.0,0
+That you will marry any student is not certain.,0,[],0,0,1,0.0,0
+Felicia kicked the ball off the bench.,0,[],0,0,1,0.0,0
+I sent the package halfway around the world.,0,[],0,0,1,0.0,0
+Sam gave the ball out of the basket.,0,[],0,0,1,0.0,0
+Sam offered the ball out of the basket.,0,[],0,0,1,0.0,0
+Park Square has a festive air.,0,[],0,0,1,0.0,0
+The worker will have a job.,0,[],0,0,1,0.0,0
+No one can forgive that comment to you.,0,[],0,0,1,0.0,0
+"We launched the rocket to the moon, but it blew up before it got there.",0,[],0,0,1,0.0,0
+"Sarah promised Catherine her old car, but then gave it to her son instead.",0,[],0,0,1,0.0,0
+I lent the book partway to Tony.,0,[],0,0,1,0.0,0
+The farmer loaded the cart with apples.,0,[],0,0,1,0.0,0
+The farmer dumped the cart with apples.,0,[],0,0,1,0.0,0
+Martha carved the baby a toy out of wood.,0,[],0,0,1,0.0,0
+The bread cuts easily.,0,[],0,0,1,0.0,0
+Janet broke Bill on the finger.,0,[],0,0,1,0.0,0
+Janet broke the cup.,0,[],0,0,1,0.0,0
+The visitor rang the bell.,0,[],0,0,1,0.0,0
+We pulled free.,0,[],0,0,1,0.0,0
+That movie always shocks people.,0,[],0,0,1,0.0,0
+That movie always shocks.,0,[],0,0,1,0.0,0
+Sharon came the room.,0,[],0,0,1,0.0,0
+Bill sent a package to Tom.,0,[],0,0,1,0.0,0
+That acorn will grow into an oak tree.,0,[],0,0,1,0.0,0
+He turned into a frog.,0,[],0,0,1,0.0,0
+I mixed the sugar into the butter.,0,[],0,0,1,0.0,0
+Brian threw the fence with the stick.,0,[],0,0,1,0.0,0
+Mira condemned Terry for the accident.,0,[],0,0,1,0.0,0
+We investigated the area for bombs.,0,[],0,0,1,0.0,0
+I sensed his eagerness.,0,[],0,0,1,0.0,0
+They praised the dedication in the volunteers.,0,[],0,0,1,0.0,0
+The earth was believed to be round.,1,['was believed'],1,1,1,1.0,1
+Sarah smiled a charming smile.,0,[],0,0,1,0.0,0
+Sandra beamed a cheerful welcome.,0,[],0,0,1,0.0,0
+You've really lived it up.,0,[],0,0,1,0.0,0
+Paperback books lift onto the table easily.,0,[],0,0,1,0.0,0
+The books lifted onto the table.,0,[],0,0,1,0.0,0
+Jessica loaded boxes under the wagon.,0,[],0,0,1,0.0,0
+Jessica loaded boxes on the wagon.,0,[],0,0,1,0.0,0
+Jessica crammed boxes at the truck.,0,[],0,0,1,0.0,0
+Lora buttered at the toast.,0,[],0,0,1,0.0,0
+Carla shoveled the walk.,0,[],0,0,1,0.0,0
+Nora sent the book.,0,[],0,0,1,0.0,0
+Nora sent Peter the book.,0,[],0,0,1,0.0,0
+Carla slid the book.,0,[],0,0,1,0.0,0
+Carla slid at the book.,0,[],0,0,1,0.0,0
+Amanda carried the package to Pamela.,0,[],0,0,1,0.0,0
+Packages drive easily to New York.,0,[],0,0,1,0.0,0
+The chair pushed.,0,[],0,0,1,0.0,0
+We offered a job to her.,0,[],0,0,1,0.0,0
+A job offered.,0,[],0,0,1,0.0,0
+Brown presented a plaque to Jones.,0,[],0,0,1,0.0,0
+Carmen bought Mary a dress.,0,[],0,0,1,0.0,0
+Carmen obtained the spare part at the hardware store.,0,[],0,0,1,0.0,0
+Michelle kept the desk with the papers.,0,[],0,0,1,0.0,0
+Frances hid the presents in the drawer.,0,[],0,0,1,0.0,0
+The needle poked the cloth.,0,[],0,0,1,0.0,0
+Carrie touched that cat.,0,[],0,0,1,0.0,0
+Herman whipped the sugar and the cream.,0,[],0,0,1,0.0,0
+Linda taped the picture to the wall.,0,[],0,0,1,0.0,0
+Linda taped the picture onto the wall.,0,[],0,0,1,0.0,0
+The child and her mother clung together.,0,[],0,0,1,0.0,0
+This flyer and that flyer differ.,0,[],0,0,1,0.0,0
+This flyer and that flyer differ apart.,0,[],0,0,1,0.0,0
+The jeweller scribbled the contract with his name.,0,[],0,0,1,0.0,0
+The gardener grew that acorn into an oak tree.,0,[],0,0,1,0.0,0
+I shaped a loaf.,0,[],0,0,1,0.0,0
+The children amused.,0,[],0,0,1,0.0,0
+Susan whispered the news.,0,[],0,0,1,0.0,0
+Susan whispered at Rachel.,0,[],0,0,1,0.0,0
+Ellen said that melons were selling well.,0,[],0,0,1,0.0,0
+Ellen said about the present conditions.,0,[],0,0,1,0.0,0
+Ellen warned Helen against skating on thin ice.,0,[],0,0,1,0.0,0
+Cynthia nibbled on the carrot .,0,[],0,0,1,0.0,0
+Cynthia chewed.,0,[],0,0,1,0.0,0
+Paul laughed at Mary.,0,[],0,0,1,0.0,0
+Linda winked her lip.,0,[],0,0,1,0.0,0
+My heart is pounding me.,0,[],0,0,1,0.0,0
+Sharon fainted from hunger.,0,[],0,0,1,0.0,0
+The witch poisoned the children.,0,[],0,0,1,0.0,0
+A grandfather clock ticked in the hallway.,0,[],0,0,1,0.0,0
+I squeaked the door.,0,[],0,0,1,0.0,0
+Over the fire there bubbled a fragrant stew.,0,[],0,0,1,0.0,0
+Soaring temperatures are predicted for this weekend.,1,['are predicted'],1,1,1,1.0,1
+The fort fluttered with many flags.,0,[],0,0,1,0.0,0
+The voices echoed in the hall.,0,[],0,0,1,0.0,0
+The stream twists through the valley.,0,[],0,0,1,0.0,0
+There presented itself a wonderful opportunity yesterday.,0,[],0,0,1,0.0,0
+A wonderful opportunity presented itself to him yesterday.,0,[],0,0,1,0.0,0
+Out of the box jumped a little white rabbit.,0,[],0,0,1,0.0,0
+Penny skated around the rink.,0,[],0,0,1,0.0,0
+Jackie accompanied Rose.,0,[],0,0,1,0.0,0
+many information was provided.,1,['was provided'],1,1,1,1.0,1
+John offers many advice.,0,[],0,0,1,0.0,0
+The cake that Jones got was more delicious than the one that Smith got.,0,[],0,0,1,0.0,0
+We recommend to eat less cake and pastry.,0,[],0,0,1,0.0,0
+I saw that gas can explode.,0,[],0,0,1,0.0,0
+He washed her.,0,[],0,0,1,0.0,0
+Wash you!,0,[],0,0,1,0.0,0
+They have no in.,0,[],0,0,1,0.0,0
+Some my jobs are in jeopardy.,0,[],0,0,1,0.0,0
+It was the policeman met that several young students in the park last night.,0,[],0,0,1,0.0,0
+did the policeman meet in the park?,0,[],0,0,1,0.0,0
+John put old books in the box.,0,[],0,0,1,0.0,0
+The monkeys proud of their leader.,0,[],0,0,1,0.0,0
+John sounded very.,0,[],0,0,1,0.0,0
+I don't know if I should agree.,0,[],0,0,1,0.0,0
+John bought a book on the table.,0,[],0,0,1,0.0,0
+John called the president a fool.,0,[],0,0,1,0.0,0
+I forgot how good beer tastes.,0,[],0,0,1,0.0,0
+This teacher is a genius.,0,[],0,0,1,0.0,0
+A good friend is remained to me by him.,1,['is remained'],1,1,1,1.0,1
+John ate his noodle quietly.,0,[],0,0,1,0.0,0
+A smith hammered the metal.,0,[],0,0,1,0.0,0
+Sandy removed her ballet shoes.,0,[],0,0,1,0.0,0
+This week will be a difficult one for us.,0,[],0,0,1,0.0,0
+Benny worked in a shoe factory when he was a student.,0,[],0,0,1,0.0,0
+Everyone hoped that she would sing.,0,[],0,0,1,0.0,0
+This proved a decisive factor.,0,[],0,0,1,0.0,0
+The crocodile devoured the doughnut.,0,[],0,0,1,0.0,0
+John is afraid of Bill.,0,[],0,0,1,0.0,0
+John put under the bathtub.,0,[],0,0,1,0.0,0
+John placed Kim behind the garage.,0,[],0,0,1,0.0,0
+Kim depends for Sandy.,0,[],0,0,1,0.0,0
+John put the book in the box.,0,[],0,0,1,0.0,0
+John taught English Syntax to new students.,0,[],0,0,1,0.0,0
+John regards Bill as a good friend.,0,[],0,0,1,0.0,0
+Kim put in the box.,0,[],0,0,1,0.0,0
+The chickens seem fond of the farmer.,0,[],0,0,1,0.0,0
+The rules require that the executives be polite.,0,[],0,0,1,0.0,0
+That Fred was unpopular nominated Bill.,0,[],0,0,1,0.0,0
+They were taking a hard look at possible FTA.,0,[],0,0,1,0.0,0
+John paid me against the book.,0,[],0,0,1,0.0,0
+The committee will study the feasibility of setting up a national computer network.,0,[],0,0,1,0.0,0
+We made them be rude.,0,[],0,0,1,0.0,0
+"After reading the pamphlet, Judy threw it into the garbage can.",0,[],0,0,1,0.0,0
+Students studying English reads Conrad's Heart of Darkness while at university.,0,[],0,0,1,0.0,0
+I read some of the book.,0,[],0,0,1,0.0,0
+Most of the fruit is rotten.,0,[],0,0,1,0.0,0
+Neither of students failed.,0,[],0,0,1,0.0,0
+I drank some of water.,0,[],0,0,1,0.0,0
+It is a golden hair.,0,[],0,0,1,0.0,0
+The boy in the doorway waved to his father.,0,[],0,0,1,0.0,0
+"That dog is so ferocious, it even tried to bite itself.",0,[],0,0,1,0.0,0
+He washed yourself.,0,[],0,0,1,0.0,0
+John is easy to please Kim.,0,[],0,0,1,0.0,0
+There seemed to be intelligent.,0,[],0,0,1,0.0,0
+John tried to please Stephen.,0,[],0,0,1,0.0,0
+We believed John to be a fountain in the park.,0,[],0,0,1,0.0,0
+It tries to leave the country.,0,[],0,0,1,0.0,0
+John tries to leave the country.,0,[],0,0,1,0.0,0
+Under the bed seems to be a fun place to hide.,0,[],0,0,1,0.0,0
+There is believed to be sheep in the park.,1,['is believed'],1,1,1,1.0,0
+I hope to would study in France.,0,[],0,0,1,0.0,0
+John can kick the ball.,0,[],0,0,1,0.0,0
+John will rain tomorrow.,0,[],0,0,1,0.0,0
+We expect there to will rain.,0,[],0,0,1,0.0,0
+John was found in the office.,1,['was found'],1,1,1,1.0,1
+Did the child be in the school?,0,[],0,0,1,0.0,0
+It did not rain.,0,[],0,0,1,0.0,0
+John wants not to leave the town.,0,[],0,0,1,0.0,0
+"Mary likes to tour art galleries, but Bill hates to.",0,[],0,0,1,0.0,0
+They needn't take this exam.,0,[],0,0,1,0.0,0
+Ann may spend her vacation in Italy.,0,[],0,0,1,0.0,0
+"They love to play golf, but I do not.",0,[],0,0,1,0.0,0
+"George has spent a lot of money, hasn't he?",0,[],0,0,1,0.0,0
+"As a statesman, scarcely could he do anything worth mentioning.",0,[],0,0,1,0.0,0
+We never found any of the unicorns.,0,[],0,0,1,0.0,0
+One of Korea's most famous poets wrote these lines.,0,[],0,0,1,0.0,0
+Somebody apparently struck the unidentified victim during the early morning hours.,0,[],0,0,1,0.0,0
+The car was driven.,1,['was driven'],1,1,1,1.0,1
+Ricky can be relied on.,1,['can be relied'],1,1,1,1.0,1
+The bed was slept in.,1,['was slept'],1,1,1,1.0,1
+A pound was weighed by the book.,1,['was weighed'],1,1,1,1.0,1
+Who do you think Tom saw?,0,[],0,0,1,0.0,0
+he had spent five thousand dollars.,0,[],0,0,1,0.0,0
+Fed knows which politician her to vote for.,0,[],0,0,1,0.0,0
+How did you guess that he fixed the computer?,0,[],0,0,1,0.0,0
+The committee knows whose efforts to achieve peace the world should honor.,0,[],0,0,1,0.0,0
+Which house does your friend live?,0,[],0,0,1,0.0,0
+the baker from whom I bought these bagels left.,0,[],0,0,1,0.0,0
+I found the place where we can relax.,0,[],0,0,1,0.0,0
+Jack is the person with whom Jenny fell in love with.,0,[],0,0,1,0.0,0
+There is a bench to sit on.,0,[],0,0,1,0.0,0
+I met the man who grows peaches.,0,[],0,0,1,0.0,0
+Which topic did you choose without getting his approval?,0,[],0,0,1,0.0,0
+Which topic did you get bored because Mary talked about?,0,[],0,0,1,0.0,0
+That is the reason why he resigned.,0,[],0,0,1,0.0,0
+It bothers me that John coughs.,0,[],0,0,1,0.0,0
+To please John is easy.,0,[],0,0,1,0.0,0
+Kim is eager to please Tom.,0,[],0,0,1,0.0,0
+That we invaded Iraq really bites.,0,[],0,0,1,0.0,0
+It annoys me that Fido barks.,0,[],0,0,1,0.0,0
+Who achieved the best result was Angela.,0,[],0,0,1,0.0,0
+It was the peasant girl who got it.,0,[],0,0,1,0.0,0
+That kind of person is hard to find anyone to look after.,0,[],0,0,1,0.0,0
+A sick owl doesn't hunt mice.,0,[],0,0,1,0.0,0
+Each candidate who has interest in semantics will be admitted to the department.,1,['will be admitted'],1,1,1,1.0,0
+Each author whose contribution is written in any language other than English will provide a summary in English.,1,['is written'],1,1,1,1.0,1
+I'm sure we even got these tickets!,0,[],0,0,1,0.0,0
+I'm even sure we got these tickets!,0,[],0,0,1,0.0,0
+It's not because I have any sympathy for urban guerillas that I helped him.,0,[],0,0,1,0.0,0
+It isn't because Sue said anything bad about me that I'm angry.,0,[],0,0,1,0.0,0
+"That he was hungry, John whined.",0,[],0,0,1,0.0,0
+1 gave Mary after the party a book.,0,[],0,0,1,0.0,0
+"Because she's so pleasant, as for Mary I really like her.",0,[],0,0,1,0.0,0
+"Though he may hate those that criticize Carter, it doesn't matter.",0,[],0,0,1,0.0,0
+With no job would John be happy.,0,[],0,0,1,0.0,0
+I have much of the manuscript left to type.,0,[],0,0,1,0.0,0
+He's a more reliable man.,0,[],0,0,1,0.0,0
+Any trouble is what I don't want.,0,[],0,0,1,0.0,0
+They may grow as high as bamboo.,0,[],0,0,1,0.0,0
+Some of them made as many errors as 20.,0,[],0,0,1,0.0,0
+Sally kissed himself.,0,[],0,0,1,0.0,0
+Drew believes I think Rosie loves magazine ads.,0,[],0,0,1,0.0,0
+"Dave, Dan, Erin, Jaime, and Alina left.",0,[],0,0,1,0.0,0
+"Hopefully, we'll make it through the winter without snow.",0,[],0,0,1,0.0,0
+Blue leather shows herself that Betsy is pretty.,0,[],0,0,1,0.0,0
+Gwen hit the baseball.,0,[],0,0,1,0.0,0
+I hit that you knew the answer.,0,[],0,0,1,0.0,0
+I've lost my wallet or I've lost my mind.,0,[],0,0,1,0.0,0
+It was a brand new car that he bought.,0,[],0,0,1,0.0,0
+He likes cookies and he hates crumb cake.,0,[],0,0,1,0.0,0
+They chased the man with the car.,0,[],0,0,1,0.0,0
+I didn't have a red cent.,0,[],0,0,1,0.0,0
+the book of poems and from Blackwell takes a very long time to read.,0,[],0,0,1,0.0,0
+the one with a red cover takes a very long time to read.,0,[],0,0,1,0.0,0
+John has a fear of dogs.,0,[],0,0,1,0.0,0
+The building's the roof is leaking.,0,[],0,0,1,0.0,0
+the panther's the coat is dark black.,0,[],0,0,1,0.0,0
+Colin asked if they could get a mortgage.,0,[],0,0,1,0.0,0
+The man I saw get into the cab robbed the bank.,0,[],0,0,1,0.0,0
+I know you eat asparagus.,0,[],0,0,1,0.0,0
+John's drum will always bother me.,0,[],0,0,1,0.0,0
+An evil thought struck Dave.,0,[],0,0,1,0.0,0
+In the classroom John put the book on the table.,0,[],0,0,1,0.0,0
+Phillip gave the medal to the soldier.,0,[],0,0,1,0.0,0
+Heidi thinks that Andy to eat salmon flavored candy bars.,0,[],0,0,1,0.0,0
+Heidi thinks that Andy should eat salmon flavored candy bars.,0,[],0,0,1,0.0,0
+He danced.,0,[],0,0,1,0.0,0
+Did Calvin his homework?,0,[],0,0,1,0.0,0
+Sylvia was slapping Jeff upside the head in martial arts class.,0,[],0,0,1,0.0,0
+"If I am a rich man, I'd buy a diamond ring.",0,[],0,0,1,0.0,0
+"If he were a rich man, he'd buy a diamond ring.",0,[],0,0,1,0.0,0
+John is likely to leave.,0,[],0,0,1,0.0,0
+The manager laughed.,0,[],0,0,1,0.0,0
+Was sunk.,1,['was sunk'],1,1,1,1.0,0
+Who did you think kissed the gorilla?,0,[],0,0,1,0.0,0
+Have you seen my model airplane collection?,0,[],0,0,1,0.0,0
+It seems that Lucy was mugged.,1,['was mugged'],1,1,1,1.0,1
+I ate a salad that was filled with lima beans.,0,[],0,0,1,0.0,1
+There were four men arriving at the station when I pulled up.,0,[],0,0,1,0.0,0
+Jean is reluctant to dance.,0,[],0,0,1,0.0,0
+I want her to dance.,0,[],0,0,1,0.0,0
+Jean persuaded Robert.,0,[],0,0,1,0.0,0
+Jean wants Bill to do the Macarena.,0,[],0,0,1,0.0,0
+The children admire their mother.,0,[],0,0,1,0.0,0
+Who has Peter talked with?,0,[],0,0,1,0.0,0
+Heidi likes her violin.,0,[],0,0,1,0.0,0
+John thinks that Mary loves himself.,0,[],0,0,1,0.0,0
+Which pictures of himself does John like?,0,[],0,0,1,0.0,0
+Any owl hunts mice.,0,[],0,0,1,0.0,0
+Any man didn't eat dinner.,0,[],0,0,1,0.0,0
+A pilot could be flying this plane.,0,[],0,0,1,0.0,0
+"Everybody who attended last week's huge rally, whoever they were, signed the petition.",0,[],0,0,1,0.0,0
+Anybody who attended last week's huge rally signed the petition.,0,[],0,0,1,0.0,0
+"Any tiger has orange fur, marked with black stripes.",0,[],0,0,1,0.0,0
+"Any albino tiger has orange fur, marked with black stripes.",0,[],0,0,1,0.0,0
+You must pick any flower you see.,0,[],0,0,1,0.0,0
+Any pilot on duty today could be flying this plane.,0,[],0,0,1,0.0,0
+"You may pick every flower, but leave a few for Mary.",0,[],0,0,1,0.0,0
+The Dodgers beat the Red Sox and were beaten by the Giants.,1,['were beaten'],1,1,1,1.0,0
+In which car was the man seen?,1,['man seen'],1,1,1,1.0,0
+The man who Mary loves and Sally hates computed my tax.,0,[],0,0,1,0.0,0
+The kennel which Mary made and Fido sleeps has been stolen.,1,['has been stolen'],1,1,1,1.0,0
+Tom said he would and Bill actually did eat a raw eggplant.,0,[],0,0,1,0.0,0
+The wealthy young man bought that piano for his secret fiancÃ©e.,0,[],0,0,2,0.0,0
+The dog stole the turkey.,0,[],0,0,1,0.0,0
+a tall building.,0,[],0,0,1,0.0,0
+This building is tall.,0,[],0,0,1,0.0,0
+I like the book which you gave me.,0,[],0,0,1,0.0,0
+Captain Wentworth wrote a letter to Anne Elliott.,0,[],0,0,1,0.0,0
+She asked was Alison coming to the party.,0,[],0,0,1,0.0,0
+They realised that never had Sir Thomas been so offended.,0,[],0,0,1,0.0,0
+Fanny regretted having to talk to Aunt Norris.,0,[],0,0,1,0.0,0
+"Knowing the country well, he took a short cut.",0,[],0,0,1,0.0,0
+He left the train with somebody else's wallet in his pocket.,0,[],0,0,1,0.0,0
+Magnus went to Ireland.,0,[],0,0,1,0.0,0
+Who did John send the book?,0,[],0,0,1,0.0,0
+The idea dismayed the Prime Minister that the Dome was dull.,0,[],0,0,1,0.0,0
+Came right in he did without so much as a knock.,0,[],0,0,1,0.0,0
+Harriet admired Mr Knightley.,0,[],0,0,1,0.0,0
+The book is boring.,0,[],0,0,1,0.0,0
+Ethel wishes to ask you some awkward questions.,0,[],0,0,1,0.0,0
+Emma made Harriet some food.,0,[],0,0,1,0.0,0
+The window was broken with a hammer.,1,['was broken'],1,1,1,1.0,1
+The fugitive lay motionless in order to avoid discovery.,0,[],0,0,1,0.0,0
+The guard marched the prisoners round the yard.,0,[],0,0,1,0.0,0
+Frank Churchill crossed the street.,0,[],0,0,1,0.0,0
+Emma and Harriet were attacked yesterday.,1,['were attacked'],1,1,1,1.0,0
+Fiona might be here by 5 o'clock.,0,[],0,0,1,0.0,0
+I am both expecting to get the job and of the opinion that it is a desirable one.,0,[],0,0,1,0.0,0
+Pat was awarded the Golden Fleece Award and very upset about it.,1,['was awarded'],1,1,1,1.0,1
+Kim alienated cats and beating his dog.,0,[],0,0,1,0.0,0
+They knew that pictures of each other would be on sale.,0,[],0,0,1,0.0,0
+Which article did Terry file papers without reading?,0,[],0,0,1,0.0,0
+I want to try and buy some whiskey.,0,[],0,0,1,0.0,0
+She goes and buying some whiskey.,0,[],0,0,1,0.0,0
+Kim and Terry is happy.,0,[],0,0,1,0.0,0
+Kim gave a dollar to Bobbie and a dime to Jean.,0,[],0,0,1,0.0,0
+This girl in the red coat will put a picture of Bill in the mailbox and on your desk before tomorrow.,0,[],0,0,1,0.0,0
+"Put a picture of Bill on your desk before tomorrow, this girl in the red coat will put a picture of Bill on your desk before tomorrow.",0,[],0,0,1,0.0,0
+"Picture of Bill, this girl in the red coat will put a picture of Bill on your desk before tomorrow.",0,[],0,0,1,0.0,0
+Ann bought a first edition of Richard III for $1000.,0,[],0,0,1,0.0,0
+John became deadly afraid of flying.,0,[],0,0,1,0.0,0
+What John promised is to be gentle.,0,[],0,0,1,0.0,0
+Henri wants to buy which books about cooking?,0,[],0,0,1,0.0,0
+I will fix the computer for Carol.,0,[],0,0,1,0.0,0
+Smith loaned a valuable collection of manuscripts to the library.,0,[],0,0,1,0.0,0
+The paper is cut by Mary.,1,['is cut'],1,1,1,1.0,1
+It was from six to nine or it took place from six to nine.,0,[],0,0,1,0.0,0
+"Suddenly, there arrived two inspectors from the INS.",0,[],0,0,1,0.0,0
+"The soup cooks, thickens.",0,[],0,0,1,0.0,0
+I gave money to the charity.,0,[],0,0,1,0.0,0
+John asked.,0,[],0,0,1,0.0,0
+I saw even the student.,0,[],0,0,1,0.0,0
+John whispered Mary left.,0,[],0,0,1,0.0,0
+Mary wonders that Bill will come.,0,[],0,0,1,0.0,0
+Sophie will theater.,0,[],0,0,1,0.0,0
+John finished the cake and drank the lemonade.,0,[],0,0,1,0.0,0
+Herself likes Mary's mother.,0,[],0,0,1,0.0,0
+Each of the boys fought with some of the other boys.,0,[],0,0,1,0.0,0
+John's mother likes himself.,0,[],0,0,1,0.0,0
+Mary revealed himself to John.,0,[],0,0,1,0.0,0
+Mary believes that Bill saw himself.,0,[],0,0,1,0.0,0
+John heard that they criticized themselves.,0,[],0,0,1,0.0,0
+Mary thinks that she is smart.,0,[],0,0,1,0.0,0
+Henry found that Bill is sad.,0,[],0,0,1,0.0,0
+John considers himself proud of Mary.,0,[],0,0,1,0.0,0
+You should sit before there.,0,[],0,0,1,0.0,0
+There is a nurse available.,0,[],0,0,1,0.0,0
+Everyone hopes everyone to sleep.,0,[],0,0,1,0.0,0
+Everyone hopes that he will sleep.,0,[],0,0,1,0.0,0
+"Only Churchill remembered Churchill giving the Blood, Sweat and Tears speech.",0,[],0,0,1,0.0,0
+John promise Mary to shave himself.,0,[],0,0,1,0.0,0
+John convinced Bill that Mary should sleep.,0,[],0,0,1,0.0,0
+I saw Bill while you did so Mary.,0,[],0,0,1,0.0,0
+What Mary did Bill was give a book.,0,[],0,0,1,0.0,0
+The bears sniffed,0,[],0,0,1,0.0,0
+to steal talismans from witches is dangerous,0,[],0,0,1,0.0,0
+Anson demonized,0,[],0,0,1,0.0,0
+You kicked yourselves,0,[],0,0,1,0.0,0
+The book that I said that I'd never read.,0,[],0,0,1,0.0,0
+Anson demonized up the Khyber,0,[],0,0,1,0.0,0
+It is not true that I might be going to the party.,0,[],0,0,1,0.0,0
+Kick you!,0,[],0,0,1,0.0,0
+Jason persuaded the doctor to treat Medea,0,[],0,0,1,0.0,0
+Who did you get an accurate description of?,0,[],0,0,1,0.0,0
+The Peter we all like was at the party,0,[],0,0,1,0.0,0
+The government's imposition of a fine.,0,[],0,0,1,0.0,0
+Did Athena help us?,0,[],0,0,1,0.0,0
+You wanted to meet the man I saw.,0,[],0,0,1,0.0,0
+Anson demonized David every day,0,[],0,0,1,0.0,0
+There is a programme about Euripides on a Radio 4 tonight?,0,[],0,0,1,0.0,0
+Medea denied poisoning the phoenix.,0,[],0,0,1,0.0,0
+The elixir was hidden in a hole in the ground,1,['was hidden'],1,1,1,1.0,1
+"Extremely frantically, Anson danced at Trade",0,[],0,0,1,0.0,0
+What did you ask who Medea gave?,0,[],0,0,1,0.0,0
+It's Anson that I like,0,[],0,0,2,0.0,0
+Medea tried the nurse to poison her children.,0,[],0,0,1,0.0,0
+I felt that I know you.,0,[],0,0,1,0.0,0
+Will he can do it?,0,[],0,0,1,0.0,0
+I ate that she was happy,0,[],0,0,1,0.0,0
+Anson believed himself to be handsome.,0,[],0,0,1,0.0,0
+We arrived about six o'clock,0,[],0,0,1,0.0,0
+Gilgamesh is having fought the dragon.,0,[],0,0,1,0.0,0
+Anson thought that himself was happy.,0,[],0,0,1,0.0,0
+Fortunately Hermione passed biology,0,[],0,0,1,0.0,0
+I might be not going to the party but washing my hair,0,[],0,0,1,0.0,0
+I thought he liked myself,0,[],0,0,1,0.0,0
+The butler sent the poison to Dinah.,0,[],0,0,1,0.0,0
+Jason happens to appear to seem to be sick.,0,[],0,0,1,0.0,0
+What did you ask who saw?,0,[],0,0,1,0.0,0
+We linguists love to argue,0,[],0,0,1,0.0,0
+He can will go,0,[],0,0,1,0.0,0
+How fierce the battle?,0,[],0,0,1,0.0,0
+Which king did you ask which city invaded?,0,[],0,0,1,0.0,0
+It is some disgruntled old pigs in those ditches that humans love to eat.,0,[],0,0,1,0.0,0
+That banana is eating the monkey.,0,[],0,0,1,0.0,0
+Burn them!,0,[],0,0,1,0.0,0
+It stinks that Aphrodite is omnipotent.,0,[],0,0,1,0.0,0
+Agamemnon seems to be a maniac,0,[],0,0,1,0.0,0
+Will Anson come to the party?,0,[],0,0,1,0.0,0
+I wondered who Medea had poisoned.,0,[],0,0,1,0.0,0
+I inquired when could we leave.,0,[],0,0,1,0.0,0
+They kicked them,0,[],0,0,1,0.0,0
+The monkey is ate the banana,1,['is ate'],1,1,1,1.0,1
+I would like to could swim,0,[],0,0,1,0.0,0
+I kicked myself,0,[],0,0,1,0.0,0
+The bookcase ran,0,[],0,0,1,0.0,0
+I shaved myself.,0,[],0,0,1,0.0,0
+Anson became a muscle bound.,1,['muscle bound'],1,1,1,1.0,0
+Somebody just left - guess who.,0,[],0,0,1,0.0,0
+"They claimed they had settled on something, but it wasn't clear what they had settled on.",0,[],0,0,1,0.0,0
+"If Sam was going, Sally would know where.",0,[],0,0,1,0.0,0
+"They're going to serve the guests something, but it's unclear what.",0,[],0,0,1,0.0,0
+She's reading. I can't imagine what.,0,[],0,0,2,0.0,0
+John said Joan saw someone from her graduating class.,0,[],0,0,1,0.0,0
+John ate dinner but I don't know who.,0,[],0,0,1,0.0,0
+"She mailed John a letter, but I don't know to whom.",0,[],0,0,1,0.0,0
+I served leek soup to my guests.,0,[],0,0,1,0.0,0
+I served my guests.,0,[],0,0,1,0.0,0
+"She was bathing, but I couldn't make out who.",0,[],0,0,1,0.0,0
+She knew French for Tom.,0,[],0,0,1,0.0,0
+John is tall on several occasions.,0,[],0,0,1,0.0,0
+"The ship sank, but I don't know with what.",0,[],0,0,1,0.0,0
+"They noticed the painting, but I don't know for how long.",0,[],0,0,1,0.0,0
+"John was tall, but I don't know on what occasions.",0,[],0,0,1,0.0,0
+Joan ate dinner with someone but I don't know who.,0,[],0,0,1,0.0,0
+Joan ate dinner with someone but I don't know who with.,0,[],0,0,1,0.0,0
+"I know that Meg's attracted to Harry, but they don't know who.",1,"[""'s attracted""]",1,1,1,1.0,0
+"Since Jill said Joe had invited Sue, we didn't have to ask who.",0,[],0,0,1,0.0,0
+"I know that Meg's attracted to Harry, but they don't know who.",1,"[""'s attracted""]",1,1,1,1.0,0
+"She said she had spoken to everybody, but he wasn't sure who.",0,[],0,0,1,0.0,0
+"Each of the performers came in, but were sitting so far back that we couldn't see who.",0,[],0,0,1,0.0,0
+She didn't talk to one student.,0,[],0,0,1,0.0,0
+"She doesn't meet anyone for dinner, but they can't figure out who.",0,[],0,0,1,0.0,0
+Everyone relies on someone. It's unclear who.,0,[],0,0,2,0.0,0
+"Each student wrote a paper on a Mayan language, but I don't remember which one.",0,[],0,0,1,0.0,0
+"The newspaper has reported that they are about to appoint someone, but I can't remember who the newspaper has reported that they are about to appoint.",0,[],0,0,1,0.0,0
+"The newspaper has reported that they are about to appoint someone, but I can't remember who they are about to appoint.",0,[],0,0,1,0.0,0
+"Most columnists claim that a senior White House official has been briefing them, and the newspaper today reveals which one.",0,[],0,0,1,0.0,0
+"Most columnists claim that a senior White House official has been briefing them, but none will reveal which one.",0,[],0,0,1,0.0,0
+"Bill wondered how many papers Sandy had read, but he didn't care which ones.",0,[],0,0,1,0.0,0
+"I never know which papers Sandy has read, but I usually know how many.",0,[],0,0,1,0.0,0
+Sandy had read how many papers?!,0,[],0,0,1,0.0,0
+"Everybody gets on well with a certain relative, but often only his therapist knows which one.",0,[],0,0,1,0.0,0
+Which book did each author recommend?,0,[],0,0,1,0.0,0
+His or her least known work.,0,[],0,0,1,0.0,0
+"They were going to meet sometime on Sunday, but the faculty didn't know when.",0,[],0,0,1,0.0,0
+"John likes some students, but I don't know who.",0,[],0,0,1,0.0,0
+I don't know who John likes.,0,[],0,0,1,0.0,0
+"John likes some students, but I don't know who John likes some students.",0,[],0,0,1,0.0,0
+"Joan said she talked to the students, but Fred couldn't figure out who.",0,[],0,0,1,0.0,0
+"He announced he had eaten the asparagus, but we didn't know what.",0,[],0,0,1,0.0,0
+"She was reading the books under the table, but Fred didn't know what books.",0,[],0,0,1,0.0,0
+"He announced he would marry the woman he loved most, but none of his relatives could figure out who.",0,[],0,0,1,0.0,0
+She talked to John or Mary but I don't know which.,0,[],0,0,1,0.0,0
+She talked to John or Mary but I don't know which one.,0,[],0,0,1,0.0,0
+"She talked to Harry, but I don't know who else.",0,[],0,0,1,0.0,0
+"I will see them, but I don't know how many of them.",0,[],0,0,1,0.0,0
+Everyone who knows either Susan or Laura likes her.,0,[],0,0,1,0.0,0
+She said she talked to three students but I don't know how many.,0,[],0,0,1,0.0,0
+She said she talked to those students but I don't know how many.,0,[],0,0,1,0.0,0
+"He shouted again, but I don't know who to.",0,[],0,0,1,0.0,0
+"She was dancing with somebody, but I don't know who with.",0,[],0,0,1,0.0,0
+"Several firefighters were injured, but it's not known.",1,"['were injured', ""'s not known""]",2,1,1,1.0,1
+"Meg is attracted to Harry, but they don't know who she is attracted to.",1,"['is attracted', 'is attracted']",2,1,1,1.0,1
+"Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one.",0,[],0,0,1,0.0,0
+"Sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one she was trying to work out which students would be able to solve.",0,[],0,0,1,0.0,0
+"John and someone were dancing together, but I don't know who.",0,[],0,0,1,0.0,0
+"The TA's have been arguing about whether some student or other should pass, but I can't now remember which one.",0,[],0,0,1,0.0,0
+It has been determined that somebody will be appointed; it's just not clear yet who.,1,"['has been determined', 'will be appointed']",2,1,1,1.0,1
+"Sally asked if somebody was going to fail math class, but I can't remember who.",0,[],0,0,1,0.0,0
+"The TA's have been arguing about whether some student or other should pass, but I can't now remember which one.",0,[],0,0,1,0.0,0
+"Sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us which.",0,[],0,0,1,0.0,0
+"Sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us in which way.",0,[],0,0,1,0.0,0
+"Clinton is anxious to find out which budget dilemmas Panetta would be willing to tackle in a certain way, but he won't say in which.",0,[],0,0,1,0.0,0
+"Sandy is wondering whether there will be students who have to drop the class for a certain reason, but she won't reveal what.",0,[],0,0,1,0.0,0
+In which way is Sandy very anxious to see if the students will be able to solve the homework problem?,0,[],0,0,1,0.0,0
+In which way is Clinton anxious to find out which budget dilemmas Panetta would be willing to solve?,0,[],0,0,1,0.0,0
+"I know how many assignments I've graded, but I don't know how many Bill has.",0,[],0,0,1,0.0,0
+What did you leave before they did?,0,[],0,0,1,0.0,0
+What did you leave before they started playing?,0,[],0,0,1,0.0,0
+Sandy was trying to work out which students would be able to solve a certain problem.,0,[],0,0,1,0.0,0
+The administration has issued a statement that it is willing to meet with one of the student groups.,0,[],0,0,1,0.0,0
+Sandy was trying to work out which students would be able to solve a problem.,0,[],0,0,1,0.0,0
+The administration has issued a statement that it is willing to meet a student group.,0,[],0,0,1,0.0,0
+"The administration has issued a statement that it is willing to meet a student group, but I'm not sure which one.",0,[],0,0,1,0.0,0
+"I think Agnes said that Bill would speak, but I don't remember what about.",0,[],0,0,1,0.0,0
+Agnes wondered how John could eat but it's not clear what.,0,[],0,0,1,0.0,0
+"Tony sent Mo a picture that he painted, but it's not clear with what.",0,[],0,0,1,0.0,0
+She's been dancing but we don't know with whom.,0,[],0,0,1,0.0,1
+Who did they see someone?,0,[],0,0,1,0.0,0
+It was believed by everybody that Mary was a thief.,1,['was believed'],1,1,1,1.0,1
+That professor is feared by all students.,1,['is feared'],1,1,1,1.0,1
+Mary was respected by John.,1,['was respected'],1,1,1,1.0,1
+Ted was bitten by the spider.,1,['was bitten'],1,1,1,1.0,1
+The book was by John written.,0,[],0,0,1,0.0,0
+The argument was summed by the coach up.,1,['was summed'],1,1,1,1.0,1
+The paper was written up by John.,1,['was written'],1,1,1,1.0,1
+The paper was written by John up.,1,['was written'],1,1,1,1.0,1
+John was spoken to by Mary.,1,['was spoken'],1,1,1,1.0,1
+John was spoken by Mary to.,1,['was spoken'],1,1,1,1.0,1
+The book was seen by Mary.,1,['was seen'],1,1,1,1.0,1
+John was seen the book.,1,['was seen'],1,1,1,1.0,1
+The book was written.,1,['was written'],1,1,1,1.0,1
+John was spoke by Mary to.,1,['was spoke'],1,1,1,1.0,1
+The table was wiped clean by John.,1,['was wiped'],1,1,1,1.0,1
+The table was wiped by John clean.,1,['was wiped'],1,1,1,1.0,1
+Mary was given by John the book.,1,['was given'],1,1,1,1.0,1
+John was believed to be telling the truth by Mary.,1,['was believed'],1,1,1,1.0,1
+John was believed by Mary to be telling the truth.,1,['was believed'],1,1,1,1.0,1
+The car was driven by John to Maine.,1,['was driven'],1,1,1,1.0,1
+It was believed by the students that they would have an exam.,1,['was believed'],1,1,1,1.0,1
+The magazines were sent to herself by Mary.,1,['were sent'],1,1,1,1.0,1
+Chocolate eggs were hidden from each other by the children.,1,['were hidden'],1,1,1,1.0,1
+The magazines were sent by Mary to herself.,1,['were sent'],1,1,1,1.0,1
+Chocolate eggs were hidden from no child by any adult.,1,['were hidden'],1,1,1,1.0,1
+Tabs were kept on each agent by the other.,1,['were kept'],1,1,1,1.0,1
+Chocolate eggs were hidden from every child by his mother.,1,['were hidden'],1,1,1,1.0,1
+Books were taken from no student and given to Mary.,1,['were taken'],1,1,1,1.0,1
+Books were taken from no student and given to Mary by any professor.,1,['were taken'],1,1,1,1.0,1
+Books were taken from each student by the other.,1,['were taken'],1,1,1,1.0,1
+Books were taken from each student and given to Mary.,1,['were taken'],1,1,1,1.0,1
+Books were taken from each student and given to Mary by the other.,1,['were taken'],1,1,1,1.0,1
+Jack hates Sue and is loved by Mary.,1,['is loved'],1,1,1,1.0,0
+Vera sent a baby alligator to Max and a leather dinosaur to Phyllis.,0,[],0,0,1,0.0,0
+Either Sam plays the bassoon or Jekyll the oboe.,0,[],0,0,1,0.0,0
+"Sam doesn't play bassoon, nor Medusa oboe.",0,[],0,0,1,0.0,0
+"Bill ate the peaches, but Harry the grapes.",0,[],0,0,1,0.0,0
+I no more could have stolen that steak than Jack the diamonds.,0,[],0,0,1,0.0,0
+Bill ate more peaches than Harry did grapes.,0,[],0,0,1,0.0,0
+Bill ate the peaches and Harry did the grapes.,0,[],0,0,1,0.0,0
+"Tom will smoke the grass, and Reuben has the hash.",0,[],0,0,1,0.0,0
+"If the ants were called elephants and elephants ants, I'd be able to squash an elephant.",1,['were called'],1,1,1,1.0,1
+"Simon quickly dropped the gold, and Jack the diamonds.",0,[],0,0,1,0.0,0
+"Bob tried to wash himself, and Mary to read the funnies.",0,[],0,0,1,0.0,0
+"Harry told Sue that Albania is a lovely place for a vacation, and Tom told Sally that Albania is a lovely place for a vacation.",0,[],0,0,1,0.0,0
+"Harry told Sue that Albania is a lovely place for a vacation, and Tom.",0,[],0,0,1,0.0,0
+"Max seemed to be trying to begin to love Harriet, and Fred to be trying to begin to love Sue.",0,[],0,0,1,0.0,0
+"Max seemed to be trying to force Ted to leave the room, and Walt, Ira.",0,[],0,0,1,0.0,0
+"Max seemed to be trying to force Ted to leave the room, and Walt to stay a little longer.",0,[],0,0,1,0.0,0
+"Arizona elected Goldwater Senator, and Massachusetts, McCormack.",0,[],0,0,1,0.0,0
+"Millie will send the President an obscene telegram, and Paul, the Secretary a rude letter.",0,[],0,0,1,0.0,0
+Maytag will give a brand-new dryer to the winner of the Mrs.,0,[],0,0,1,0.0,0
+"Bill didn't eat the peaches, nor Harry.",0,[],0,0,1,0.0,0
+"Bill ate the peaches, and Harry did, too.",0,[],0,0,1,0.0,0
+"Bill must quickly eat the peaches, and Harry must slowly.",0,[],0,0,1,0.0,0
+"Whenever Russia has made a major political blunder, the U.S. has too.",0,[],0,0,1,0.0,0
+Bill's story about Sue and Max's about Kathy both amazed me.,0,[],0,0,1,0.0,0
+I bought three quarts of wine and two of Clorox.,0,[],0,0,1,0.0,0
+"Scientists at the South Hanoi Institute of Technology have succeeded in raising one dog with five legs, another with a cow's liver, and a third with no head.",0,[],0,0,1,0.0,0
+"Bill's story about Sue may be amazing, but Max's is virtually incredible.",0,[],0,0,1,0.0,0
+"I like Bill's yellow shirt, but not Max's.",0,[],0,0,1,0.0,0
+Bill's funny story about Sue and Max's boring one about Kathy both amazed me.,0,[],0,0,1,0.0,0
+Bill's wine from France and Ted's from California cannot be compared.,1,['be compared'],1,1,1,1.0,0
+"As a teacher, you have to deal simultaneously with the administration's pressure on you to succeed, and the children's to be a nice guy.",0,[],0,0,1,0.0,0
+Neither Von Karajan's recording of Beethoven's 6th on Columbia nor Klemperer's on Angel has the right tempo.,0,[],0,0,1,0.0,0
+Gould's performance of Bach on the piano doesn't please me anywhere as much as Ross's on the harpsichord.,0,[],0,0,1,0.0,0
+Tom's dog with one eye attacked Frank's with three legs.,0,[],0,0,1,0.0,0
+"Because Steve's of a spider's eye had been stolen, I borrowed Fred's diagram of a snake's fang.",1,['had been stolen'],1,1,1,1.0,0
+Neither von Karajan's recording of Beethoven's 6th on Columbia nor Klemperer's has the right tempo.,0,[],0,0,1,0.0,0
+Tom's dog with one eye attacked Fred's.,0,[],0,0,1,0.0,0
+I borrowed Fred's diagram of a snake's eye because Steve's had been stolen.,1,['had been stolen'],1,1,1,1.0,0
+Jerry attempted to blow up the Pentagon.,0,[],0,0,1,0.0,0
+So fast did he run that nobody could catch him.,0,[],0,0,1,0.0,0
+"Bill bought a red house, and Max bought one too.",0,[],0,0,1,0.0,0
+Who always drinks milk?,0,[],0,0,1,0.0,0
+The book which inspired them was very long.,0,[],0,0,1,0.0,0
+The book what inspired them was very long.,0,[],0,0,1,0.0,0
+I know the person whose mother died.,0,[],0,0,1,0.0,0
+The person whose mother's dog we were all fond of.,0,[],0,0,1,0.0,0
+I wonder whose mother died.,0,[],0,0,1,0.0,0
+I wonder whose mother's dog died.,0,[],0,0,1,0.0,0
+I wonder to whom they dedicated the building.,0,[],0,0,1,0.0,0
+Give me the phone number of the person whose mother's dog died.,0,[],0,0,1,0.0,0
+This is the senator to whose mother's friend's sister's I sent the letter.,0,[],0,0,1,0.0,0
+I want goes to the store.,0,[],0,0,1,0.0,0
+I wonder what to be a clown on the cover of.,0,[],0,0,1,0.0,0
+Bother you that Kim left!,0,[],0,0,1,0.0,0
+A student who to talk to us just walked in.,0,[],0,0,1,0.0,0
+Whose bagels do you like?,0,[],0,0,1,0.0,0
+I wonder in whom to place my trust.,0,[],0,0,1,0.0,0
+There were several old rocks songs that she and I were the only two who knew.,0,[],0,0,1,0.0,0
+It was to to amuse us that Kim was singing that they wanted.,0,[],0,0,1,0.0,0
+What they feared most was to be no one available to help them.,0,[],0,0,1,0.0,0
+We tried to amuse them that Kim was singing.,0,[],0,0,1,0.0,0
+"Mary asked me if, in St. Louis, John could rent a house cheap.",0,[],0,0,2,0.0,0
+"Mary arranged for, in St. Louis, John to rent a house cheap.",0,[],0,0,2,0.0,0
+It would be unwise for there to be no fire exit.,0,[],0,0,1,0.0,0
+I believe there to be no way out.,0,[],0,0,1,0.0,0
+I wonder in whom them to place their trust.,0,[],0,0,1,0.0,0
+I wonder whom us to trust.,0,[],0,0,1,0.0,0
+I wonder who for us to trust.,0,[],0,0,1,0.0,0
+I wonder who to place my trust in.,0,[],0,0,1,0.0,0
+I know the people that voted in the election.,0,[],0,0,1,0.0,0
+I threw away a book that Sandy thought we had read.,0,[],0,0,1,0.0,0
+I thought that you were sick.,0,[],0,0,1,0.0,0
+I dislike the people in who we placed our trust.,0,[],0,0,1,0.0,0
+I dislike the company in which we placed our trust.,0,[],0,0,1,0.0,0
+I dislike the people in whose house we stayed.,0,[],0,0,1,0.0,0
+I dislike the person with whom we were talking.,0,[],0,0,1,0.0,0
+"Jones, that we were talking to last night, always watches football games alone.",0,[],0,0,1,0.0,0
+A letter was received that Jones would be upset by.,1,"['was received', 'would be upset']",2,1,1,1.0,1
+A letter was received Jones would be upset by.,1,"['was received', 'would be upset']",2,1,1,1.0,1
+I saw someone yesterday I hadn't seen for years.,0,[],0,0,1,0.0,0
+Something happened I couldn't really talk about.,0,[],0,0,1,0.0,0
+The only person that I like whose kids Dana is willing to put up with is Pat.,0,[],0,0,1,0.0,0
+The book that I like which everyone else in the class hates was written by John.,1,['was written'],1,1,1,1.0,0
+The only person whose kids Dana is willing to put up with was written by John.,1,['was written'],1,1,1,1.0,0
+The book that I like - everyone else in the class hates.,0,[],0,0,1,0.0,0
+The only person whose kids Dana is willing to put up with is Pat.,0,[],0,0,1,0.0,0
+"Which book's, author did you meet?",0,[],0,0,1,0.0,0
+Which boy's mother did you meet who you liked?,0,[],0,0,1,0.0,0
+"Which book's, author did you meet who you liked?",0,[],0,0,1,0.0,0
+Which boy's mother did you meet?,0,[],0,0,1,0.0,0
+All who lost money in the scam are eligible for the program.,0,[],0,0,1,0.0,0
+Who for Sandy to talk to is still enrolled in the class?,1,['is still enrolled'],1,1,1,1.0,0
+Who who you like does Sandy also like?,0,[],0,0,1,0.0,0
+Everything you like is on the table.,0,[],0,0,1,0.0,0
+The bills passed by the House yesterday that we objected to were vetoed.,1,['were vetoed'],1,1,1,1.0,0
+The only people being added to our group who were at Harvard were students.,1,['being added'],1,1,1,1.0,1
+We like ourselves.,0,[],0,0,1,0.0,0
+Nobody likes us.,0,[],0,0,1,0.0,0
+Leslie likes ourselves.,0,[],0,0,1,0.0,0
+Ourselves like ourselves.,0,[],0,0,1,0.0,0
+She voted for herself.,0,[],0,0,1,0.0,0
+We gave us presents.,0,[],0,0,1,0.0,0
+We gave ourselves presents.,0,[],0,0,1,0.0,0
+We gave presents to ourselves.,0,[],0,0,1,0.0,0
+We gave us to the cause.,0,[],0,0,1,0.0,0
+We gave ourselves to the cause.,0,[],0,0,1,0.0,0
+Leslie told us about us.,0,[],0,0,1,0.0,0
+Leslie told ourselves about us.,0,[],0,0,1,0.0,0
+We think that Leslie likes us.,0,[],0,0,1,0.0,0
+We think that Leslie likes ourselves.,0,[],0,0,1,0.0,0
+Our friends like us.,0,[],0,0,1,0.0,0
+Those pictures of us offended us.,0,[],0,0,1,0.0,0
+We found your letter to ourselves in the trash.,0,[],0,0,1,0.0,0
+Vote for you!,0,[],0,0,1,0.0,0
+Vote for yourself!,0,[],0,0,1,0.0,0
+We appeared to them to vote for themselves.,0,[],0,0,1,0.0,0
+We admired the pictures of us in the album.,0,[],0,0,1,0.0,0
+We admired the pictures of ourselves in the album.,0,[],0,0,1,0.0,0
+Leslie used a pen.,0,[],0,0,1,0.0,0
+We put the pigs in a pen.,0,[],0,0,1,0.0,0
+We need to pen the pigs to keep them from getting into the corn.,0,[],0,0,1,0.0,0
+They should pen the letter quickly.,0,[],0,0,1,0.0,0
+The car won't run.,0,[],0,0,1,0.0,0
+This dye will run.,0,[],0,0,1,0.0,0
+She can run an accelerator.,0,[],0,0,1,0.0,0
+These stockings will run.,0,[],0,0,1,0.0,0
+We need another run to win.,0,[],0,0,1,0.0,0
+Lee saw the student with a telescope.,0,[],0,0,1,0.0,0
+I forgot how good beer tastes.,0,[],0,0,1,0.0,0
+Visiting relatives can be boring.,0,[],0,0,1,0.0,0
+If only Superman would stop flying planes!,0,[],0,0,1,0.0,0
+That's a new car dealership.,0,[],0,0,1,0.0,0
+I know you like the back of my hand.,0,[],0,0,1,0.0,0
+Max is on the phone now.,0,[],0,0,1,0.0,0
+I saw her duck.,0,[],0,0,1,0.0,0
+I'm creating a committee. Kim â you're in charge.,0,[],0,0,3,0.0,0
+Lights go out at ten. There will be no talking afterwards.,0,[],0,0,2,0.0,0
+They found the book on the atom.,0,[],0,0,1,0.0,0
+Which experts testified against defendants who exposed them?,0,[],0,0,1,0.0,0
+List all experts for the defendant who represented himself.,0,[],0,0,1,0.0,0
+List associates of each defendant who speaks Spanish.,0,[],0,0,1,0.0,0
+They lost themselves' books.,0,[],0,0,1,0.0,0
+Some sentences go on and on and on.,0,[],0,0,1,0.0,0
+Sentences some go on and on and on and on.,0,[],0,0,1,0.0,0
+That surprised me.,0,[],0,0,1,0.0,0
+I noticed the.,0,[],0,0,1,0.0,0
+They were interested in his.,0,[],0,0,1,0.0,0
+This is my favorite.,0,[],0,0,1,0.0,0
+A large dog chased a small cat.,0,[],0,0,1,0.0,0
+Some people yell at noisy dogs in my neighborhood.,0,[],0,0,1,0.0,0
+Some people yell at the dogs in my neighborhood.,0,[],0,0,1,0.0,0
+Some people yell at the dogs.,0,[],0,0,1,0.0,0
+Some people yell at noisy dogs.,0,[],0,0,1,0.0,0
+Some people yell at dogs.,0,[],0,0,1,0.0,0
+Some people consider the noisy dogs dangerous.,0,[],0,0,1,0.0,0
+Some people consider the dogs in my neighborhood dangerous.,0,[],0,0,1,0.0,0
+Some people consider noisy dogs in my neighborhood dangerous.,0,[],0,0,1,0.0,0
+Some people consider the dogs dangerous.,0,[],0,0,1,0.0,0
+Some people consider noisy dogs dangerous.,0,[],0,0,1,0.0,0
+Some people consider dogs in my neighborhood dangerous.,0,[],0,0,1,0.0,0
+Some people consider dogs dangerous.,0,[],0,0,1,0.0,0
+People with children who use drugs should be locked up.,1,['should be locked'],1,1,1,1.0,0
+This disease gave Leslie a fever in Rome.,0,[],0,0,1,0.0,0
+The love of my life and mother of my children would never do such a thing.,0,[],0,0,1,0.0,0
+"Most elections are quickly forgotten, but the election of 2000, everyone will remember for a long time.",1,['are quickly forgotten'],1,1,1,1.0,0
+It is painting by Klee or drawing by Miro that the museum displays no.,0,[],0,0,1,0.0,0
+The defendant denied the accusation.,0,[],0,0,1,0.0,0
+The teacher disappeared the problem.,0,[],0,0,1,0.0,0
+The teacher handed the student.,0,[],0,0,1,0.0,0
+The bird sings.,0,[],0,0,1,0.0,0
+The bird sing.,0,[],0,0,1,0.0,0
+Birds sings.,0,[],0,0,1,0.0,0
+The birds give the worm a tug.,0,[],0,0,1,0.0,0
+The bird give the worm a tug.,0,[],0,0,1,0.0,0
+The birds gives the worm a tug.,0,[],0,0,1,0.0,0
+Terry delighted in my pain.,0,[],0,0,1,0.0,0
+Terry delighted.,0,[],0,0,1,0.0,0
+Terry delighted my pain.,0,[],0,0,1,0.0,0
+Kerry remarked it was late.,0,[],0,0,1,0.0,0
+What additional categories and rules would be required to handle these verbs?,1,['would be required'],1,1,1,1.0,0
+We created a monster.,0,[],0,0,1,0.0,0
+I was already aware of fact.,0,[],0,0,1,0.0,0
+The defendant deny the allegation.,0,[],0,0,1,0.0,0
+The defendants denies the allegation.,0,[],0,0,1,0.0,0
+The defendant walks.,0,[],0,0,1,0.0,0
+The defendant walk.,0,[],0,0,1,0.0,0
+The defendants walks.,0,[],0,0,1,0.0,0
+How many feature structures categories can label the first daughter?,0,[],0,0,1,0.0,0
+The child put the toy on the table.,0,[],0,0,1,0.0,0
+The teacher became angry with the students.,0,[],0,0,1,0.0,0
+The teacher became.,0,[],0,0,1,0.0,0
+The jury believed the defendant lied.,0,[],0,0,1,0.0,0
+The guests dined.,0,[],0,0,1,0.0,0
+We relied on Leslie.,0,[],0,0,1,0.0,0
+We relied above Leslie.,0,[],0,0,1,0.0,0
+We celebrated in the streets.,0,[],0,0,1,0.0,0
+We celebrated in the streets in the rain on Tuesday in the morning.,0,[],0,0,1,0.0,0
+The children are happy of ice cream.,0,[],0,0,1,0.0,0
+The children are fond with the ice cream.,0,[],0,0,1,0.0,0
+The children are fond that they have ice cream.,0,[],0,0,1,0.0,0
+A magazine appeared on the newsstands.,0,[],0,0,1,0.0,0
+A magazine about crime appeared on the newsstands.,0,[],0,0,1,0.0,0
+Newsweek appeared on the newsstands.,0,[],0,0,1,0.0,0
+Newsweek about crime appeared on the newsstands.,0,[],0,0,1,0.0,0
+The report that crime was declining surprised many people.,0,[],0,0,1,0.0,0
+The book surprised many people.,0,[],0,0,1,0.0,0
+The book that crime was declining surprised many people.,0,[],0,0,1,0.0,0
+The storm arrived after the picnic.,0,[],0,0,1,0.0,0
+The storm arrived while the picnic.,0,[],0,0,1,0.0,0
+The storm arrived while we ate lunch.,0,[],0,0,1,0.0,0
+This dogs barked.,0,[],0,0,1,0.0,0
+These dogs barked.,0,[],0,0,1,0.0,0
+A chair was broken.,1,['was broken'],1,1,1,1.0,1
+They want them arrested.,0,[],0,0,1,0.0,0
+They preferred them arrested.,0,[],0,0,1,0.0,0
+We preferred them on our team.,0,[],0,0,1,0.0,0
+"With my parents as supportive as they are, I'll be in fine shape.",0,[],0,0,1,0.0,0
+We walks.,0,[],0,0,1,0.0,0
+Few dog barked.,0,[],0,0,1,0.0,0
+The dogs barked.,0,[],0,0,1,0.0,0
+I walk and Dana runs.,0,[],0,0,1,0.0,0
+They like us.,0,[],0,0,1,0.0,0
+Us like them.,0,[],0,0,1,0.0,0
+Kim likes dogs.,0,[],0,0,1,0.0,0
+Dogs like Kim.,0,[],0,0,1,0.0,0
+The person responsible confessed.,0,[],0,0,1,0.0,0
+The person confessed responsible.,0,[],0,0,1,0.0,0
+The cat slept soundly and furry.,0,[],0,0,1,0.0,0
+The soundly and furry cat slept.,0,[],0,0,1,0.0,0
+"Chris walks, Pat eats broccoli, and Sandy plays squash.",0,[],0,0,1,0.0,0
+There was some particular dog who saved every family.,0,[],0,0,1,0.0,0
+Susan frightens her.,0,[],0,0,1,0.0,0
+Susan told her a story.,0,[],0,0,1,0.0,0
+Susan told a story to her.,0,[],0,0,1,0.0,0
+Susan devoted herself to linguistics.,0,[],0,0,1,0.0,0
+Nobody told Susan about herself.,0,[],0,0,1,0.0,0
+That picture of Susan offended her.,0,[],0,0,1,0.0,0
+He offended Sandy.,0,[],0,0,1,0.0,0
+I enjoy yourself.,0,[],0,0,1,0.0,0
+They talk to themselves.,0,[],0,0,1,0.0,0
+Nobody told Susan.,0,[],0,0,1,0.0,0
+Protect yourself!,0,[],0,0,1,0.0,0
+Protect you!,0,[],0,0,1,0.0,0
+I met the person who left.,0,[],0,0,1,0.0,0
+Leslie slept.,0,[],0,0,1,0.0,0
+Chris handed Bo.,0,[],0,0,1,0.0,0
+Dana walked and Leslie ran.,0,[],0,0,1,0.0,0
+Dana walking and Leslie ran.,0,[],0,0,1,0.0,0
+Dana walking and Leslie running.,0,[],0,0,1,0.0,0
+the putter of books left.,0,[],0,0,1,0.0,0
+Kris donated a book to the library.,0,[],0,0,1,0.0,0
+The police sprayed the protesters with water.,0,[],0,0,1,0.0,0
+The police sprayed water on the protesters.,0,[],0,0,1,0.0,0
+The students drove cars.,0,[],0,0,1,0.0,0
+These cars drive easily.,0,[],0,0,1,0.0,0
+The horse kicked me black and blue.,0,[],0,0,1,0.0,0
+They yelled.,0,[],0,0,1,0.0,0
+The horse raced past the barn fell.,0,[],0,0,1,0.0,0
+The horse that was raced past the barn fell.,1,['was raced'],1,1,1,1.0,1
+The boat seen down the river sank.,0,[],0,0,1,0.0,0
+The evidence assembled by the prosecution convinced the jury.,0,[],0,0,1,0.0,0
+Lou forgot the umbrella.,0,[],0,0,1,0.0,0
+Lou forgot the umbrella in the closet.,0,[],0,0,1,0.0,0
+Lou hoped the umbrella was broken.,1,['was broken'],1,1,1,1.0,1
+Lou hoped the umbrella in the closet.,0,[],0,0,1,0.0,0
+Lou put the umbrella was broken.,1,['was broken'],1,1,1,1.0,0
+Lou put the umbrella in the closet.,0,[],0,0,1,0.0,0
+The artist drew the child with a pencil.,0,[],0,0,1,0.0,0
+The dog bit the cat.,0,[],0,0,1,0.0,0
+The cat was bitten the mouse.,1,['was bitten'],1,1,1,1.0,1
+The cat was bitten the mouse by the dog.,1,['was bitten'],1,1,1,1.0,1
+Chris was handed Sandy a note by Pat.,1,['was handed'],1,1,1,1.0,1
+Chris was handed a note.,1,['was handed'],1,1,1,1.0,1
+Chris was handed Sandy a note.,1,['was handed'],1,1,1,1.0,1
+TV puts dumb ideas in children's heads.,0,[],0,0,1,0.0,0
+Dumb ideas are put in children's heads by TV.,1,['are put'],1,1,1,1.0,1
+Dumb ideas are put in children's heads.,1,['are put'],1,1,1,1.0,1
+Dumb ideas are put notions in children's heads by TV.,1,['are put'],1,1,1,1.0,1
+The patient died.,0,[],0,0,1,0.0,0
+The patient was died.,1,['was died'],1,1,1,1.0,1
+Chris was handed.,1,['was handed'],1,1,1,1.0,1
+TV puts dumb ideas.,0,[],0,0,1,0.0,0
+He was arrested by the police.,1,['was arrested'],1,1,1,1.0,1
+The cat got bitten.,1,['got bitten'],1,1,1,1.0,1
+The cat were bitten by the dog.,1,['were bitten'],1,1,1,1.0,1
+There is a monster in Loch Ness.,0,[],0,0,1,0.0,0
+It is obvious that Pat is lying.,0,[],0,0,1,0.0,0
+Pat is the captain of the team.,0,[],0,0,1,0.0,0
+Pat is hate Chris.,0,[],0,0,1,0.0,0
+There is a unicorn in the garden.,0,[],0,0,1,0.0,0
+There was a felon elected to the city council.,1,['felon elected'],1,1,1,1.0,0
+There is a seat available.,0,[],0,0,1,0.0,0
+A seat available was in the last row.,0,[],0,0,1,0.0,0
+Many people were fond of Pat.,0,[],0,0,1,0.0,0
+People are looking through the window.,0,[],0,0,1,0.0,0
+A felon was elected to the city council.,1,['was elected'],1,1,1,1.0,1
+There loved Sandy.,0,[],0,0,1,0.0,0
+We talked to them about there.,0,[],0,0,1,0.0,0
+It mattered that the Giants had lost.,0,[],0,0,1,0.0,0
+That dogs bark annoys people.,0,[],0,0,1,0.0,0
+It annoys people that dogs bark.,0,[],0,0,1,0.0,0
+That Chris knew the answer occurred to Pat.,0,[],0,0,1,0.0,0
+It never occurred to Pat that Chris knew the answer.,0,[],0,0,1,0.0,0
+That the Cardinal won the game gave Sandy a thrill.,0,[],0,0,1,0.0,0
+It gave Sandy a thrill that the Cardinal won the game.,0,[],0,0,1,0.0,0
+That Sandy had lied suggested.,0,[],0,0,1,0.0,0
+It loved Sandy.,0,[],0,0,1,0.0,0
+Cohen proved the independence of the continuum hypothesis.,0,[],0,0,1,0.0,0
+Cohen proved that the continuum hypothesis was independent.,0,[],0,0,1,0.0,0
+We forgot our invitations.,0,[],0,0,1,0.0,0
+Nobody saw Pat.,0,[],0,0,1,0.0,0
+That Fido barks annoys me.,0,[],0,0,1,0.0,0
+Fido barks.,0,[],0,0,1,0.0,0
+Chris dreads the bucket.,0,[],0,0,1,0.0,0
+The candidates bring advantage to the voters.,0,[],0,0,1,0.0,0
+Tabs are kept on suspected drug dealers by the FBI.,1,['are kept'],1,1,1,1.0,1
+Advantage is taken of every opportunity for improvement.,1,['is taken'],1,1,1,1.0,1
+The bucket was kicked by Pat.,1,['was kicked'],1,1,1,1.0,1
+John is sad.,0,[],0,0,1,0.0,0
+John loaded the wagon full with hay.,0,[],0,0,1,0.0,0
+John loaded the wagon with hay green.,0,[],0,0,1,0.0,0
+I presented John with it dead.,0,[],0,0,1,0.0,0
+Of whom are you thinking?,0,[],0,0,1,0.0,0
+John became rich.,0,[],0,0,1,0.0,0
+I gave John gold apples.,0,[],0,0,1,0.0,0
+how silly is Bill considered?,0,[],0,0,1,0.0,0
+how mad was Bill made?,0,[],0,0,1,0.0,0
+John is sick.,0,[],0,0,1,0.0,0
+John left singing.,0,[],0,0,1,0.0,0
+John is near Larry.,0,[],0,0,1,0.0,0
+John gave Bill the dog dead.,0,[],0,0,1,0.0,0
+Bill was struck by John as stupid.,1,['was struck'],1,1,1,1.0,1
+John was struck as sick.,1,['was struck'],1,1,1,1.0,1
+John was struck by Bill's idiocy.,1,['was struck'],1,1,1,1.0,1
+John promised Bill to leave.,0,[],0,0,1,0.0,0
+John tried to leave.,0,[],0,0,1,0.0,0
+To leave would be a pleasure.,0,[],0,0,1,0.0,0
+John was struck by Bill as pompous.,1,['was struck'],1,1,1,1.0,1
+John was promised by Bill to leave.,1,['was promised'],1,1,1,1.0,1
+They make good cooks.,0,[],0,0,1,0.0,0
+there is nothing to do.,0,[],0,0,1,0.0,0
+John has something for Bill to do.,0,[],0,0,1,0.0,0
+I am counting on Bill to incriminate himself.,0,[],0,0,1,0.0,0
+On whom are you counting to incriminate himself?,0,[],0,0,1,0.0,0
+I am counting on Bill to get there on time.,0,[],0,0,1,0.0,0
+I would prefer to leave.,0,[],0,0,1,0.0,0
+I would hate for John to leave.,0,[],0,0,1,0.0,0
+I would prefer for John to leave.,0,[],0,0,1,0.0,0
+It was hated for John to leave.,1,['was hated'],1,1,1,1.0,1
+John decided for Bill to get the prize.,0,[],0,0,1,0.0,0
+John decided Bill to get the prize.,0,[],0,0,1,0.0,0
+to die is no fun.,0,[],0,0,1,0.0,0
+John wants to leave.,0,[],0,0,1,0.0,0
+John counted on Bill to get there on time.,0,[],0,0,1,0.0,0
+I bought Bill a book to read.,0,[],0,0,1,0.0,0
+John told Mary that it would be important to leave early.,0,[],0,0,1,0.0,0
+John told Mary that it was important to Fred to leave early.,0,[],0,0,1,0.0,0
+"John, told Mary that it would be appropriate to leave together.",0,[],0,0,1,0.0,0
+the election of John president surprised me.,0,[],0,0,1,0.0,0
+John's arriving dead surprised me.,0,[],0,0,1,0.0,0
+the attempt by John to leave surprised me.,0,[],0,0,1,0.0,0
+John left orders to follow Pete.,0,[],0,0,1,0.0,0
+John left us orders to follow Pete.,0,[],0,0,1,0.0,0
+John left orders not to be disturbed.,1,['be disturbed'],1,1,1,1.0,0
+That he is here is clear.,0,[],0,0,1,0.0,0
+It is a problem that he is here.,0,[],0,0,1,0.0,0
+It bothers me that he is here.,0,[],0,0,1,0.0,0
+John regretted it that Bill had a good time.,0,[],0,0,1,0.0,0
+John believes it that Bill is here.,0,[],0,0,1,0.0,0
+John believes it sincerely that Bill is here.,0,[],0,0,1,0.0,0
+John is aware of it that Bill is here.,0,[],0,0,1,0.0,0
+John felt it that Bill was tardy.,0,[],0,0,1,0.0,0
+John believed it that Bill was tardy.,0,[],0,0,1,0.0,0
+It was believed that Bill was tardy.,1,['was believed'],1,1,1,1.0,1
+That John is reluctant seems.,0,[],0,0,1,0.0,0
+It is the problem that he is here.,0,[],0,0,1,0.0,0
+That he is here is the problem.,0,[],0,0,1,0.0,0
+The problem we are discussing is George.,0,[],0,0,1,0.0,0
+It is to give up to leave.,0,[],0,0,1,0.0,0
+It would prove our theory to be untenable for carrots to be vegetables.,0,[],0,0,1,0.0,0
+It was believed to be illegal by them to do that.,1,['was believed'],1,1,1,1.0,1
+John grudgingly accepted judgments of his incompetence as an auto mechanic.,0,[],0,0,1,0.0,0
+It was to John that I gave the book.,0,[],0,0,1,0.0,0
+I bought it to read.,0,[],0,0,1,0.0,0
+I bought it to give to Pete.,0,[],0,0,1,0.0,0
+I gave it to Pete to take to the fair.,0,[],0,0,1,0.0,0
+I gave Pete the book to impress.,0,[],0,0,1,0.0,0
+I wrote to Bill.,0,[],0,0,1,0.0,0
+I presented it to Bill to read.,0,[],0,0,1,0.0,0
+I presented Bill with it to read.,0,[],0,0,1,0.0,0
+I gave a book to Bill to read.,0,[],0,0,1,0.0,0
+John thinks it would upset himself to die.,0,[],0,0,1,0.0,0
+John made Bill mad at himself.,0,[],0,0,1,0.0,0
+John made Bill master of himself.,0,[],0,0,1,0.0,0
+The correspondence school made Bill a good typist.,0,[],0,0,1,0.0,0
+The correspondence school sent Bill a good typist.,0,[],0,0,1,0.0,0
+John considers Bill silly.,0,[],0,0,1,0.0,0
+John considers Bill to be silly.,0,[],0,0,1,0.0,0
+John bought a dog for himself to play with.,0,[],0,0,1,0.0,0
+John arranged for himself to get the prize.,0,[],0,0,1,0.0,0
+John talked to Bill about himself.,0,[],0,0,1,0.0,0

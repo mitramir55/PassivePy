@@ -85,3 +85,5 @@ lemma:  she
 If you do not need any columns to be appended to the main dataset, simply add `add_other_columns = False`, or if you don't what the percentages to show up add `percentage_of_passive_sentences = False` in any of the following functions.
 
 
+Accuracy on the CoLA dataset: 0.97
+Accuracy on the CrowdSource Dataset: 0.98
