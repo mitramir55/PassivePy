@@ -1,0 +1,1054 @@
+docId,sentenceId,sentence,binary,passive_match(es),raw_passive_count,cola_passive_binary
+1,1,the sailors rode the breeze clear of the rocks.,0,,0,0
+2,1,the weights made the rope stretch over the pulley.,0,,0,0
+3,1,the mechanical doll wriggled itself loose.,0,,0,0
+4,1,"if you had eaten more, you would want less.",0,,0,0
+5,1,"as you eat the most, you want the least.",0,,0,0
+6,1,"the more you would want, the less you would eat.",0,,0,0
+7,1,"i demand that the more john eat, the more he pays.",0,,0,0
+8,1,"mary listens to the grateful dead, she gets depressed.",0,,0,0
+9,1,"the angrier mary got, the more she looked at pictures.",0,,0,0
+10,1,"the higher the stakes, the lower his expectations are.",0,,0,0
+11,1,"the more fred is obnoxious, the less attention you should pay to him.",0,,0,0
+12,1,john was lots more obnoxious than fred.,0,,0,0
+13,1,"the more people you give beer to, the more people get sick.",0,,0,0
+14,1,"the more does bill smoke, the more susan hates him.",0,,0,0
+15,1,"the more pictures of him that appear in the news, the more embarrassed john becomes.",0,,0,0
+16,1,"every senator seems to become more corrupt, as he talks to more lobbyists.",0,,0,0
+17,1,who does john visit sally because he likes?,0,,0,0
+18,1,marianne did not leave.,0,,0,0
+19,1,he could not have been working.,0,,0,0
+20,1,he can not have been working.,0,,0,0
+21,1,you will believe bob.,0,,0,0
+22,1,john has not kissed mary.,0,,0,0
+23,1,i said that never in my life had i seen a place like bangor.,0,,0,0
+24,1,mickey looked up it.,0,,0,0
+25,1,there tended to be a lot of discussion.,0,,0,0
+26,1,john tried to be a good boy.,0,,0,0
+27,1,john is eager.,0,,0,0
+28,1,we want john to win.,0,,0,0
+29,1,the box contained the ball from the tree.,0,,0,0
+30,1,the tube was escaped by gas.,1,['was escaped'],1,1
+31,1,water bubbled up out of the kettle.,0,,0,0
+32,1,the tub leaked water.,0,,0,0
+33,1,what the water did to the bottle was fill it.,0,,0,0
+34,1,what the water did to the whole bottle was fill it.,0,,0,0
+35,1,the tank leaked the fluid free.,0,,0,0
+36,1,john lay the ball in the box.,0,,0,0
+37,1,john owns the book.,0,,0,0
+38,1,we persuaded mary to leave and sue to stay.,0,,0,0
+39,1,"most people probably consider, even though the courts didn't actually find, klaus guilty of murder.",0,,0,0
+40,1,mary beautifully plays the violin.,0,,0,0
+41,1,"clearly, john probably will immediately learn french perfectly.",0,,0,0
+42,1,sue gave to bill a book.,0,,0,0
+43,1,the men will all leave.,0,,0,0
+44,1,john went home.,0,,0,0
+45,1,they represented seriously to the dean mary as a genuine linguist.,0,,0,0
+46,1,us love they.,0,,0,0
+47,1,it is nice to go abroad.,0,,0,0
+48,1,mary intended john to go abroad.,0,,0,0
+49,1,i remembered having kissed mary.,0,,0,0
+50,1,"i can't believe fred won't, either.",0,,0,0
+51,1,"john wants to read fred's story, and i also want to.",0,,0,0
+52,1,"we wanted to invite someone, but we couldn't decide who to.",0,,0,0
+53,1,"mary will read fred's story, and joe will read holly's.",0,,0,0
+54,1,"mary claimed that eating cabbage, holly shouldn't.",0,,0,0
+55,1,mary came to be introduced by the bartender and i also came to be.,1,['introduced by the bartender'],2,0
+56,1,"if i can, i will work on it.",0,,0,0
+57,1,"joe's neuroses bother his patrons, and sally does too.",0,,0,0
+58,1,"i know which book josã© didn't read for class, and which book lilly did it for him.",0,,0,0
+59,1,"this is the book which bob reviewed, and this is the one which fred won't do it.",0,,0,0
+60,1,"i know which book mag read, and which book bob said that you hadn't.",0,,0,0
+61,1,"i know which book mag read, and which book bob read my report that you hadn't.",0,,0,0
+62,1,i'm sure i would like him to eat fruit more than i would cookies.,0,,0,0
+63,1,rusty talked about himself only after mary did talk about him.,0,,0,0
+64,1,fred talked about everything before rusty did talk about something.,0,,0,0
+65,1,john often meets mary.,0,,0,0
+66,1,the problem perceives easily.,0,,0,0
+67,1,a hundred men surrounded the fort.,0,,0,0
+68,1,we elected me.,0,,0,0
+69,1,which report that john was incompetent did he submit?,0,,0,0
+70,1,Not a Sentence,0,,0,0
+70,2,has always preferred lemons to limes.,0,,0,0
+71,1,he let the cats which were whining out.,0,,0,0
+72,1,what did bill buy?,0,,0,0
+73,1,mary saw the boy walking toward the railroad station.,0,,0,0
+74,1,a proof that the claim had been made was given that john had lied.,1,"['had been made', 'was given']",2,1
+75,1,he attributed to a short circuit which was caused by an overloaded transducer the fire which destroyed most of my factory.,1,['was caused'],1,1
+76,1,the mayor regarded as being absurd the proposal to build a sidewalk from dartmouth to smith.,0,,0,0
+77,1,i want that bill left to remain a secret.,0,,0,0
+78,1,i know a man who tom drives as drives.,0,,0,0
+79,1,"drowning cats, which is against the law, are hard to rescue.",0,,0,0
+80,1,muriel said nothing else than that she had been insulted.,1,['had been insulted'],1,1
+81,1,himself is understood by rutherford.,1,['is understood'],1,1
+82,1,i feel that arch will show up.,0,,0,0
+83,1,the proof this set is recursive is difficult.,0,,0,0
+84,1,the madrigals which henry plays the lute and sings sound lousy.,0,,0,0
+85,1,"tom picked these grapes, and i washed some turnips, and suzie will prepare these grapes.",0,,0,0
+86,1,where did you go and who ate what?,0,,0,0
+87,1,which boy's did we elect guardian's employer president?,0,,0,0
+88,1,how sane is peter?,0,,0,0
+89,1,i live at the place where route 150 crosses the river and my dad lives at the place where route 150 crosses the hudson river too.,0,,0,0
+90,1,i live at the place where route 150 crosses the hudson river and my dad lives at it too.,0,,0,0
+91,1,who is she trying to make up to now?,0,,0,0
+92,1,wind was gotten of a plot to negotiate an honorable end to the war in vietnam.,1,['was gotten'],1,1
+93,1,mike talked about politics yesterday to my friends.,0,,0,0
+94,1,it was expected by the reporters that the principal would fire some teacher.,1,['was expected'],1,1
+95,1,which hat did mike quip that she never wore?,0,,0,0
+96,1,which girl did mike quip never wore this hat?,0,,0,0
+97,1,we donated wire for the convicts to build cages with.,0,,0,0
+98,1,i won't have some money.,0,,0,0
+99,1,do you believe the claim that somebody was looking for something?,0,,0,0
+100,1,i won't ask you to believe that he tried to force me to give her any money.,0,,0,0
+101,1,that sam sometimes didn't sleep must have pleased somebody.,0,,0,0
+102,1,i talked to winston about himself.,0,,0,0
+103,1,"that the fuzz wanted him worried john, but that the fuzz wanted her didn't worry mary.",0,,0,0
+104,1,i'll work on it if sam will be working on it.,0,,0,0
+105,1,i'll work on it if i can.,0,,0,0
+106,1,here's a knife with which for you to cut up the onions.,0,,0,0
+107,1,"fluffy is sick, which not everybody knows.",0,,0,0
+108,1,maxwell is quite a doctor.,0,,0,0
+109,1,"the younger woman might have been tall and, and the older one definitely was, blond.",0,,0,0
+110,1,"sally is tall, and may be blond, and sheila is short, and definitely is, blond.",0,,0,0
+111,1,i have to try to finish grading some papers.,0,,0,0
+112,1,the socks are ready for for you to put on to be planned.,1,['be planned'],1,0
+113,1,it is easy to play sonatas on this violin.,0,,0,0
+114,1,this violin is difficult to play sonatas on.,0,,0,0
+115,1,my mother is easy to please my father and.,0,,0,0
+116,1,"poor bill, it had started to rain and he had no umbrella.",0,,0,0
+117,1,"that the cops spoke to the janitor about it yesterday is terrible, that robbery.",0,,0,0
+118,1,"every student, and he wears socks, is a swinger.",0,,0,0
+119,1,that girl was given my binoculars by him.,1,['was given'],1,1
+120,1,bill didn't allege that roger had eaten anything.,0,,0,0
+121,1,nobody who hates to eat anything should work in a delicatessen.,0,,0,0
+122,1,everybody around here who ever buys anything on credit talks in his sleep.,0,,0,0
+123,1,i can't remember the name of somebody who had misgivings.,0,,0,0
+124,1,"no writer, and no playwright, meets in vienna.",0,,0,0
+125,1,"no writer, nor any playwright, meets in vienna.",0,,0,0
+126,1,that you will marry any student is not certain.,0,,0,0
+127,1,felicia kicked the ball off the bench.,0,,0,0
+128,1,i sent the package halfway around the world.,0,,0,0
+129,1,sam gave the ball out of the basket.,0,,0,0
+130,1,sam offered the ball out of the basket.,0,,0,0
+131,1,park square has a festive air.,0,,0,0
+132,1,the worker will have a job.,0,,0,0
+133,1,no one can forgive that comment to you.,0,,0,0
+134,1,"we launched the rocket to the moon, but it blew up before it got there.",0,,0,0
+135,1,"sarah promised catherine her old car, but then gave it to her son instead.",0,,0,0
+136,1,i lent the book partway to tony.,0,,0,0
+137,1,the farmer loaded the cart with apples.,0,,0,0
+138,1,the farmer dumped the cart with apples.,0,,0,0
+139,1,martha carved the baby a toy out of wood.,0,,0,0
+140,1,the bread cuts easily.,0,,0,0
+141,1,janet broke bill on the finger.,0,,0,0
+142,1,janet broke the cup.,0,,0,0
+143,1,the visitor rang the bell.,0,,0,0
+144,1,we pulled free.,0,,0,0
+145,1,that movie always shocks people.,0,,0,0
+146,1,that movie always shocks.,0,,0,0
+147,1,sharon came the room.,0,,0,0
+148,1,bill sent a package to tom.,0,,0,0
+149,1,that acorn will grow into an oak tree.,0,,0,0
+150,1,he turned into a frog.,0,,0,0
+151,1,i mixed the sugar into the butter.,0,,0,0
+152,1,brian threw the fence with the stick.,0,,0,0
+153,1,mira condemned terry for the accident.,0,,0,0
+154,1,we investigated the area for bombs.,0,,0,0
+155,1,i sensed his eagerness.,0,,0,0
+156,1,they praised the dedication in the volunteers.,0,,0,0
+157,1,the earth was believed to be round.,1,['was believed'],1,1
+158,1,sarah smiled a charming smile.,0,,0,0
+159,1,sandra beamed a cheerful welcome.,0,,0,0
+160,1,you've really lived it up.,0,,0,0
+161,1,paperback books lift onto the table easily.,0,,0,0
+162,1,the books lifted onto the table.,0,,0,0
+163,1,jessica loaded boxes under the wagon.,0,,0,0
+164,1,jessica loaded boxes on the wagon.,0,,0,0
+165,1,jessica crammed boxes at the truck.,0,,0,0
+166,1,lora buttered at the toast.,0,,0,0
+167,1,carla shoveled the walk.,0,,0,0
+168,1,nora sent the book.,0,,0,0
+169,1,nora sent peter the book.,0,,0,0
+170,1,carla slid the book.,0,,0,0
+171,1,carla slid at the book.,0,,0,0
+172,1,amanda carried the package to pamela.,0,,0,0
+173,1,packages drive easily to new york.,0,,0,0
+174,1,the chair pushed.,0,,0,0
+175,1,we offered a job to her.,0,,0,0
+176,1,a job offered.,0,,0,0
+177,1,brown presented a plaque to jones.,0,,0,0
+178,1,carmen bought mary a dress.,0,,0,0
+179,1,carmen obtained the spare part at the hardware store.,0,,0,0
+180,1,michelle kept the desk with the papers.,0,,0,0
+181,1,frances hid the presents in the drawer.,0,,0,0
+182,1,the needle poked the cloth.,0,,0,0
+183,1,carrie touched that cat.,0,,0,0
+184,1,herman whipped the sugar and the cream.,0,,0,0
+185,1,linda taped the picture to the wall.,0,,0,0
+186,1,linda taped the picture onto the wall.,0,,0,0
+187,1,the child and her mother clung together.,0,,0,0
+188,1,this flyer and that flyer differ.,0,,0,0
+189,1,this flyer and that flyer differ apart.,0,,0,0
+190,1,the jeweller scribbled the contract with his name.,0,,0,0
+191,1,the gardener grew that acorn into an oak tree.,0,,0,0
+192,1,i shaped a loaf.,0,,0,0
+193,1,the children amused.,0,,0,0
+194,1,susan whispered the news.,0,,0,0
+195,1,susan whispered at rachel.,0,,0,0
+196,1,ellen said that melons were selling well.,0,,0,0
+197,1,ellen said about the present conditions.,0,,0,0
+198,1,ellen warned helen against skating on thin ice.,0,,0,0
+199,1,cynthia nibbled on the carrot .,0,,0,0
+200,1,cynthia chewed.,0,,0,0
+201,1,paul laughed at mary.,0,,0,0
+202,1,linda winked her lip.,0,,0,0
+203,1,my heart is pounding me.,0,,0,0
+204,1,sharon fainted from hunger.,0,,0,0
+205,1,the witch poisoned the children.,0,,0,0
+206,1,a grandfather clock ticked in the hallway.,0,,0,0
+207,1,i squeaked the door.,0,,0,0
+208,1,over the fire there bubbled a fragrant stew.,0,,0,0
+209,1,soaring temperatures are predicted for this weekend.,1,['are predicted'],1,1
+210,1,the fort fluttered with many flags.,0,,0,0
+211,1,the voices echoed in the hall.,0,,0,0
+212,1,the stream twists through the valley.,0,,0,0
+213,1,there presented itself a wonderful opportunity yesterday.,0,,0,0
+214,1,a wonderful opportunity presented itself to him yesterday.,0,,0,0
+215,1,out of the box jumped a little white rabbit.,0,,0,0
+216,1,penny skated around the rink.,0,,0,0
+217,1,jackie accompanied rose.,0,,0,0
+218,1,many information was provided.,1,['was provided'],1,1
+219,1,john offers many advice.,0,,0,0
+220,1,the cake that jones got was more delicious than the one that smith got.,0,,0,0
+221,1,we recommend to eat less cake and pastry.,0,,0,0
+222,1,i saw that gas can explode.,0,,0,0
+223,1,he washed her.,0,,0,0
+224,1,wash you!,0,,0,0
+225,1,they have no in.,0,,0,0
+226,1,some my jobs are in jeopardy.,0,,0,0
+227,1,it was the policeman met that several young students in the park last night.,0,,0,0
+228,1,did the policeman meet in the park?,0,,0,0
+229,1,john put old books in the box.,0,,0,0
+230,1,the monkeys proud of their leader.,0,,0,0
+231,1,john sounded very.,0,,0,0
+232,1,i don't know if i should agree.,0,,0,0
+233,1,john bought a book on the table.,0,,0,0
+234,1,john called the president a fool.,0,,0,0
+235,1,i forgot how good beer tastes.,0,,0,0
+236,1,this teacher is a genius.,0,,0,0
+237,1,a good friend is remained to me by him.,1,['is remained'],1,1
+238,1,john ate his noodle quietly.,0,,0,0
+239,1,a smith hammered the metal.,0,,0,0
+240,1,sandy removed her ballet shoes.,0,,0,0
+241,1,this week will be a difficult one for us.,0,,0,0
+242,1,benny worked in a shoe factory when he was a student.,0,,0,0
+243,1,everyone hoped that she would sing.,0,,0,0
+244,1,this proved a decisive factor.,0,,0,0
+245,1,the crocodile devoured the doughnut.,0,,0,0
+246,1,john is afraid of bill.,0,,0,0
+247,1,john put under the bathtub.,0,,0,0
+248,1,john placed kim behind the garage.,0,,0,0
+249,1,kim depends for sandy.,0,,0,0
+250,1,john put the book in the box.,0,,0,0
+251,1,john taught english syntax to new students.,0,,0,0
+252,1,john regards bill as a good friend.,0,,0,0
+253,1,kim put in the box.,0,,0,0
+254,1,the chickens seem fond of the farmer.,0,,0,0
+255,1,the rules require that the executives be polite.,0,,0,0
+256,1,that fred was unpopular nominated bill.,0,,0,0
+257,1,they were taking a hard look at possible fta.,0,,0,0
+258,1,john paid me against the book.,0,,0,0
+259,1,the committee will study the feasibility of setting up a national computer network.,0,,0,0
+260,1,we made them be rude.,0,,0,0
+261,1,"after reading the pamphlet, judy threw it into the garbage can.",0,,0,0
+262,1,students studying english reads conrad's heart of darkness while at university.,0,,0,0
+263,1,i read some of the book.,0,,0,0
+264,1,most of the fruit is rotten.,0,,0,0
+265,1,neither of students failed.,0,,0,0
+266,1,i drank some of water.,0,,0,0
+267,1,it is a golden hair.,0,,0,0
+268,1,the boy in the doorway waved to his father.,0,,0,0
+269,1,"that dog is so ferocious, it even tried to bite itself.",0,,0,0
+270,1,he washed yourself.,0,,0,0
+271,1,john is easy to please kim.,0,,0,0
+272,1,there seemed to be intelligent.,0,,0,0
+273,1,john tried to please stephen.,0,,0,0
+274,1,we believed john to be a fountain in the park.,0,,0,0
+275,1,it tries to leave the country.,0,,0,0
+276,1,john tries to leave the country.,0,,0,0
+277,1,under the bed seems to be a fun place to hide.,0,,0,0
+278,1,there is believed to be sheep in the park.,1,['is believed'],1,0
+279,1,i hope to would study in france.,0,,0,0
+280,1,john can kick the ball.,0,,0,0
+281,1,john will rain tomorrow.,0,,0,0
+282,1,we expect there to will rain.,0,,0,0
+283,1,john was found in the office.,1,['was found'],1,1
+284,1,did the child be in the school?,0,,0,0
+285,1,it did not rain.,0,,0,0
+286,1,john wants not to leave the town.,0,,0,0
+287,1,"mary likes to tour art galleries, but bill hates to.",0,,0,0
+288,1,they needn't take this exam.,0,,0,0
+289,1,ann may spend her vacation in italy.,0,,0,0
+290,1,"they love to play golf, but i do not.",0,,0,0
+291,1,"george has spent a lot of money, hasn't he?",0,,0,0
+292,1,"as a statesman, scarcely could he do anything worth mentioning.",0,,0,0
+293,1,we never found any of the unicorns.,0,,0,0
+294,1,one of korea's most famous poets wrote these lines.,0,,0,0
+295,1,somebody apparently struck the unidentified victim during the early morning hours.,0,,0,0
+296,1,the car was driven.,1,['was driven'],1,1
+297,1,ricky can be relied on.,1,['can be relied'],1,1
+298,1,the bed was slept in.,1,['was slept'],1,1
+299,1,a pound was weighed by the book.,1,['was weighed'],1,1
+300,1,who do you think tom saw?,0,,0,0
+301,1,he had spent five thousand dollars.,0,,0,0
+302,1,fed knows which politician her to vote for.,0,,0,0
+303,1,how did you guess that he fixed the computer?,0,,0,0
+304,1,the committee knows whose efforts to achieve peace the world should honor.,0,,0,0
+305,1,which house does your friend live?,0,,0,0
+306,1,the baker from whom i bought these bagels left.,0,,0,0
+307,1,i found the place where we can relax.,0,,0,0
+308,1,jack is the person with whom jenny fell in love with.,0,,0,0
+309,1,there is a bench to sit on.,0,,0,0
+310,1,i met the man who grows peaches.,0,,0,0
+311,1,which topic did you choose without getting his approval?,0,,0,0
+312,1,which topic did you get bored because mary talked about?,0,,0,0
+313,1,that is the reason why he resigned.,0,,0,0
+314,1,it bothers me that john coughs.,0,,0,0
+315,1,to please john is easy.,0,,0,0
+316,1,kim is eager to please tom.,0,,0,0
+317,1,that we invaded iraq really bites.,0,,0,0
+318,1,it annoys me that fido barks.,0,,0,0
+319,1,who achieved the best result was angela.,0,,0,0
+320,1,it was the peasant girl who got it.,0,,0,0
+321,1,that kind of person is hard to find anyone to look after.,0,,0,0
+322,1,a sick owl doesn't hunt mice.,0,,0,0
+323,1,each candidate who has interest in semantics will be admitted to the department.,1,['will be admitted'],1,0
+324,1,each author whose contribution is written in any language other than english will provide a summary in english.,1,['is written'],1,1
+325,1,i'm sure we even got these tickets!,0,,0,0
+326,1,i'm even sure we got these tickets!,0,,0,0
+327,1,it's not because i have any sympathy for urban guerillas that i helped him.,0,,0,0
+328,1,it isn't because sue said anything bad about me that i'm angry.,0,,0,0
+329,1,"that he was hungry, john whined.",0,,0,0
+330,1,1 gave mary after the party a book.,0,,0,0
+331,1,"because she's so pleasant, as for mary i really like her.",0,,0,0
+332,1,"though he may hate those that criticize carter, it doesn't matter.",0,,0,0
+333,1,with no job would john be happy.,0,,0,0
+334,1,i have much of the manuscript left to type.,0,,0,0
+335,1,he's a more reliable man.,0,,0,0
+336,1,any trouble is what i don't want.,0,,0,0
+337,1,they may grow as high as bamboo.,0,,0,0
+338,1,some of them made as many errors as 20.,0,,0,0
+339,1,sally kissed himself.,0,,0,0
+340,1,drew believes i think rosie loves magazine ads.,0,,0,0
+341,1,"dave, dan, erin, jaime, and alina left.",0,,0,0
+342,1,"hopefully, we'll make it through the winter without snow.",0,,0,0
+343,1,blue leather shows herself that betsy is pretty.,0,,0,0
+344,1,gwen hit the baseball.,0,,0,0
+345,1,i hit that you knew the answer.,0,,0,0
+346,1,i've lost my wallet or i've lost my mind.,0,,0,0
+347,1,it was a brand new car that he bought.,0,,0,0
+348,1,he likes cookies and he hates crumb cake.,0,,0,0
+349,1,they chased the man with the car.,0,,0,0
+350,1,i didn't have a red cent.,0,,0,0
+351,1,the book of poems and from blackwell takes a very long time to read.,0,,0,0
+352,1,the one with a red cover takes a very long time to read.,0,,0,0
+353,1,john has a fear of dogs.,0,,0,0
+354,1,the building's the roof is leaking.,0,,0,0
+355,1,the panther's the coat is dark black.,0,,0,0
+356,1,colin asked if they could get a mortgage.,0,,0,0
+357,1,the man i saw get into the cab robbed the bank.,0,,0,0
+358,1,i know you eat asparagus.,0,,0,0
+359,1,john's drum will always bother me.,0,,0,0
+360,1,an evil thought struck dave.,0,,0,0
+361,1,in the classroom john put the book on the table.,0,,0,0
+362,1,phillip gave the medal to the soldier.,0,,0,0
+363,1,heidi thinks that andy to eat salmon flavored candy bars.,0,,0,0
+364,1,heidi thinks that andy should eat salmon flavored candy bars.,0,,0,0
+365,1,he danced.,0,,0,0
+366,1,did calvin his homework?,0,,0,0
+367,1,sylvia was slapping jeff upside the head in martial arts class.,0,,0,0
+368,1,"if i am a rich man, i'd buy a diamond ring.",0,,0,0
+369,1,"if he were a rich man, he'd buy a diamond ring.",0,,0,0
+370,1,john is likely to leave.,0,,0,0
+371,1,the manager laughed.,0,,0,0
+372,1,was sunk.,1,['was sunk'],1,0
+373,1,who did you think kissed the gorilla?,0,,0,0
+374,1,have you seen my model airplane collection?,0,,0,0
+375,1,it seems that lucy was mugged.,1,['was mugged'],1,1
+376,1,i ate a salad that was filled with lima beans.,0,,0,1
+377,1,there were four men arriving at the station when i pulled up.,0,,0,0
+378,1,jean is reluctant to dance.,0,,0,0
+379,1,i want her to dance.,0,,0,0
+380,1,jean persuaded robert.,0,,0,0
+381,1,jean wants bill to do the macarena.,0,,0,0
+382,1,the children admire their mother.,0,,0,0
+383,1,who has peter talked with?,0,,0,0
+384,1,heidi likes her violin.,0,,0,0
+385,1,john thinks that mary loves himself.,0,,0,0
+386,1,which pictures of himself does john like?,0,,0,0
+387,1,any owl hunts mice.,0,,0,0
+388,1,any man didn't eat dinner.,0,,0,0
+389,1,a pilot could be flying this plane.,0,,0,0
+390,1,"everybody who attended last week's huge rally, whoever they were, signed the petition.",0,,0,0
+391,1,anybody who attended last week's huge rally signed the petition.,0,,0,0
+392,1,"any tiger has orange fur, marked with black stripes.",0,,0,0
+393,1,"any albino tiger has orange fur, marked with black stripes.",0,,0,0
+394,1,you must pick any flower you see.,0,,0,0
+395,1,any pilot on duty today could be flying this plane.,0,,0,0
+396,1,"you may pick every flower, but leave a few for mary.",0,,0,0
+397,1,the dodgers beat the red sox and were beaten by the giants.,1,['were beaten'],1,0
+398,1,in which car was the man seen?,1,['man seen'],1,0
+399,1,the man who mary loves and sally hates computed my tax.,0,,0,0
+400,1,the kennel which mary made and fido sleeps has been stolen.,1,['has been stolen'],1,0
+401,1,tom said he would and bill actually did eat a raw eggplant.,0,,0,0
+402,1,the wealthy young man bought that piano for his secret fiancã,0,,0,0
+402,2,©e.,0,,0,0
+403,1,the dog stole the turkey.,0,,0,0
+404,1,a tall building.,0,,0,0
+405,1,this building is tall.,0,,0,0
+406,1,i like the book which you gave me.,0,,0,0
+407,1,captain wentworth wrote a letter to anne elliott.,0,,0,0
+408,1,she asked was alison coming to the party.,0,,0,0
+409,1,they realised that never had sir thomas been so offended.,0,,0,0
+410,1,fanny regretted having to talk to aunt norris.,0,,0,0
+411,1,"knowing the country well, he took a short cut.",0,,0,0
+412,1,he left the train with somebody else's wallet in his pocket.,0,,0,0
+413,1,magnus went to ireland.,0,,0,0
+414,1,who did john send the book?,0,,0,0
+415,1,the idea dismayed the prime minister that the dome was dull.,0,,0,0
+416,1,came right in he did without so much as a knock.,0,,0,0
+417,1,harriet admired mr knightley.,0,,0,0
+418,1,the book is boring.,0,,0,0
+419,1,ethel wishes to ask you some awkward questions.,0,,0,0
+420,1,emma made harriet some food.,0,,0,0
+421,1,the window was broken with a hammer.,1,['was broken'],1,1
+422,1,the fugitive lay motionless in order to avoid discovery.,0,,0,0
+423,1,the guard marched the prisoners round the yard.,0,,0,0
+424,1,frank churchill crossed the street.,0,,0,0
+425,1,emma and harriet were attacked yesterday.,1,['were attacked'],1,0
+426,1,fiona might be here by 5 o'clock.,0,,0,0
+427,1,i am both expecting to get the job and of the opinion that it is a desirable one.,0,,0,0
+428,1,pat was awarded the golden fleece award and very upset about it.,1,['was awarded'],1,1
+429,1,kim alienated cats and beating his dog.,0,,0,0
+430,1,they knew that pictures of each other would be on sale.,0,,0,0
+431,1,which article did terry file papers without reading?,0,,0,0
+432,1,i want to try and buy some whiskey.,0,,0,0
+433,1,she goes and buying some whiskey.,0,,0,0
+434,1,kim and terry is happy.,0,,0,0
+435,1,kim gave a dollar to bobbie and a dime to jean.,0,,0,0
+436,1,this girl in the red coat will put a picture of bill in the mailbox and on your desk before tomorrow.,0,,0,0
+437,1,"put a picture of bill on your desk before tomorrow, this girl in the red coat will put a picture of bill on your desk before tomorrow.",0,,0,0
+438,1,"picture of bill, this girl in the red coat will put a picture of bill on your desk before tomorrow.",0,,0,0
+439,1,ann bought a first edition of richard iii for $1000.,0,,0,0
+440,1,john became deadly afraid of flying.,0,,0,0
+441,1,what john promised is to be gentle.,0,,0,0
+442,1,henri wants to buy which books about cooking?,0,,0,0
+443,1,i will fix the computer for carol.,0,,0,0
+444,1,smith loaned a valuable collection of manuscripts to the library.,0,,0,0
+445,1,the paper is cut by mary.,1,['is cut'],1,1
+446,1,it was from six to nine or it took place from six to nine.,0,,0,0
+447,1,"suddenly, there arrived two inspectors from the ins.",0,,0,0
+448,1,"the soup cooks, thickens.",0,,0,0
+449,1,i gave money to the charity.,0,,0,0
+450,1,john asked.,0,,0,0
+451,1,i saw even the student.,0,,0,0
+452,1,john whispered mary left.,0,,0,0
+453,1,mary wonders that bill will come.,0,,0,0
+454,1,sophie will theater.,0,,0,0
+455,1,john finished the cake and drank the lemonade.,0,,0,0
+456,1,herself likes mary's mother.,0,,0,0
+457,1,each of the boys fought with some of the other boys.,0,,0,0
+458,1,john's mother likes himself.,0,,0,0
+459,1,mary revealed himself to john.,0,,0,0
+460,1,mary believes that bill saw himself.,0,,0,0
+461,1,john heard that they criticized themselves.,0,,0,0
+462,1,mary thinks that she is smart.,0,,0,0
+463,1,henry found that bill is sad.,0,,0,0
+464,1,john considers himself proud of mary.,0,,0,0
+465,1,you should sit before there.,0,,0,0
+466,1,there is a nurse available.,0,,0,0
+467,1,everyone hopes everyone to sleep.,0,,0,0
+468,1,everyone hopes that he will sleep.,0,,0,0
+469,1,"only churchill remembered churchill giving the blood, sweat and tears speech.",0,,0,0
+470,1,john promise mary to shave himself.,0,,0,0
+471,1,john convinced bill that mary should sleep.,0,,0,0
+472,1,i saw bill while you did so mary.,0,,0,0
+473,1,what mary did bill was give a book.,0,,0,0
+474,1,the bears sniffed,0,,0,0
+475,1,to steal talismans from witches is dangerous,0,,0,0
+476,1,anson demonized,0,,0,0
+477,1,you kicked yourselves,0,,0,0
+478,1,the book that i said that i'd never read.,0,,0,0
+479,1,anson demonized up the khyber,0,,0,0
+480,1,it is not true that i might be going to the party.,0,,0,0
+481,1,kick you!,0,,0,0
+482,1,jason persuaded the doctor to treat medea,0,,0,0
+483,1,who did you get an accurate description of?,0,,0,0
+484,1,the peter we all like was at the party,0,,0,0
+485,1,the government's imposition of a fine.,0,,0,0
+486,1,did athena help us?,0,,0,0
+487,1,you wanted to meet the man i saw.,0,,0,0
+488,1,anson demonized david every day,0,,0,0
+489,1,there is a programme about euripides on a radio 4 tonight?,0,,0,0
+490,1,medea denied poisoning the phoenix.,0,,0,0
+491,1,the elixir was hidden in a hole in the ground,1,['was hidden'],1,1
+492,1,"extremely frantically, anson danced at trade",0,,0,0
+493,1,what did you ask who medea gave?,0,,0,0
+494,1,it's anson,0,,0,0
+494,2,that i like,0,,0,0
+495,1,medea tried the nurse to poison her children.,0,,0,0
+496,1,i felt that i know you.,0,,0,0
+497,1,will he can do it?,0,,0,0
+498,1,i ate that she was happy,0,,0,0
+499,1,anson believed himself to be handsome.,0,,0,0
+500,1,we arrived about six o'clock,0,,0,0
+501,1,gilgamesh is having fought the dragon.,0,,0,0
+502,1,anson thought that himself was happy.,0,,0,0
+503,1,fortunately hermione passed biology,0,,0,0
+504,1,i might be not going to the party but washing my hair,0,,0,0
+505,1,i thought he liked myself,0,,0,0
+506,1,the butler sent the poison to dinah.,0,,0,0
+507,1,jason happens to appear to seem to be sick.,0,,0,0
+508,1,what did you ask who saw?,0,,0,0
+509,1,we linguists love to argue,0,,0,0
+510,1,he can will go,0,,0,0
+511,1,how fierce the battle?,0,,0,0
+512,1,which king did you ask which city invaded?,0,,0,0
+513,1,it is some disgruntled old pigs in those ditches that humans love to eat.,0,,0,0
+514,1,that banana is eating the monkey.,0,,0,0
+515,1,burn them!,0,,0,0
+516,1,it stinks that aphrodite is omnipotent.,0,,0,0
+517,1,agamemnon seems to be a maniac,0,,0,0
+518,1,will anson come to the party?,0,,0,0
+519,1,i wondered who medea had poisoned.,0,,0,0
+520,1,i inquired when could we leave.,0,,0,0
+521,1,they kicked them,0,,0,0
+522,1,the monkey is ate the banana,1,['is ate'],1,1
+523,1,i would like to could swim,0,,0,0
+524,1,i kicked myself,0,,0,0
+525,1,the bookcase ran,0,,0,0
+526,1,i shaved myself.,0,,0,0
+527,1,anson became a muscle bound.,1,['muscle bound'],1,0
+528,1,somebody just left - guess who.,0,,0,0
+529,1,"they claimed they had settled on something, but it wasn't clear what they had settled on.",0,,0,0
+530,1,"if sam was going, sally would know where.",0,,0,0
+531,1,"they're going to serve the guests something, but it's unclear what.",0,,0,0
+532,1,she's reading.,0,,0,0
+532,2,i can't imagine what.,0,,0,0
+533,1,john said joan saw someone from her graduating class.,0,,0,0
+534,1,john ate dinner but i don't know who.,0,,0,0
+535,1,"she mailed john a letter, but i don't know to whom.",0,,0,0
+536,1,i served leek soup to my guests.,0,,0,0
+537,1,i served my guests.,0,,0,0
+538,1,"she was bathing, but i couldn't make out who.",0,,0,0
+539,1,she knew french for tom.,0,,0,0
+540,1,john is tall on several occasions.,0,,0,0
+541,1,"the ship sank, but i don't know with what.",0,,0,0
+542,1,"they noticed the painting, but i don't know for how long.",0,,0,0
+543,1,"john was tall, but i don't know on what occasions.",0,,0,0
+544,1,joan ate dinner with someone but i don't know who.,0,,0,0
+545,1,joan ate dinner with someone but i don't know who with.,0,,0,0
+546,1,"i know that meg's attracted to harry, but they don't know who.",1,"[""'s attracted""]",1,0
+547,1,"since jill said joe had invited sue, we didn't have to ask who.",0,,0,0
+548,1,"i know that meg's attracted to harry, but they don't know who.",1,"[""'s attracted""]",1,0
+549,1,"she said she had spoken to everybody, but he wasn't sure who.",0,,0,0
+550,1,"each of the performers came in, but were sitting so far back that we couldn't see who.",0,,0,0
+551,1,she didn't talk to one student.,0,,0,0
+552,1,"she doesn't meet anyone for dinner, but they can't figure out who.",0,,0,0
+553,1,everyone relies on someone.,0,,0,0
+553,2,it's unclear who.,0,,0,0
+554,1,"each student wrote a paper on a mayan language, but i don't remember which one.",0,,0,0
+555,1,"the newspaper has reported that they are about to appoint someone, but i can't remember who the newspaper has reported that they are about to appoint.",0,,0,0
+556,1,"the newspaper has reported that they are about to appoint someone, but i can't remember who they are about to appoint.",0,,0,0
+557,1,"most columnists claim that a senior white house official has been briefing them, and the newspaper today reveals which one.",0,,0,0
+558,1,"most columnists claim that a senior white house official has been briefing them, but none will reveal which one.",0,,0,0
+559,1,"bill wondered how many papers sandy had read, but he didn't care which ones.",0,,0,0
+560,1,"i never know which papers sandy has read, but i usually know how many.",0,,0,0
+561,1,sandy had read how many papers?!,0,,0,0
+562,1,"everybody gets on well with a certain relative, but often only his therapist knows which one.",0,,0,0
+563,1,which book did each author recommend?,0,,0,0
+564,1,his or her least known work.,0,,0,0
+565,1,"they were going to meet sometime on sunday, but the faculty didn't know when.",0,,0,0
+566,1,"john likes some students, but i don't know who.",0,,0,0
+567,1,i don't know who john likes.,0,,0,0
+568,1,"john likes some students, but i don't know who john likes some students.",0,,0,0
+569,1,"joan said she talked to the students, but fred couldn't figure out who.",0,,0,0
+570,1,"he announced he had eaten the asparagus, but we didn't know what.",0,,0,0
+571,1,"she was reading the books under the table, but fred didn't know what books.",0,,0,0
+572,1,"he announced he would marry the woman he loved most, but none of his relatives could figure out who.",0,,0,0
+573,1,she talked to john or mary but i don't know which.,0,,0,0
+574,1,she talked to john or mary but i don't know which one.,0,,0,0
+575,1,"she talked to harry, but i don't know who else.",0,,0,0
+576,1,"i will see them, but i don't know how many of them.",0,,0,0
+577,1,everyone who knows either susan or laura likes her.,0,,0,0
+578,1,she said she talked to three students but i don't know how many.,0,,0,0
+579,1,she said she talked to those students but i don't know how many.,0,,0,0
+580,1,"he shouted again, but i don't know who to.",0,,0,0
+581,1,"she was dancing with somebody, but i don't know who with.",0,,0,0
+582,1,"several firefighters were injured, but it's not known.",1,"['were injured', ""'s not known""]",2,1
+583,1,"meg is attracted to harry, but they don't know who she is attracted to.",1,"['is attracted', 'is attracted']",2,1
+584,1,"sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one.",0,,0,0
+585,1,"sandy was trying to work out which students would be able to solve a certain problem, but she wouldn't tell us which one she was trying to work out which students would be able to solve.",0,,0,0
+586,1,"john and someone were dancing together, but i don't know who.",0,,0,0
+587,1,"the ta's have been arguing about whether some student or other should pass, but i can't now remember which one.",0,,0,0
+588,1,it has been determined that somebody will be appointed; it's just not clear yet who.,1,"['has been determined', 'will be appointed']",2,1
+589,1,"sally asked if somebody was going to fail math class, but i can't remember who.",0,,0,0
+590,1,"the ta's have been arguing about whether some student or other should pass, but i can't now remember which one.",0,,0,0
+591,1,"sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us which.",0,,0,0
+592,1,"sandy is very anxious to see if the students will be able to solve the homework problem in a particular way, but she won't tell us in which way.",0,,0,0
+593,1,"clinton is anxious to find out which budget dilemmas panetta would be willing to tackle in a certain way, but he won't say in which.",0,,0,0
+594,1,"sandy is wondering whether there will be students who have to drop the class for a certain reason, but she won't reveal what.",0,,0,0
+595,1,in which way is sandy very anxious to see if the students will be able to solve the homework problem?,0,,0,0
+596,1,in which way is clinton anxious to find out which budget dilemmas panetta would be willing to solve?,0,,0,0
+597,1,"i know how many assignments i've graded, but i don't know how many bill has.",0,,0,0
+598,1,what did you leave before they did?,0,,0,0
+599,1,what did you leave before they started playing?,0,,0,0
+600,1,sandy was trying to work out which students would be able to solve a certain problem.,0,,0,0
+601,1,the administration has issued a statement that it is willing to meet with one of the student groups.,0,,0,0
+602,1,sandy was trying to work out which students would be able to solve a problem.,0,,0,0
+603,1,the administration has issued a statement that it is willing to meet a student group.,0,,0,0
+604,1,"the administration has issued a statement that it is willing to meet a student group, but i'm not sure which one.",0,,0,0
+605,1,"i think agnes said that bill would speak, but i don't remember what about.",0,,0,0
+606,1,agnes wondered how john could eat but it's not clear what.,0,,0,0
+607,1,"tony sent mo a picture that he painted, but it's not clear with what.",0,,0,0
+608,1,she's been dancing but we don't know with whom.,0,,0,1
+609,1,who did they see someone?,0,,0,0
+610,1,it was believed by everybody that mary was a thief.,1,['was believed'],1,1
+611,1,that professor is feared by all students.,1,['is feared'],1,1
+612,1,mary was respected by john.,1,['was respected'],1,1
+613,1,ted was bitten by the spider.,1,['was bitten'],1,1
+614,1,the book was by john written.,0,,0,0
+615,1,the argument was summed by the coach up.,1,['was summed'],1,1
+616,1,the paper was written up by john.,1,['was written'],1,1
+617,1,the paper was written by john up.,1,['was written'],1,1
+618,1,john was spoken to by mary.,1,['was spoken'],1,1
+619,1,john was spoken by mary to.,1,['was spoken'],1,1
+620,1,the book was seen by mary.,1,['was seen'],1,1
+621,1,john was seen the book.,1,['was seen'],1,1
+622,1,the book was written.,1,['was written'],1,1
+623,1,john was spoke by mary to.,1,['was spoke'],1,1
+624,1,the table was wiped clean by john.,1,['was wiped'],1,1
+625,1,the table was wiped by john clean.,1,['was wiped'],1,1
+626,1,mary was given by john the book.,1,['was given'],1,1
+627,1,john was believed to be telling the truth by mary.,1,['was believed'],1,1
+628,1,john was believed by mary to be telling the truth.,1,['was believed'],1,1
+629,1,the car was driven by john to maine.,1,['was driven'],1,1
+630,1,it was believed by the students that they would have an exam.,1,['was believed'],1,1
+631,1,the magazines were sent to herself by mary.,1,['were sent'],1,1
+632,1,chocolate eggs were hidden from each other by the children.,1,['were hidden'],1,1
+633,1,the magazines were sent by mary to herself.,1,['were sent'],1,1
+634,1,chocolate eggs were hidden from no child by any adult.,1,['were hidden'],1,1
+635,1,tabs were kept on each agent by the other.,1,['were kept'],1,1
+636,1,chocolate eggs were hidden from every child by his mother.,1,['were hidden'],1,1
+637,1,books were taken from no student and given to mary.,1,['were taken'],1,1
+638,1,books were taken from no student and given to mary by any professor.,1,['were taken'],1,1
+639,1,books were taken from each student by the other.,1,['were taken'],1,1
+640,1,books were taken from each student and given to mary.,1,['were taken'],1,1
+641,1,books were taken from each student and given to mary by the other.,1,['were taken'],1,1
+642,1,jack hates sue and is loved by mary.,1,['is loved'],1,0
+643,1,vera sent a baby alligator to max and a leather dinosaur to phyllis.,0,,0,0
+644,1,either sam plays the bassoon or jekyll the oboe.,0,,0,0
+645,1,"sam doesn't play bassoon, nor medusa oboe.",0,,0,0
+646,1,"bill ate the peaches, but harry the grapes.",0,,0,0
+647,1,i no more could have stolen that steak than jack the diamonds.,0,,0,0
+648,1,bill ate more peaches than harry did grapes.,0,,0,0
+649,1,bill ate the peaches and harry did the grapes.,0,,0,0
+650,1,"tom will smoke the grass, and reuben has the hash.",0,,0,0
+651,1,"if the ants were called elephants and elephants ants, i'd be able to squash an elephant.",1,['were called'],1,1
+652,1,"simon quickly dropped the gold, and jack the diamonds.",0,,0,0
+653,1,"bob tried to wash himself, and mary to read the funnies.",0,,0,0
+654,1,"harry told sue that albania is a lovely place for a vacation, and tom told sally that albania is a lovely place for a vacation.",0,,0,0
+655,1,"harry told sue that albania is a lovely place for a vacation, and tom.",0,,0,0
+656,1,"max seemed to be trying to begin to love harriet, and fred to be trying to begin to love sue.",0,,0,0
+657,1,"max seemed to be trying to force ted to leave the room, and walt, ira.",0,,0,0
+658,1,"max seemed to be trying to force ted to leave the room, and walt to stay a little longer.",0,,0,0
+659,1,"arizona elected goldwater senator, and massachusetts, mccormack.",0,,0,0
+660,1,"millie will send the president an obscene telegram, and paul, the secretary a rude letter.",0,,0,0
+661,1,maytag will give a brand-new dryer to the winner of the mrs.,0,,0,0
+662,1,"bill didn't eat the peaches, nor harry.",0,,0,0
+663,1,"bill ate the peaches, and harry did, too.",0,,0,0
+664,1,"bill must quickly eat the peaches, and harry must slowly.",0,,0,0
+665,1,"whenever russia has made a major political blunder, the u.s. has too.",0,,0,0
+666,1,bill's story about sue and max's about kathy both amazed me.,0,,0,0
+667,1,i bought three quarts of wine and two of clorox.,0,,0,0
+668,1,"scientists at the south hanoi institute of technology have succeeded in raising one dog with five legs, another with a cow's liver, and a third with no head.",0,,0,0
+669,1,"bill's story about sue may be amazing, but max's is virtually incredible.",0,,0,0
+670,1,"i like bill's yellow shirt, but not max's.",0,,0,0
+671,1,bill's funny story about sue and max's boring one about kathy both amazed me.,0,,0,0
+672,1,bill's wine from france and ted's from california cannot be compared.,1,['be compared'],1,0
+673,1,"as a teacher, you have to deal simultaneously with the administration's pressure on you to succeed, and the children's to be a nice guy.",0,,0,0
+674,1,neither von karajan's recording of beethoven's 6th on columbia nor klemperer's on angel has the right tempo.,0,,0,0
+675,1,gould's performance of bach on the piano doesn't please me anywhere as much as ross's on the harpsichord.,0,,0,0
+676,1,tom's dog with one eye attacked frank's with three legs.,0,,0,0
+677,1,"because steve's of a spider's eye had been stolen, i borrowed fred's diagram of a snake's fang.",1,['had been stolen'],1,0
+678,1,neither von karajan's recording of beethoven's 6th on columbia nor klemperer's has the right tempo.,0,,0,0
+679,1,tom's dog with one eye attacked fred's.,0,,0,0
+680,1,i borrowed fred's diagram of a snake's eye because steve's had been stolen.,1,['had been stolen'],1,0
+681,1,jerry attempted to blow up the pentagon.,0,,0,0
+682,1,so fast did he run that nobody could catch him.,0,,0,0
+683,1,"bill bought a red house, and max bought one too.",0,,0,0
+684,1,who always drinks milk?,0,,0,0
+685,1,the book which inspired them was very long.,0,,0,0
+686,1,the book what inspired them was very long.,0,,0,0
+687,1,i know the person whose mother died.,0,,0,0
+688,1,the person whose mother's dog we were all fond of.,0,,0,0
+689,1,i wonder whose mother died.,0,,0,0
+690,1,i wonder whose mother's dog died.,0,,0,0
+691,1,i wonder to whom they dedicated the building.,0,,0,0
+692,1,give me the phone number of the person whose mother's dog died.,0,,0,0
+693,1,this is the senator to whose mother's friend's sister's i sent the letter.,0,,0,0
+694,1,i want goes to the store.,0,,0,0
+695,1,i wonder what to be a clown on the cover of.,0,,0,0
+696,1,bother you that kim left!,0,,0,0
+697,1,a student who to talk to us just walked in.,0,,0,0
+698,1,whose bagels do you like?,0,,0,0
+699,1,i wonder in whom to place my trust.,0,,0,0
+700,1,there were several old rocks songs that she and i were the only two who knew.,0,,0,0
+701,1,it was to to amuse us that kim was singing that they wanted.,0,,0,0
+702,1,what they feared most was to be no one available to help them.,0,,0,0
+703,1,we tried to amuse them that kim was singing.,0,,0,0
+704,1,"mary asked me if, in st.",0,,0,0
+704,2,"louis, john could rent a house cheap.",0,,0,0
+705,1,"mary arranged for, in st.",0,,0,0
+705,2,"louis, john to rent a house cheap.",0,,0,0
+706,1,it would be unwise for there to be no fire exit.,0,,0,0
+707,1,i believe there to be no way out.,0,,0,0
+708,1,i wonder in whom them to place their trust.,0,,0,0
+709,1,i wonder whom us to trust.,0,,0,0
+710,1,i wonder who for us to trust.,0,,0,0
+711,1,i wonder who to place my trust in.,0,,0,0
+712,1,i know the people that voted in the election.,0,,0,0
+713,1,i threw away a book that sandy thought we had read.,0,,0,0
+714,1,i thought that you were sick.,0,,0,0
+715,1,i dislike the people in who we placed our trust.,0,,0,0
+716,1,i dislike the company in which we placed our trust.,0,,0,0
+717,1,i dislike the people in whose house we stayed.,0,,0,0
+718,1,i dislike the person with whom we were talking.,0,,0,0
+719,1,"jones, that we were talking to last night, always watches football games alone.",0,,0,0
+720,1,a letter was received that jones would be upset by.,1,"['was received', 'would be upset']",2,1
+721,1,a letter was received jones would be upset by.,1,"['was received', 'would be upset']",2,1
+722,1,i saw someone yesterday i hadn't seen for years.,0,,0,0
+723,1,something happened i couldn't really talk about.,0,,0,0
+724,1,the only person that i like whose kids dana is willing to put up with is pat.,0,,0,0
+725,1,the book that i like which everyone else in the class hates was written by john.,1,['was written'],1,0
+726,1,the only person whose kids dana is willing to put up with was written by john.,1,['was written'],1,0
+727,1,the book that i like - everyone else in the class hates.,0,,0,0
+728,1,the only person whose kids dana is willing to put up with is pat.,0,,0,0
+729,1,"which book's, author did you meet?",0,,0,0
+730,1,which boy's mother did you meet who you liked?,0,,0,0
+731,1,"which book's, author did you meet who you liked?",0,,0,0
+732,1,which boy's mother did you meet?,0,,0,0
+733,1,all who lost money in the scam are eligible for the program.,0,,0,0
+734,1,who for sandy to talk to is still enrolled in the class?,1,['is still enrolled'],1,0
+735,1,who who you like does sandy also like?,0,,0,0
+736,1,everything you like is on the table.,0,,0,0
+737,1,the bills passed by the house yesterday that we objected to were vetoed.,1,['were vetoed'],1,0
+738,1,the only people being added to our group who were at harvard were students.,1,['being added'],1,1
+739,1,we like ourselves.,0,,0,0
+740,1,nobody likes us.,0,,0,0
+741,1,leslie likes ourselves.,0,,0,0
+742,1,ourselves like ourselves.,0,,0,0
+743,1,she voted for herself.,0,,0,0
+744,1,we gave us presents.,0,,0,0
+745,1,we gave ourselves presents.,0,,0,0
+746,1,we gave presents to ourselves.,0,,0,0
+747,1,we gave us to the cause.,0,,0,0
+748,1,we gave ourselves to the cause.,0,,0,0
+749,1,leslie told us about us.,0,,0,0
+750,1,leslie told ourselves about us.,0,,0,0
+751,1,we think that leslie likes us.,0,,0,0
+752,1,we think that leslie likes ourselves.,0,,0,0
+753,1,our friends like us.,0,,0,0
+754,1,those pictures of us offended us.,0,,0,0
+755,1,we found your letter to ourselves in the trash.,0,,0,0
+756,1,vote for you!,0,,0,0
+757,1,vote for yourself!,0,,0,0
+758,1,we appeared to them to vote for themselves.,0,,0,0
+759,1,we admired the pictures of us in the album.,0,,0,0
+760,1,we admired the pictures of ourselves in the album.,0,,0,0
+761,1,leslie used a pen.,0,,0,0
+762,1,we put the pigs in a pen.,0,,0,0
+763,1,we need to pen the pigs to keep them from getting into the corn.,0,,0,0
+764,1,they should pen the letter quickly.,0,,0,0
+765,1,the car won't run.,0,,0,0
+766,1,this dye will run.,0,,0,0
+767,1,she can run an accelerator.,0,,0,0
+768,1,these stockings will run.,0,,0,0
+769,1,we need another run to win.,0,,0,0
+770,1,lee saw the student with a telescope.,0,,0,0
+771,1,i forgot how good beer tastes.,0,,0,0
+772,1,visiting relatives can be boring.,0,,0,0
+773,1,if only superman would stop flying planes!,0,,0,0
+774,1,that's a new car dealership.,0,,0,0
+775,1,i know you like the back of my hand.,0,,0,0
+776,1,max is on the phone now.,0,,0,0
+777,1,i saw her duck.,0,,0,0
+778,1,i'm creating a committee.,0,,0,0
+778,2,Not a Sentence,0,,0,0
+778,3,â you're in charge.,0,,0,0
+779,1,lights go out at ten.,0,,0,0
+779,2,there will be no talking afterwards.,0,,0,0
+780,1,they found the book on the atom.,0,,0,0
+781,1,which experts testified against defendants who exposed them?,0,,0,0
+782,1,list all experts for the defendant who represented himself.,0,,0,0
+783,1,list associates of each defendant who speaks spanish.,0,,0,0
+784,1,they lost themselves' books.,0,,0,0
+785,1,some sentences go on and on and on.,0,,0,0
+786,1,sentences some go on and on and on and on.,0,,0,0
+787,1,that surprised me.,0,,0,0
+788,1,i noticed the.,0,,0,0
+789,1,they were interested in his.,0,,0,0
+790,1,this is my favorite.,0,,0,0
+791,1,a large dog chased a small cat.,0,,0,0
+792,1,some people yell at noisy dogs in my neighborhood.,0,,0,0
+793,1,some people yell at the dogs in my neighborhood.,0,,0,0
+794,1,some people yell at the dogs.,0,,0,0
+795,1,some people yell at noisy dogs.,0,,0,0
+796,1,some people yell at dogs.,0,,0,0
+797,1,some people consider the noisy dogs dangerous.,0,,0,0
+798,1,some people consider the dogs in my neighborhood dangerous.,0,,0,0
+799,1,some people consider noisy dogs in my neighborhood dangerous.,0,,0,0
+800,1,some people consider the dogs dangerous.,0,,0,0
+801,1,some people consider noisy dogs dangerous.,0,,0,0
+802,1,some people consider dogs in my neighborhood dangerous.,0,,0,0
+803,1,some people consider dogs dangerous.,0,,0,0
+804,1,people with children who use drugs should be locked up.,1,['should be locked'],1,0
+805,1,this disease gave leslie a fever in rome.,0,,0,0
+806,1,the love of my life and mother of my children would never do such a thing.,0,,0,0
+807,1,"most elections are quickly forgotten, but the election of 2000, everyone will remember for a long time.",1,['are quickly forgotten'],1,0
+808,1,it is painting by klee or drawing by miro that the museum displays no.,0,,0,0
+809,1,the defendant denied the accusation.,0,,0,0
+810,1,the teacher disappeared the problem.,0,,0,0
+811,1,the teacher handed the student.,0,,0,0
+812,1,the bird sings.,0,,0,0
+813,1,the bird sing.,0,,0,0
+814,1,birds sings.,0,,0,0
+815,1,the birds give the worm a tug.,0,,0,0
+816,1,the bird give the worm a tug.,0,,0,0
+817,1,the birds gives the worm a tug.,0,,0,0
+818,1,terry delighted in my pain.,0,,0,0
+819,1,terry delighted.,0,,0,0
+820,1,terry delighted my pain.,0,,0,0
+821,1,kerry remarked it was late.,0,,0,0
+822,1,what additional categories and rules would be required to handle these verbs?,1,['would be required'],1,0
+823,1,we created a monster.,0,,0,0
+824,1,i was already aware of fact.,0,,0,0
+825,1,the defendant deny the allegation.,0,,0,0
+826,1,the defendants denies the allegation.,0,,0,0
+827,1,the defendant walks.,0,,0,0
+828,1,the defendant walk.,0,,0,0
+829,1,the defendants walks.,0,,0,0
+830,1,how many feature structures categories can label the first daughter?,0,,0,0
+831,1,the child put the toy on the table.,0,,0,0
+832,1,the teacher became angry with the students.,0,,0,0
+833,1,the teacher became.,0,,0,0
+834,1,the jury believed the defendant lied.,0,,0,0
+835,1,the guests dined.,0,,0,0
+836,1,we relied on leslie.,0,,0,0
+837,1,we relied above leslie.,0,,0,0
+838,1,we celebrated in the streets.,0,,0,0
+839,1,we celebrated in the streets in the rain on tuesday in the morning.,0,,0,0
+840,1,the children are happy of ice cream.,0,,0,0
+841,1,the children are fond with the ice cream.,0,,0,0
+842,1,the children are fond that they have ice cream.,0,,0,0
+843,1,a magazine appeared on the newsstands.,0,,0,0
+844,1,a magazine about crime appeared on the newsstands.,0,,0,0
+845,1,newsweek appeared on the newsstands.,0,,0,0
+846,1,newsweek about crime appeared on the newsstands.,0,,0,0
+847,1,the report that crime was declining surprised many people.,0,,0,0
+848,1,the book surprised many people.,0,,0,0
+849,1,the book that crime was declining surprised many people.,0,,0,0
+850,1,the storm arrived after the picnic.,0,,0,0
+851,1,the storm arrived while the picnic.,0,,0,0
+852,1,the storm arrived while we ate lunch.,0,,0,0
+853,1,this dogs barked.,0,,0,0
+854,1,these dogs barked.,0,,0,0
+855,1,a chair was broken.,1,['was broken'],1,1
+856,1,they want them arrested.,0,,0,0
+857,1,they preferred them arrested.,0,,0,0
+858,1,we preferred them on our team.,0,,0,0
+859,1,"with my parents as supportive as they are, i'll be in fine shape.",0,,0,0
+860,1,we walks.,0,,0,0
+861,1,few dog barked.,0,,0,0
+862,1,the dogs barked.,0,,0,0
+863,1,i walk and dana runs.,0,,0,0
+864,1,they like us.,0,,0,0
+865,1,us like them.,0,,0,0
+866,1,kim likes dogs.,0,,0,0
+867,1,dogs like kim.,0,,0,0
+868,1,the person responsible confessed.,0,,0,0
+869,1,the person confessed responsible.,0,,0,0
+870,1,the cat slept soundly and furry.,0,,0,0
+871,1,the soundly and furry cat slept.,0,,0,0
+872,1,"chris walks, pat eats broccoli, and sandy plays squash.",0,,0,0
+873,1,there was some particular dog who saved every family.,0,,0,0
+874,1,susan frightens her.,0,,0,0
+875,1,susan told her a story.,0,,0,0
+876,1,susan told a story to her.,0,,0,0
+877,1,susan devoted herself to linguistics.,0,,0,0
+878,1,nobody told susan about herself.,0,,0,0
+879,1,that picture of susan offended her.,0,,0,0
+880,1,he offended sandy.,0,,0,0
+881,1,i enjoy yourself.,0,,0,0
+882,1,they talk to themselves.,0,,0,0
+883,1,nobody told susan.,0,,0,0
+884,1,protect yourself!,0,,0,0
+885,1,protect you!,0,,0,0
+886,1,i met the person who left.,0,,0,0
+887,1,leslie slept.,0,,0,0
+888,1,chris handed bo.,0,,0,0
+889,1,dana walked and leslie ran.,0,,0,0
+890,1,dana walking and leslie ran.,0,,0,0
+891,1,dana walking and leslie running.,0,,0,0
+892,1,the putter of books left.,0,,0,0
+893,1,kris donated a book to the library.,0,,0,0
+894,1,the police sprayed the protesters with water.,0,,0,0
+895,1,the police sprayed water on the protesters.,0,,0,0
+896,1,the students drove cars.,0,,0,0
+897,1,these cars drive easily.,0,,0,0
+898,1,the horse kicked me black and blue.,0,,0,0
+899,1,they yelled.,0,,0,0
+900,1,the horse raced past the barn fell.,0,,0,0
+901,1,the horse that was raced past the barn fell.,1,['was raced'],1,1
+902,1,the boat seen down the river sank.,0,,0,0
+903,1,the evidence assembled by the prosecution convinced the jury.,0,,0,0
+904,1,lou forgot the umbrella.,0,,0,0
+905,1,lou forgot the umbrella in the closet.,0,,0,0
+906,1,lou hoped the umbrella was broken.,1,['was broken'],1,1
+907,1,lou hoped the umbrella in the closet.,0,,0,0
+908,1,lou put the umbrella was broken.,1,['was broken'],1,0
+909,1,lou put the umbrella in the closet.,0,,0,0
+910,1,the artist drew the child with a pencil.,0,,0,0
+911,1,the dog bit the cat.,0,,0,0
+912,1,the cat was bitten the mouse.,1,['was bitten'],1,1
+913,1,the cat was bitten the mouse by the dog.,1,['was bitten'],1,1
+914,1,chris was handed sandy a note by pat.,1,['was handed'],1,1
+915,1,chris was handed a note.,1,['was handed'],1,1
+916,1,chris was handed sandy a note.,1,['was handed'],1,1
+917,1,tv puts dumb ideas in children's heads.,0,,0,0
+918,1,dumb ideas are put in children's heads by tv.,1,['are put'],1,1
+919,1,dumb ideas are put in children's heads.,1,['are put'],1,1
+920,1,dumb ideas are put notions in children's heads by tv.,1,['are put'],1,1
+921,1,the patient died.,0,,0,0
+922,1,the patient was died.,1,['was died'],1,1
+923,1,chris was handed.,1,['was handed'],1,1
+924,1,tv puts dumb ideas.,0,,0,0
+925,1,he was arrested by the police.,1,['was arrested'],1,1
+926,1,the cat got bitten.,1,['got bitten'],1,1
+927,1,the cat were bitten by the dog.,1,['were bitten'],1,1
+928,1,there is a monster in loch ness.,0,,0,0
+929,1,it is obvious that pat is lying.,0,,0,0
+930,1,pat is the captain of the team.,0,,0,0
+931,1,pat is hate chris.,0,,0,0
+932,1,there is a unicorn in the garden.,0,,0,0
+933,1,there was a felon elected to the city council.,1,['felon elected'],1,0
+934,1,there is a seat available.,0,,0,0
+935,1,a seat available was in the last row.,0,,0,0
+936,1,many people were fond of pat.,0,,0,0
+937,1,people are looking through the window.,0,,0,0
+938,1,a felon was elected to the city council.,1,['was elected'],1,1
+939,1,there loved sandy.,0,,0,0
+940,1,we talked to them about there.,0,,0,0
+941,1,it mattered that the giants had lost.,0,,0,0
+942,1,that dogs bark annoys people.,0,,0,0
+943,1,it annoys people that dogs bark.,0,,0,0
+944,1,that chris knew the answer occurred to pat.,0,,0,0
+945,1,it never occurred to pat that chris knew the answer.,0,,0,0
+946,1,that the cardinal won the game gave sandy a thrill.,0,,0,0
+947,1,it gave sandy a thrill that the cardinal won the game.,0,,0,0
+948,1,that sandy had lied suggested.,0,,0,0
+949,1,it loved sandy.,0,,0,0
+950,1,cohen proved the independence of the continuum hypothesis.,0,,0,0
+951,1,cohen proved that the continuum hypothesis was independent.,0,,0,0
+952,1,we forgot our invitations.,0,,0,0
+953,1,nobody saw pat.,0,,0,0
+954,1,that fido barks annoys me.,0,,0,0
+955,1,fido barks.,0,,0,0
+956,1,chris dreads the bucket.,0,,0,0
+957,1,the candidates bring advantage to the voters.,0,,0,0
+958,1,tabs are kept on suspected drug dealers by the fbi.,1,['are kept'],1,1
+959,1,advantage is taken of every opportunity for improvement.,1,['is taken'],1,1
+960,1,the bucket was kicked by pat.,1,['was kicked'],1,1
+961,1,john is sad.,0,,0,0
+962,1,john loaded the wagon full with hay.,0,,0,0
+963,1,john loaded the wagon with hay green.,0,,0,0
+964,1,i presented john with it dead.,0,,0,0
+965,1,of whom are you thinking?,0,,0,0
+966,1,john became rich.,0,,0,0
+967,1,i gave john gold apples.,0,,0,0
+968,1,how silly is bill considered?,0,,0,0
+969,1,how mad was bill made?,0,,0,0
+970,1,john is sick.,0,,0,0
+971,1,john left singing.,0,,0,0
+972,1,john is near larry.,0,,0,0
+973,1,john gave bill the dog dead.,0,,0,0
+974,1,bill was struck by john as stupid.,1,['was struck'],1,1
+975,1,john was struck as sick.,1,['was struck'],1,1
+976,1,john was struck by bill's idiocy.,1,['was struck'],1,1
+977,1,john promised bill to leave.,0,,0,0
+978,1,john tried to leave.,0,,0,0
+979,1,to leave would be a pleasure.,0,,0,0
+980,1,john was struck by bill as pompous.,1,['was struck'],1,1
+981,1,john was promised by bill to leave.,1,['was promised'],1,1
+982,1,they make good cooks.,0,,0,0
+983,1,there is nothing to do.,0,,0,0
+984,1,john has something for bill to do.,0,,0,0
+985,1,i am counting on bill to incriminate himself.,0,,0,0
+986,1,on whom are you counting to incriminate himself?,0,,0,0
+987,1,i am counting on bill to get there on time.,0,,0,0
+988,1,i would prefer to leave.,0,,0,0
+989,1,i would hate for john to leave.,0,,0,0
+990,1,i would prefer for john to leave.,0,,0,0
+991,1,it was hated for john to leave.,1,['was hated'],1,1
+992,1,john decided for bill to get the prize.,0,,0,0
+993,1,john decided bill to get the prize.,0,,0,0
+994,1,to die is no fun.,0,,0,0
+995,1,john wants to leave.,0,,0,0
+996,1,john counted on bill to get there on time.,0,,0,0
+997,1,i bought bill a book to read.,0,,0,0
+998,1,john told mary that it would be important to leave early.,0,,0,0
+999,1,john told mary that it was important to fred to leave early.,0,,0,0
+1000,1,"john, told mary that it would be appropriate to leave together.",0,,0,0
+1001,1,the election of john president surprised me.,0,,0,0
+1002,1,john's arriving dead surprised me.,0,,0,0
+1003,1,the attempt by john to leave surprised me.,0,,0,0
+1004,1,john left orders to follow pete.,0,,0,0
+1005,1,john left us orders to follow pete.,0,,0,0
+1006,1,john left orders not to be disturbed.,1,['be disturbed'],1,0
+1007,1,that he is here is clear.,0,,0,0
+1008,1,it is a problem that he is here.,0,,0,0
+1009,1,it bothers me that he is here.,0,,0,0
+1010,1,john regretted it that bill had a good time.,0,,0,0
+1011,1,john believes it that bill is here.,0,,0,0
+1012,1,john believes it sincerely that bill is here.,0,,0,0
+1013,1,john is aware of it that bill is here.,0,,0,0
+1014,1,john felt it that bill was tardy.,0,,0,0
+1015,1,john believed it that bill was tardy.,0,,0,0
+1016,1,it was believed that bill was tardy.,1,['was believed'],1,1
+1017,1,that john is reluctant seems.,0,,0,0
+1018,1,it is the problem that he is here.,0,,0,0
+1019,1,that he is here is the problem.,0,,0,0
+1020,1,the problem we are discussing is george.,0,,0,0
+1021,1,it is to give up to leave.,0,,0,0
+1022,1,it would prove our theory to be untenable for carrots to be vegetables.,0,,0,0
+1023,1,it was believed to be illegal by them to do that.,1,['was believed'],1,1
+1024,1,john grudgingly accepted judgments of his incompetence as an auto mechanic.,0,,0,0
+1025,1,it was to john that i gave the book.,0,,0,0
+1026,1,i bought it to read.,0,,0,0
+1027,1,i bought it to give to pete.,0,,0,0
+1028,1,i gave it to pete to take to the fair.,0,,0,0
+1029,1,i gave pete the book to impress.,0,,0,0
+1030,1,i wrote to bill.,0,,0,0
+1031,1,i presented it to bill to read.,0,,0,0
+1032,1,i presented bill with it to read.,0,,0,0
+1033,1,i gave a book to bill to read.,0,,0,0
+1034,1,john thinks it would upset himself to die.,0,,0,0
+1035,1,john made bill mad at himself.,0,,0,0
+1036,1,john made bill master of himself.,0,,0,0
+1037,1,the correspondence school made bill a good typist.,0,,0,0
+1038,1,the correspondence school sent bill a good typist.,0,,0,0
+1039,1,john considers bill silly.,0,,0,0
+1040,1,john considers bill to be silly.,0,,0,0
+1041,1,john bought a dog for himself to play with.,0,,0,0
+1042,1,john arranged for himself to get the prize.,0,,0,0
+1043,1,john talked to bill about himself.,0,,0,0
