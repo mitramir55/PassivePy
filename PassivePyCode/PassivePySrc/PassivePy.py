@@ -230,17 +230,35 @@ class PassivePyAnalyzer:
 
                 return s_output
 
+                
+        def find_unique_spans(self, doc, truncated_passive=False) ->list:
+
+            """"
+            finds matches and checks for overlaps
+            """
+            final_matches_i = []
+            if truncated_passive: matches_i = self.matcher_t(doc)
+            else: matches_i = self.matcher_t(doc)
+
+            if matches_i:
+                spans = [doc[s:e] for id_, s,e in matches_i]
+
+                for span in spacy.util.filter_spans(spans):
+                    final_matches_i.append(str(span))
+            return final_matches_i
+
+
         def find_matches(self, corpora, batch_size, n_process, truncated_passive=False):
 
             """ finds matches from each record """
             print(colored('Starting to find passives...', 'green'))  
 
-            passive_c_f = []
-            passive_c_t = []
-            binaries_list_t = []
-            binaries_list_f = []
-            all_full_matches = []
-            all_truncated_matches = []
+            raw_full_passive_count = []
+            raw_truncated_passive_count = []
+            binary_truncated_passive = []
+            binary_full_passive = []
+            full_passive_matches = []
+            truncated_passive_matches = []
 
             i = 0
 
@@ -254,65 +272,51 @@ class PassivePyAnalyzer:
                 binary_t = 0
                 
                 # truncated passive voice ----------------------------------
-                if truncated_passive==True:
-                    match_t_i = []
-                    all_matches_truncated = self.matcher_t(doc)
+                if truncated_passive:
 
-                    if all_matches_truncated:
-                        spans = [doc[s:e] for id_, s,e in all_matches_truncated]
-
-                        for span in spacy.util.filter_spans(spans):
-                            match_t_i.append(str(span))
-
-                        all_truncated_matches.append(match_t_i)
+                    truncated_matches_i = self.find_unique_spans(doc, truncated_passive)
+                    if truncated_matches_i != None:
                         binary_t = 1
-                        binaries_list_t.append(binary_t)
+                        binary_truncated_passive.append(binary_t)
+                        truncated_passive_matches.append(truncated_matches_i)
+                        raw_truncated_passive_count.append(len(truncated_matches_i))
 
-                # if there were no matches
-                else:
-                    all_truncated_matches.append(None)
-                    passive_c_t.append(0)
-                    binaries_list_t.append(binary_t)
+                    # if there were no matches
+                    else:
+                        truncated_passive_matches.append(None)
+                        raw_truncated_passive_count.append(0)
+                        binary_truncated_passive.append(binary_t)
 
                 # full passive voice ----------------------------------------
-                match_f_i = []
-                all_matches_full = self.matcher_f(doc)
-
-                # check for overlap
-                if all_matches_full:
-                    spans = [doc[s:e] for id_, s,e in all_matches_full]
-
-                    for span in spacy.util.filter_spans(spans):
-                        match_f_i.append(str(span))
+                full_matches_i = self.find_unique_spans(doc, truncated_passive)
+                if full_matches_i != None:
 
                     binary_f = 1
-                    all_full_matches.append(match_f_i)
-                    passive_c_f.append(len(all_matches_full))
-                    binaries_list_f.append(binary_f)
+                    full_passive_matches.append(full_matches_i)
+                    raw_full_passive_count.append(len(full_matches_i))
+                    binary_full_passive.append(binary_f)
 
                 # if there were no matches
                 else:
-                    all_full_matches.append(None)
-                    passive_c_f.append(0)
-                    binaries_list_f.append(binary_f)
+                    full_passive_matches.append(None)
+                    raw_full_passive_count.append(0)
+                    binary_full_passive.append(binary_f)
                     
 
                 i+=1
+            output_dict = {}
 
+            columns = [full_passive_matches, raw_full_passive_count, binary_full_passive,
+            binary_full_passive]
 
             if truncated_passive: 
-                return np.array(all_full_matches, dtype='object'),\
-                 np.array(all_matches_truncated, dtype='object'),\
-                 np.array(passive_c_f, dtype='object'),\
-                 np.array(passive_c_t, dtype='object'),\
-                  np.array(binaries_list_f, dtype='object'),\
-                  np.array(binaries_list_t, dtype='object')
+                columns += [truncated_passive_matches, raw_truncated_passive_count,
+                 binary_truncated_passive]
 
-            else :
-                return np.array(all_full_matches, dtype='object'),\
-                  np.array(passive_c_f, dtype='object'),\
-                   np.array(binaries_list_f, dtype='object')
-             
+            for element in columns: 
+                output_dict[str(element)] = np.array(element, dtype='object')
+                
+            return output_dict
 
         def match_sentence_level(self, df, column_name, n_process = 1,
                                 batch_size = 1000, add_other_columns=True,
@@ -356,7 +360,7 @@ class PassivePyAnalyzer:
             else:
                 all_full_matches, passive_c_f, binaries_list_f = self.find_matches(all_sentences, batch_size, n_process, truncated_passive)
                 s_output = pd.DataFrame(np.c_[doc_indices, sent_indices, all_sentences, binaries_list_f, all_full_matches, passive_c_f],
-                            columns=['docId', 'sentenceId', 'sentence', 'binary_full_passive', 'full_passive_match(es)', 'raw_full_passive_count'])
+                            columns=['docId', 'sentenceId', 'sentence', 'binary_full_passive', 'full_passive_matches', 'raw_full_passive_count'])
 
 
             # concatenating the results with the initial df -------------------
@@ -418,15 +422,15 @@ class PassivePyAnalyzer:
                 # define lists for all values--------------------
                 # full passive
                 full_passive_matches = []
-                full_passives_c = []
-                full_binaries = []
+                full_passive_count = []
+                full_passive_binary = []
                 full_passive_percentages = []
                 full_passive_sents_count = []
 
                 # truncated
                 truncated_passive_matches = []
-                truncated_passives_c = []
-                truncated_binaries = []
+                truncated_passive_count = []
+                truncated_passive_binary = []
                 truncated_passive_percentages = []
                 truncated_passive_sents_count = []
                 
@@ -452,8 +456,8 @@ class PassivePyAnalyzer:
                     full_passive_percentages.append(percent_full)
 
                     # binary will be =1 if there is even one 1 
-                    if any(rows.binary_full_passive) == 1: full_binaries.append(1)
-                    else: full_binaries.append(0)
+                    if any(rows.binary_full_passive) == 1: full_passive_binary.append(1)
+                    else: full_passive_binary.append(0)
 
                     # truncated passive
                     if truncated_passive:
@@ -463,8 +467,8 @@ class PassivePyAnalyzer:
                         truncated_passive_percentages.append(percent_truncated)
 
                         # binary will be =1 if there is even one 1 
-                        if any(rows.binary_full_passive) == 1: truncated_binaries.append(1)
-                        else: truncated_binaries.append(0)
+                        if any(rows.binary_full_passive) == 1: truncated_passive_binary.append(1)
+                        else: truncated_passive_binary.append(0)
 
 
 
@@ -473,36 +477,31 @@ class PassivePyAnalyzer:
                     # full passive
                     full_passives = self._all_elements_in_one_list(rows['full_passive_match(es)'])
                     full_passive_matches.append(full_passives)
-                    full_passives_c.append(len(full_passives))
+                    full_passive_count.append(len(full_passives))
 
                     # truncated passive
                     if truncated_passive:
                         truncated_passives = self._all_elements_in_one_list(rows['truncated_passive_match(es)'])
                         truncated_passive_matches.append(truncated_passives)
-                        truncated_passives_c.append(len(truncated_passives))
+                        truncated_passive_count.append(len(truncated_passives))
 
                 # put all properties in a dict ------------------------------------------------------
                 output_dict = {}
-                all_columns = [cleaned_corpus, count_sents, full_passives_c, full_passive_matches, full_passive_percentages,
-                 full_binaries]
+                all_columns = [cleaned_corpus, count_sents, full_passive_count, full_passive_matches, full_passive_percentages,
+                 full_passive_binary]
 
                 if truncated_passive: all_columns += [
-                    truncated_passives_c, truncated_passive_matches, truncated_passive_percentages,
-                    truncated_binaries
+                    truncated_passive_count, truncated_passive_matches, truncated_passive_percentages,
+                    truncated_passive_binary
                     ]
-                for element in :
-                 output_dict[element] = np.array(element, dtype='object')
+                for element in all_columns:
+                 output_dict[str(element)] = np.array(element, dtype='object')
 
  
                 
-                assert len(cleaned_corpus) == len(binaries) == len(percentages) == len(matches) == len(full_passives_c) == len(count_p_sents)
-                if truncated_passive:
-                    d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, full_passives_c, count_p_sents, count_sents, percentages],
-                                            columns=['document', 'binary', 'full_passive_match(es)', 'raw_full_passive_count', 'raw_passive_sents_count', 'raw_sentence_count', 'passive_sents_percentage' ])
-                else:
-                    d_output = pd.DataFrame(np.c_[cleaned_corpus, binaries, matches, full_passives_c, count_p_sents, count_sents, percentages],
-                                        columns=['document', 'binary', 'full_passive_match(es)', 'raw_full_passive_count', 'raw_passive_sents_count', 'raw_sentence_count', 'passive_sents_percentage' ])
-
+                assert len(cleaned_corpus) == len(count_sents) == len(full_passive_count) == len(full_passive_matches) == len(full_passives_c) == len(count_p_sents)
+                d_output = pd.DataFrame(output_dict)
+               
 
 
             elif percentage_of_passive_sentences==False:
