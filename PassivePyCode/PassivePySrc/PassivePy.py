@@ -372,6 +372,15 @@ class PassivePyAnalyzer:
                 return s_output
 
 
+        def _all_elements_in_one_list(series_: pd.Series(list)) -> list:
+            """
+            a function for reducing the size of a series
+            """
+            # output: 1d list
+            passive_matches = [val for val in series_.values if val!=None]
+            passive_matches = list(chain.from_iterable(passive_matches))
+            return passive_matches
+
 
         def match_corpus_level(self, df, column_name, n_process = 1,
             batch_size = 1000, add_other_columns=True,
@@ -406,17 +415,25 @@ class PassivePyAnalyzer:
                 s_output = self.match_sentence_level(df, column_name, n_process = n_process,
                                 batch_size = batch_size, add_other_columns=add_other_columns)
 
+                # define lists for all values--------------------
+                # full passive
                 full_passive_matches = []
-                truncated_passive_matches = []
                 full_passives_c = []
-                truncated_passives_c = []
                 full_binaries = []
-                truncated_binaries = []
                 full_passive_percentages = []
+                full_passive_sents_count = []
+
+                # truncated
+                truncated_passive_matches = []
+                truncated_passives_c = []
+                truncated_binaries = []
                 truncated_passive_percentages = []
+                truncated_passive_sents_count = []
+                
+                # general
                 count_sents = []
-                count_f_p_sents = []
-                count_t_p_sents = []
+
+                # list all the docs
                 ids_ = s_output.docId.unique()
 
 
@@ -430,61 +447,53 @@ class PassivePyAnalyzer:
 
                     # full passive
                     count_full_passive_s = sum(rows.binary_full_passive)
-                    count_f_p_sents.append(count_full_passive_s)
                     percent_full =  count_full_passive_s/ len(rows)
+                    full_passive_sents_count.append(count_full_passive_s)
                     full_passive_percentages.append(percent_full)
+
+                    # binary will be =1 if there is even one 1 
+                    if any(rows.binary_full_passive) == 1: full_binaries.append(1)
+                    else: full_binaries.append(0)
 
                     # truncated passive
                     if truncated_passive:
                         count_truncated_passive_s = sum(rows.binary_truncated_passive)
-                        count_t_p_sents.append(count_truncated_passive_s)
                         percent_truncated =  count_truncated_passive_s/ len(rows)
+                        truncated_passive_sents_count.append(count_truncated_passive_s)
                         truncated_passive_percentages.append(percent_truncated)
+
                         # binary will be =1 if there is even one 1 
-                        if any(rows.binary_full_passive) == 1:
-                            truncated_binaries.append(1)
+                        if any(rows.binary_full_passive) == 1: truncated_binaries.append(1)
                         else: truncated_binaries.append(0)
 
 
 
-                    # binary will be =1 if there is even one 1 
-                    if any(rows.binary_full_passive) == 1:
-                        full_binaries.append(1)
-                    else: full_binaries.append(0)
 
                     # putting all sentences' passives in one list ----------------------------
                     # full passive
-                    full_passives = [val for val in rows['full_passive_match(es)'].values if val!=None]
-                    full_passives = list(chain.from_iterable(full_passives))
+                    full_passives = self._all_elements_in_one_list(rows['full_passive_match(es)'])
                     full_passive_matches.append(full_passives)
                     full_passives_c.append(len(full_passives))
 
                     # truncated passive
                     if truncated_passive:
-                        truncated_passives = [val for val in rows['truncated_passive_match(es)'].values if val!=None]
-                        truncated_passives = list(chain.from_iterable(truncated_passives))
+                        truncated_passives = self._all_elements_in_one_list(rows['truncated_passive_match(es)'])
                         truncated_passive_matches.append(truncated_passives)
                         truncated_passives_c.append(len(truncated_passives))
-                # Full passive
-                full_passives_c = np.array(full_passives_c, dtype='object')
-                full_passive_matches = np.array(full_passive_matches, dtype='object')
-                full_passive_percentages = np.array(full_passive_percentages, dtype='object')
-                full_binaries = np.array(full_binaries, dtype='object')
 
-                # truncated passive
-                truncated_passives_c = np.array(truncated_passives_c, dtype='object')
-                truncated_passive_matches = np.array(truncated_passive_matches, dtype='object')
-                truncated_passive_percentages = np.array(truncated_passive_percentages, dtype='object')
-                truncated_binaries = np.array(truncated_binaries, dtype='object')
+                # put all properties in a dict ------------------------------------------------------
+                output_dict = {}
+                all_columns = [cleaned_corpus, count_sents, full_passives_c, full_passive_matches, full_passive_percentages,
+                 full_binaries]
 
+                if truncated_passive: all_columns += [
+                    truncated_passives_c, truncated_passive_matches, truncated_passive_percentages,
+                    truncated_binaries
+                    ]
+                for element in :
+                 output_dict[element] = np.array(element, dtype='object')
 
-                count_sents = np.array(count_sents, dtype='object')
-                cleaned_corpus = np.array(cleaned_corpus, dtype='object')
-
-                if truncated_passive:
-                    truncated_passives_c = np.array(truncated_passives_c, dtype='object')
-                    truncated_passives = np.array(truncated_passives, dtype='object')
-
+ 
                 
                 assert len(cleaned_corpus) == len(binaries) == len(percentages) == len(matches) == len(full_passives_c) == len(count_p_sents)
                 if truncated_passive:
