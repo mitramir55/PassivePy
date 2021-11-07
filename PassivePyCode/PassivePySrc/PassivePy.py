@@ -378,7 +378,7 @@ class PassivePyAnalyzer:
                 return s_output
 
 
-        def _all_elements_in_one_list(series_: pd.Series(list)) -> list:
+        def _all_elements_in_one_list(self, series_: pd.Series(list)) -> list:
             """
             a function for reducing the size of a series
             """
