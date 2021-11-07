@@ -486,19 +486,20 @@ class PassivePyAnalyzer:
 
             # put all properties in a dict ------------------------------------------------------
             output_dict = {}
-            all_columns = [
+            columns = [
                 cleaned_corpus, count_sents, full_passive_matches, full_passive_count, 
                 full_passive_sents_count, full_passive_percentages, full_passive_binary
                 ]
 
-            if truncated_passive: all_columns += [
+            if truncated_passive: columns += [
                 truncated_passive_matches, truncated_passive_count, truncated_passive_sents_count,
                 truncated_passive_percentages, truncated_passive_binary
                 ]
                 
-            for element in all_columns:
-                output_dict[str(element)] = np.array(element, dtype='object')
-
+            for element in columns:
+                # name of variables will be the name of columns 
+                element_name = [ k for k,v in locals().items() if v is element][0]
+                output_dict[str(element_name)] = np.array(element, dtype='object')
 
             
             assert len(cleaned_corpus) == len(count_sents) == len(full_passive_count) == len(full_passive_matches)
