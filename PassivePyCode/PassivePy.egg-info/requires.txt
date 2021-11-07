@@ -1,0 +1,3 @@
+termcolor
+tqdm
+spacy>=3.0.0

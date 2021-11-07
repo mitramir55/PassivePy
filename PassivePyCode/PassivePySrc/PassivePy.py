@@ -217,7 +217,7 @@ class PassivePyAnalyzer:
             return df_other_cols  
 
 
-        def match_text(self, cleaned_corpus, batch_size=1, n_process=1, truncated_passive=False):
+        def match_text(self, document, batch_size=1, n_process=1, truncated_passive=False):
 
             """ 
             This function finds passive matches in one sample sentence
@@ -226,7 +226,7 @@ class PassivePyAnalyzer:
             # we don't want to print the usual statements
             with HiddenPrints():
                 # seperating sentences
-                _, all_sentences = self._detect_sents([cleaned_corpus], batch_size, n_process)
+                _, all_sentences = self._detect_sents([document], batch_size, n_process)
                 output_df = self._find_matches(all_sentences, batch_size, n_process, truncated_passive)
                 s_output = pd.DataFrame(output_df)
                 
