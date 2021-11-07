@@ -346,8 +346,10 @@ class PassivePyAnalyzer:
             output_dict = self._find_matches(all_sentences, batch_size, n_process, truncated_passive)
             s_output = pd.DataFrame(output_dict)
             
-            s_output.insert(0, 'docId', doc_indices)
-            s_output.insert(1, 'sentenceId', sent_indices)
+            
+            s_output.loc[:, 'docId'] = doc_indices
+            s_output.loc[:, 'sentenceId'] = sent_indices
+
    
 
             # concatenating the results with the initial df -------------------
