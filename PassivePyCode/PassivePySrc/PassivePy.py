@@ -79,7 +79,7 @@ class PassivePyAnalyzer:
 
 
 
-        def _detect_sents(self, cleaned_corpus, batch_size, n_process):
+        def _detect_sents(self, document, batch_size, n_process):
 
             print('Detecting Sentences...')
 
@@ -88,7 +88,7 @@ class PassivePyAnalyzer:
              and puts them in a list along side the count of sentences in each 
              document in another list
              """
-            cleaned_corpus = [corpus.lower() for corpus in cleaned_corpus]
+            document = [corpus.lower() for corpus in document]
 
             all_sentences = []
             count_sents = []
@@ -96,10 +96,10 @@ class PassivePyAnalyzer:
 
             # go through all the records
             m = 0
-            for record_doc in tq.tqdm(self.nlp.pipe(cleaned_corpus, batch_size=batch_size, n_process = n_process), 
+            for record_doc in tq.tqdm(self.nlp.pipe(document, batch_size=batch_size, n_process = n_process), 
                                     leave=True,
                                     position=0,
-                                    total=len(cleaned_corpus)):
+                                    total=len(document)):
 
 
                 sentences = list(record_doc.sents)
@@ -348,10 +348,10 @@ class PassivePyAnalyzer:
             
             df = df.reset_index(drop=True)
             # create a list of the column we will process
-            cleaned_corpus = df.loc[:, column_name].values.tolist()
+            document = df.loc[:, column_name].values.tolist()
 
             # seperating sentences
-            count_sents, all_sentences = self._detect_sents(cleaned_corpus, batch_size, n_process)
+            count_sents, all_sentences = self._detect_sents(document, batch_size, n_process)
 
             # find indices required for the final dataset based on the document and sentence index
             sent_indices, doc_indices = self._find_doc_idx(count_sents)
@@ -411,7 +411,7 @@ class PassivePyAnalyzer:
             
             df = df.reset_index(drop=True)
             # create a list of the column we will process
-            cleaned_corpus = df.loc[:, column_name].values.tolist()
+            document = df.loc[:, column_name].values.tolist()
 
 
             s_output = self.match_sentence_level(df, column_name, n_process = n_process,
@@ -487,7 +487,7 @@ class PassivePyAnalyzer:
             # put all properties in a dict ------------------------------------------------------
             output_dict = {}
             columns = [
-                cleaned_corpus, count_sents, full_passive_matches, full_passive_count, 
+                document, count_sents, full_passive_matches, full_passive_count, 
                 full_passive_sents_count, full_passive_percentages, full_passive_binary
                 ]
 
@@ -502,7 +502,7 @@ class PassivePyAnalyzer:
                 output_dict[str(element_name)] = np.array(element, dtype='object')
 
             
-            assert len(cleaned_corpus) == len(count_sents) == len(full_passive_count) == len(full_passive_matches)
+            assert len(document) == len(count_sents) == len(full_passive_count) == len(full_passive_matches)
             d_output = pd.DataFrame(output_dict)
                
 
