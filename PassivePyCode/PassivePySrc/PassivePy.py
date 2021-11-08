@@ -72,10 +72,12 @@ class PassivePyAnalyzer:
                     '\nlemma: ', token.lemma_)
 
             full_passive_matches = self.matcher_f(doc)
-            if truncated_passive: truncated_passive_matches = self.matcher_t(doc)
+            
+            if truncated_passive: 
+                truncated_passive_matches = self.matcher_t(doc)
+                self.print_matches(sentence, truncated_passive_matches)
 
             self.print_matches(sentence, full_passive_matches)
-            self.print_matches(sentence, truncated_passive_matches)
 
 
 
