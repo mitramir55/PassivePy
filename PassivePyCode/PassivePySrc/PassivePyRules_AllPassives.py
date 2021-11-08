@@ -25,8 +25,7 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
         {"DEP":"neg", "TAG":"RB", "OP":"*"},
         {"DEP":"HYPH", "OP":"*"},
         {"DEP":"advmod", "TAG":"RB", "OP":"*"},
-        {"POS":"VERB", "TAG":"VBN", "LEMMA":{"NOT_IN" : verbs_list + ['be']}},
-        {"LOWER":"by"}
+        {"POS":"VERB", "TAG":"VBN", "LEMMA":{"NOT_IN" : verbs_list + ['be']}}
     ]
 
     """
@@ -38,8 +37,7 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
         {"DEP": {"IN": ["attr", 'nsubjpass', 'appos']}},
         {"TAG": "RB", "DEP": "advmod", "OP" : "*"},
         {"DEP": "PUNCT", "OP" : "*"},
-        {"TAG": "VBN", "DEP": "acl","LEMMA": {"NOT_IN" : verbs_list}},
-        {"LOWER":"by"}
+        {"TAG": "VBN", "DEP": "acl","LEMMA": {"NOT_IN" : verbs_list}}
     ]
 
     """
@@ -58,8 +56,8 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
         {"POS":"VERB", "DEP":"ROOT", "LEMMA":{"NOT_IN" : verbs_list}},
         {"DEP":"cc"},
         {"DEP":"advmod", "TAG":"VBN", "OP": "*", "LEMMA": {"NOT_IN":["pre"]}},
-        {"DEP": "conj", "LEMMA":{"NOT_IN" : verbs_list}}, 
-        {"LOWER":"by"}
+        {"DEP": "conj", "LEMMA":{"NOT_IN" : verbs_list}},
+        {"DEP":"pobj", "OP":"!"}
     ]
 
     """
@@ -73,7 +71,7 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
         {"DEP":"advcl", "TAG":"VBN"},
         {"DEP": "agent", "TAG":"IN"},
         {"OP":"*"},
-        {"LOWER":"by"}
+        {"DEP": "pobj", "TAG":"NN"},
     ]
 
     """
