@@ -44,6 +44,7 @@ class PassivePyAnalyzer:
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             self.nlp, self.matcher_t = create_matcher_truncated(spacy_model)
             self.nlp, self.matcher_f = create_matcher_full(spacy_model)
+            self.nlp, self.matcher = create_matcher(spacy_model)
 
 
         def print_matches(self, sentence, matches):
@@ -59,7 +60,7 @@ class PassivePyAnalyzer:
 
 
 
-        def parse_sentence(self, sentence, truncated_passive=False):
+        def parse_sentence(self, sentence, full_passive=False, truncated_passive=False):
             """
             This function allows us to see the components of a sentence, 
             specifically, the POS, DEP, and lemma
@@ -71,13 +72,18 @@ class PassivePyAnalyzer:
                     '\ndependency:', token.dep_, '\ntag: ', token.tag_,
                     '\nlemma: ', token.lemma_)
 
-            full_passive_matches = self.matcher_f(doc)
+            # create matcher objects and print the results
+            all_passives = self.matcher(doc)
+            self.print_matches(sentence, all_passives)
 
             if truncated_passive: 
                 truncated_passive_matches = self.matcher_t(doc)
                 self.print_matches(sentence, truncated_passive_matches)
 
-            self.print_matches(sentence, full_passive_matches)
+            if full_passive: 
+                full_passive_matches = self.matcher_f(doc)
+                self.print_matches(sentence, full_passive_matches)
+
 
 
 
@@ -219,7 +225,8 @@ class PassivePyAnalyzer:
             return df_other_cols  
 
 
-        def match_text(self, document, batch_size=1, n_process=1, truncated_passive=False):
+        def match_text(self, document, batch_size=1, n_process=1,
+         truncated_passive=False, full_passive=False):
 
             """ 
             This function finds passive matches in one sample sentence
@@ -229,14 +236,16 @@ class PassivePyAnalyzer:
             with HiddenPrints():
                 # seperating sentences
                 _, all_sentences = self._detect_sents([document], batch_size, n_process)
-                output_df = self._find_matches(all_sentences, batch_size, n_process, truncated_passive)
-                s_output = pd.DataFrame(output_df)
+                output_df = self._find_matches(
+                    all_sentences, batch_size, n_process, truncated_passive, full_passive
+                    )
+                df_output = pd.DataFrame(output_df)
                 
 
-                return s_output
+                return df_output
 
                 
-        def _find_unique_spans(self, doc, truncated_passive=False) ->list:
+        def _find_unique_spans(self, doc, truncated_passive=False, full_passive=False) ->list:
 
             """"
             finds matches and checks for overlaps
@@ -244,7 +253,8 @@ class PassivePyAnalyzer:
 
             final_matches_i = []
             if truncated_passive: matches_i = self.matcher_t(doc)
-            else: matches_i = self.matcher_t(doc)
+            elif full_passive: matches_i = self.matcher_f(doc)
+            else: matches_i = self.matcher(doc)
 
             if matches_i:
                 spans = [doc[s:e] for id_, s,e in matches_i]
@@ -263,7 +273,7 @@ class PassivePyAnalyzer:
             # defining the parameters ---------------------------------------
             # all passives parameters
             all_passives_count = []
-            all_matches = []
+            all_passives = []
             binary = []
 
             # full passive parameters
@@ -276,7 +286,7 @@ class PassivePyAnalyzer:
             truncated_passive_matches = []
             binary_truncated_passive = []
             # -----------------------------------------------------------------
-            i = 0
+
 
             
             for doc in tq.tqdm(self.nlp.pipe(sentences, batch_size=batch_size, n_process=n_process), 
@@ -290,7 +300,7 @@ class PassivePyAnalyzer:
                 # truncated passive voice ----------------------------------
                 if truncated_passive:
 
-                    truncated_matches_i = self._find_unique_spans(doc, truncated_passive)
+                    truncated_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive)
                     if truncated_matches_i != []:
                         binary_t = 1
                         binary_truncated_passive.append(binary_t)
@@ -305,7 +315,7 @@ class PassivePyAnalyzer:
 
                 # full passive voice ----------------------------------------
                 if full_passive:
-                    full_matches_i = self._find_unique_spans(doc, truncated_passive=False)
+                    full_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive)
                     if full_matches_i != []:
 
                         binary_f = 1
@@ -324,30 +334,30 @@ class PassivePyAnalyzer:
                 if matches_i != []:
                     binary_i = 1
                     binary.append(binary_i)
-                    all_matches.append(matches_i)
+                    all_passives.append(matches_i)
                     all_passives_count.append(len(matches_i))
 
                 # if there were no matches
                 else:
-                    all_matches.append(None)
+                    all_passives.append(None)
                     all_passives_count.append(0)
                     binary.append(binary_i)
-                i+=1
+
+
+
             output_dict = {}
 
             # add columns -------------------------------------------------------
-            columns = [sentences, all_matches, all_passives_count, binary]
+            columns = [sentences, all_passives, all_passives_count, binary]
             if full_passive:
-                columns += [full_passive_matches, raw_full_passive_count,
-                binary_full_passive, binary_full_passive]
+                columns += [full_passive_matches, raw_full_passive_count, binary_full_passive]
 
             if truncated_passive: 
-                columns += [truncated_passive_matches, raw_truncated_passive_count,
-                 binary_truncated_passive]
+                columns += [truncated_passive_matches, raw_truncated_passive_count, binary_truncated_passive]
 
             for element in columns:
                 # name of variables will be the name of columns 
-                element_name = [ k for k,v in locals().items() if v is element][0]
+                element_name = [k for k,v in locals().items() if v is element][0]
                 output_dict[str(element_name)] = np.array(element, dtype='object')
             
             return output_dict
@@ -355,7 +365,7 @@ class PassivePyAnalyzer:
 
         def match_sentence_level(self, df, column_name, n_process = 1,
                                 batch_size = 1000, add_other_columns=True,
-                                truncated_passive=False):
+                                truncated_passive=False, full_passive=False):
 
             """
             Parameters
@@ -378,29 +388,32 @@ class PassivePyAnalyzer:
             # seperating sentences
             count_sents, all_sentences = self._detect_sents(document, batch_size, n_process)
 
+            # create a df of matches -------------------------------------------
+            output_dict = self._find_matches(
+                all_sentences, batch_size, n_process,
+                truncated_passive, full_passive
+                )
+            df_output = pd.DataFrame(output_dict)
+
             # find indices required for the final dataset based on the document and sentence index
             sent_indices, doc_indices = self._find_doc_idx(count_sents)
-
-            # create a df of matches -------------------------------------------
-            output_dict = self._find_matches(all_sentences, batch_size, n_process, truncated_passive)
-            s_output = pd.DataFrame(output_dict)
             
             # add indices
-            s_output.insert(0, "docId", doc_indices)
-            s_output.insert(1, "sentenceId", sent_indices)
+            df_output.insert(0, "docId", doc_indices)
+            df_output.insert(1, "sentenceId", sent_indices)
 
 
             # concatenating the results with the initial df -------------------
             if add_other_columns==True:
 
                 other_cols_df = self._add_other_cols(df, column_name, count_sents)
-                assert len(other_cols_df) == len(s_output)
-                df_final = pd.concat([s_output, other_cols_df], axis = 1)
+                assert len(other_cols_df) == len(df_output)
+                df_final = pd.concat([df_output, other_cols_df], axis = 1)
 
                 return df_final
 
             else:
-                return s_output
+                return df_output
 
 
         def _all_elements_in_one_list(self, series_: pd.Series(list)) -> list:
@@ -433,6 +446,8 @@ class PassivePyAnalyzer:
             add_other_columns: True\False whether or not to add the other columns 
             to the outputted dataframe
             sentences to the output dataset
+
+            passive_sents_count: the percentage of sentences with passive in them
             """
             
             df = df.reset_index(drop=True)
@@ -440,9 +455,11 @@ class PassivePyAnalyzer:
             document = df.loc[:, column_name].values.tolist()
 
 
-            s_output = self.match_sentence_level(df, column_name, n_process = n_process,
-                            batch_size = batch_size, add_other_columns=add_other_columns,
-                            truncated_passive=truncated_passive)
+            df_output = self.match_sentence_level(
+                df, column_name, n_process,
+                batch_size, add_other_columns,
+                truncated_passive, full_passive
+                )
 
             # define parameters-----------------------------------------
             # full passive
@@ -460,7 +477,7 @@ class PassivePyAnalyzer:
             truncated_passive_sents_count = []
             
             # truncated
-            all_passive_matches = []
+            all_passives = []
             passive_count = []
             binary = []
             passive_percentages = []
@@ -471,17 +488,17 @@ class PassivePyAnalyzer:
             count_sents = []
             output_dict = {}
             columns = [
-                document, count_sents, all_passive_matches, passive_count, 
+                document, count_sents, all_passives, passive_count, 
                 passive_sents_count, passive_percentages, binary
                 ]
             # list all the docs
-            ids_ = s_output.docId.unique()
+            ids_ = df_output.docId.unique()
             
 
             for i in tq.tqdm(ids_, leave=True, position=0, total=len(ids_)):
 
                 # select all the sentences of a doc
-                rows = s_output[s_output['docId'] == i]
+                rows = df_output[df_output['docId'] == i]
 
                 # concatenate all the proberties ------------------------------------
                 count_sents.append(len(rows))
@@ -495,9 +512,9 @@ class PassivePyAnalyzer:
                 else: binary.append(0)
 
                 # put all matches in one list
-                all_passives = self._all_elements_in_one_list(rows['all_matches'])
-                all_passive_matches.append(all_passives)
-                passive_count.append(len(all_passives))
+                all_matches = self._all_elements_in_one_list(rows['all_passives'])
+                all_passives.append(all_matches)
+                passive_count.append(len(all_matches))
 
                 
                 # full passive
@@ -553,9 +570,10 @@ class PassivePyAnalyzer:
                
             # add other columns in the initial df -------------------------------------------
             if add_other_columns==True:
-
+                
                 # create a list of all the col names
                 fields = df.columns.tolist()
+
                 # remove column_name
                 del fields[fields.index(column_name)]
 
