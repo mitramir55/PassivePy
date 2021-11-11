@@ -73,7 +73,7 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
         {"DEP":"advcl", "TAG":"VBN"},
         {"DEP": "agent", "TAG":"IN"},
         {"OP":"*"},
-        {"LOWER":"by"}
+        {"DEP": "pobj"},
     ]
 
     """

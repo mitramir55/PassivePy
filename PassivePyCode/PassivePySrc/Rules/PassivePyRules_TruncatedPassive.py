@@ -69,18 +69,6 @@ def create_matcher_truncated(spacy_model = "en_core_web_lg"):
     tags : ['PRP', 'VBD', 'VBN', 'CC', 'VBN', '.']
     """
 
-    passive_rule_4 = [
-        {"DEP":"advcl", "TAG":"VBN"},
-        {"DEP": "agent", "TAG":"IN"},
-        {"OP":"*"},
-        {"DEP":"agent", "OP":"!"}
-    ]
-
-    """
-    sentence : killed by the police, he never thought this would be his end.
-    dependencies : ['advcl', 'agent', 'det', 'pobj', 'punct', 'nsubj', 'neg', 'ROOT', 'nsubj', 'aux', 'ccomp', 'poss', 'attr']
-    tags : ['VBN', 'IN', 'DT', 'NN', ',', 'PRP', 'RB', 'VBD', 'DT', 'MD', 'VB', 'PRP$', 'NN']
-    """
 
     passive_rule_5 = [
         {"DEP": "nsubj"},
@@ -103,7 +91,6 @@ def create_matcher_truncated(spacy_model = "en_core_web_lg"):
     matcher.add("passive_rule_1", [passive_rule_1], greedy='LONGEST')
     matcher.add("passive_rule_2", [passive_rule_2], greedy='LONGEST')
     matcher.add("passive_rule_3", [passive_rule_3], greedy='LONGEST')
-    matcher.add("passive_rule_4", [passive_rule_4], greedy='LONGEST')
     matcher.add("passive_rule_5", [passive_rule_5], greedy='LONGEST')
 
     # print('Matcher is built.')

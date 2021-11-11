@@ -3,11 +3,10 @@ import numpy as np
 import spacy
 from spacy.matcher import Matcher
 from termcolor import colored
-import time
 import regex as re
 from itertools import chain 
 import string
-from tqdm import tqdm 
+from tqdm import tqdm
 import tqdm.notebook as tq
 import os, sys
 
@@ -46,17 +45,22 @@ class PassivePyAnalyzer:
             self.nlp, self.matcher_f = create_matcher_full(spacy_model)
             self.nlp, self.matcher = create_matcher(spacy_model)
 
-        def _print_matches(self, doc, matches, type='all passives'):
+        def print_matches(self, sentence,
+         truncated_passive=False, full_passive=False):
             """
             prints match span - I removed this from parse_sentence after changing its 
             structure. It is used by the author for testing.
             """
-            print(f"\nfor {type}:")
+            doc = self.nlp(sentence)
+            if truncated_passive: matches = self.matcher_t(doc)
+            elif full_passive:matches = self.matcher_f(doc)
+            else: matches = self.matcher(doc)
+
             if matches:
                 for id_, s,e in matches:
                     match_ = doc[s:e] 
                     print(match_)
-                    print(colored(self.nlp.vocab.strings[id_], 'blue'))
+                    print(colored('rule: ', 'blue'), self.nlp.vocab.strings[id_])
             else: print('No match.')
 
 
@@ -290,11 +294,11 @@ class PassivePyAnalyzer:
 
                 binary_f = 0
                 binary_t = 0
-                
+                binary_i = 0
                 # truncated passive voice ----------------------------------
                 if truncated_passive:
 
-                    truncated_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive)
+                    truncated_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive=False)
                     if truncated_matches_i != []:
                         binary_t = 1
                         binary_truncated_passive.append(binary_t)
@@ -309,7 +313,7 @@ class PassivePyAnalyzer:
 
                 # full passive voice ----------------------------------------
                 if full_passive:
-                    full_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive)
+                    full_matches_i = self._find_unique_spans(doc, truncated_passive=False, full_passive=True)
                     if full_matches_i != []:
 
                         binary_f = 1
