@@ -300,6 +300,11 @@ class PassivePyAnalyzer:
 
                     truncated_matches_i = self._find_unique_spans(doc, truncated_passive, full_passive=False)
                     if truncated_matches_i != []:
+                        
+                        # because the truncated version adds one token at the end
+                        # I will use the main matcher whenever there was a truncated passive
+                        truncated_matches_i = self._find_unique_spans(doc)
+
                         binary_t = 1
                         binary_truncated_passive.append(binary_t)
                         truncated_passive_matches.append(truncated_matches_i)

@@ -6,7 +6,7 @@ Our aim with this work is to create a reliable (e.g., passive voice judgments ar
 For using the package, first we have to install the requirements:
 ```
 !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-!pip install -i https://test.pypi.org/simple/ PassivePy==0.0.55
+!pip install -i https://test.pypi.org/simple/ PassivePy==0.0.56
 
 ```
 Then, import PassivePy and initiate the analyzer:
