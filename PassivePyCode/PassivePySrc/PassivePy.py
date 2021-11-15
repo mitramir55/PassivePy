@@ -16,8 +16,9 @@ try:
     from PassivePyCode.PassivePySrc.Rules.PassivePyRules_FullPassive import create_matcher_full
     from PassivePyCode.PassivePySrc.Rules.PassivePyRules_TruncatedPassive import create_matcher_truncated
 except: 
-    from PassivePySrc.PassivePyRules_FullPassive import create_matcher_full
-    from PassivePySrc.PassivePyRules_TruncatedPassive import create_matcher_truncated
+    from PassivePySrc.Rules.PassivePyRules_AllPassives import create_matcher
+    from PassivePySrc.Rules.PassivePyRules_FullPassive import create_matcher_full
+    from PassivePySrc.Rules.PassivePyRules_TruncatedPassive import create_matcher_truncated
 
 class PassivePyAnalyzer:
     
