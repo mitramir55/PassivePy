@@ -21,7 +21,7 @@ Use passivepy for single sentences:
 ```
 # Try changing the sentence below:
 sample_text = "The painting has been drawn."
-passivepy.match_text(sample_text)
+passivepy.passivepy.match_text(sample_text, full_passive=True, truncated_passive=True)
 ```
 The output will be:
 ```
@@ -30,6 +30,9 @@ binary : Whether any passive voice is detected
 passive_match(es) : The span of passive form in text
 raw_passive_count : Number of passive voices
 ```
+You can set the full_passive or truncated_passive to true if you want the same sort of output for these two types of passive. (truncated is a passive without an object of preposition, while a full passive is one with the object of preposition - e.g., this was broken by him.)
+
+
 For processing datasets, we have can either analyze the records sentence- or corpus-level. Your dataset can be in any format (e.g., CSV, XLSX or XLS).; however, make sure to that it has at least one column with the text that needs to be analyzed.
 
 In case of large datasets, you can also add `batch_size = ...` and `n_process=...` to speed up the analysis (the default for both is 1).
@@ -37,10 +40,14 @@ In case of large datasets, you can also add `batch_size = ...` and `n_process=..
 
 ``` 
 # sentence level:
-df_detected_s = passivepy.match_sentence_level(df=df, column_name = 'text')
+df_detected_s = passivepy.match_sentence_level(df, column_name='documents', n_process = 1,
+                                                batch_size = 1000, add_other_columns=True,
+                                                truncated_passive=False, full_passive=False)
 
 # corpus level
-df_detected_c = passivepy.match_corpus_level(df=df, column_name = 'text')
+df_detected_c = passivepy.match_corpus_level(df, column_name='sentences', n_process = 1,
+                                            batch_size = 1000, add_other_columns=True,
+                                            truncated_passive=False, full_passive=False)
 ```
 In the output you will have a data frame with the following columns:
 

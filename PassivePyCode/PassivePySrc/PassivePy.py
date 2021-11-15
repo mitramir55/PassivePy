@@ -219,8 +219,7 @@ class PassivePyAnalyzer:
             return df_other_cols  
 
 
-        def match_text(self, document, batch_size=1, n_process=1,
-         truncated_passive=False, full_passive=False):
+        def match_text(self, document, truncated_passive=False, full_passive=False):
 
             """ 
             This function finds passive matches in one sample sentence
