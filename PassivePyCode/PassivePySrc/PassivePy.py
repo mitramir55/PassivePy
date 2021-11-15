@@ -10,13 +10,13 @@ import os, sys
 
 
 try: 
-    from PassivePyCode.PassivePySrc.Rules.PassivePyRules_AllPassives import create_matcher
-    from PassivePyCode.PassivePySrc.Rules.PassivePyRules_FullPassive import create_matcher_full
-    from PassivePyCode.PassivePySrc.Rules.PassivePyRules_TruncatedPassive import create_matcher_truncated
+    from PassivePyCode.PassivePySrc.rules_for_all_passives import create_matcher
+    from PassivePyCode.PassivePySrc.rules_for_full_passives import create_matcher_full
+    from PassivePyCode.PassivePySrc.rules_for_truncated_passives import create_matcher_truncated
 except: 
-    from PassivePySrc.Rules.PassivePyRules_AllPassives import create_matcher
-    from PassivePySrc.Rules.PassivePyRules_FullPassive import create_matcher_full
-    from PassivePySrc.Rules.PassivePyRules_TruncatedPassive import create_matcher_truncated
+    from PassivePySrc.rules_for_all_passives import create_matcher
+    from PassivePySrc.rules_for_full_passives import create_matcher_full
+    from PassivePySrc.rules_for_truncated_passives  import create_matcher_truncated
 
 class PassivePyAnalyzer:
     
