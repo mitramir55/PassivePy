@@ -1,11 +1,9 @@
 import pandas as pd
 import numpy as np
 import spacy
-from spacy.matcher import Matcher
 from termcolor import colored
 import regex as re
 from itertools import chain 
-import string
 from tqdm import tqdm
 import tqdm.notebook as tq
 import os, sys
