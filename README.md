@@ -8,7 +8,7 @@ If you need to quickly test the package you can run it [here, on a prepared Cola
 For using the package, in Jupyter Notebooks, first we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
 ```
 !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-!pip install PassivePy==0.2.01
+!pip install PassivePy==0.2.2
 
 ```
 Then, import PassivePy and initiate the analyzer:
