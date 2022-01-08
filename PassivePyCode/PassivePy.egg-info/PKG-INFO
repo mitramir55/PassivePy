@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PassivePy
-Version: 0.2.11
+Version: 0.2.3
 Summary: A package for processing large corpora and detecting passive voice.
 Home-page: https://github.com/mitramir55/PassivePy
 Author: Mitra Mirshafiee
@@ -20,7 +20,7 @@ Description: # PassivePy: A Tool to Automatically Identify Passive Voice in Big 
         First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
         ```
         !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-        !pip install PassivePy==0.2.2
+        !pip install PassivePy==0.2.3
         
         ```
         Then, import PassivePy and initiate the analyzer:
