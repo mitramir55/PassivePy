@@ -3,6 +3,8 @@
 
 Our aim with this work is to create a reliable (e.g., passive voice judgments are consistent), valid (e.g., passive voice judgments are accurate), flexible (e.g., texts can be assessed at different units of analysis), replicable (e.g., the approach can be performed by a range of research teams with varying levels of computational expertise), and scalable way (e.g., small and large collections of texts can be analyzed) to capture passive voice from different corpora for social and psychological evaluations of text. To achieve these aims, we introduce PassivePy, a fully transparent and documented Python library.
 
+For accessing the datasets in our paper, please click on [this link](https://osf.io/j2b6u/?view_only=0e78d7f4028041b693d6b64547b514ca). 
+
 If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://mitramir55.github.io/PassivePyWeb/).
 
 
