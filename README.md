@@ -3,9 +3,10 @@
 
 Our aim with this work is to create a reliable (e.g., passive voice judgments are consistent), valid (e.g., passive voice judgments are accurate), flexible (e.g., texts can be assessed at different units of analysis), replicable (e.g., the approach can be performed by a range of research teams with varying levels of computational expertise), and scalable way (e.g., small and large collections of texts can be analyzed) to capture passive voice from different corpora for social and psychological evaluations of text. To achieve these aims, we introduce PassivePy, a fully transparent and documented Python library.
 
-If you need to quickly test the package you can run it [here, on a prepared Colab notebook](https://colab.research.google.com/drive/1xMAwUo96SBtPmbg6-3fd4hPI0lQ0roUo?usp=sharing).
+If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://mitramir55.github.io/PassivePyWeb/).
 
-For using the package, in Jupyter Notebooks, first we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
+
+First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
 ```
 !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
 !pip install PassivePy==0.2.2
