@@ -1,12 +1,10 @@
-import spacy
 from spacy.matcher import Matcher
 
 
 
-def create_matcher_full(spacy_model = "en_core_web_lg"):
+def create_matcher_full(nlp):
 
     """creates a matcher on the following vocabulary"""
-    nlp = spacy.load(spacy_model, disable=["ner"])
     matcher = Matcher(nlp.vocab)
 
     # list of verbs that their adjective form 
@@ -124,4 +122,4 @@ def create_matcher_full(spacy_model = "en_core_web_lg"):
 
     # print('Matcher is built.')
 
-    return nlp, matcher
+    return matcher

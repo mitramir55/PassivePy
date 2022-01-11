@@ -40,12 +40,12 @@ class PassivePyAnalyzer:
             
             """
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
-            self.nlp, self.matcher_t = create_matcher_truncated(spacy_model)
-            self.nlp, self.matcher_f = create_matcher_full(spacy_model)
+            
             self.nlp, self.matcher = create_matcher(spacy_model)
+            self.matcher_t = create_matcher_truncated(self.nlp, spacy_model)
+            self.matcher_f = create_matcher_full(self.nlp, spacy_model)
 
-        def print_matches(self, sentence,
-         truncated_passive=False, full_passive=False):
+        def print_matches(self, sentence, truncated_passive=False, full_passive=False):
             """
             prints match span - I removed this from parse_sentence after changing its 
             structure. It is used by the author for testing.
