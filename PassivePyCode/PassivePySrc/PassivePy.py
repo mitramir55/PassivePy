@@ -6,7 +6,7 @@ import regex as re
 from itertools import chain 
 from tqdm import tqdm
 import tqdm.notebook as tq
-import os, sys
+import os, sys, gc
 
 
 try: 
@@ -97,10 +97,7 @@ class PassivePyAnalyzer:
 
             # go through all the records
             m = 0
-            for record_doc in tq.tqdm(self.nlp.pipe(document, batch_size=batch_size, n_process = n_process), 
-                                    leave=True,
-                                    position=0,
-                                    total=len(document)):
+            for record_doc in self.nlp.pipe(document, batch_size=batch_size, n_process = n_process):
 
 
                 sentences = list(record_doc.sents)
@@ -108,7 +105,6 @@ class PassivePyAnalyzer:
 
 
                 unwanted = []
-
                 for sentence in sentences:
                     i = sentences.index(sentence)
                 
@@ -165,7 +161,7 @@ class PassivePyAnalyzer:
                 for index in sorted(set(unwanted), reverse=True):
                     del sentences[index]
 
-                
+
                 count_sents.append(len(sentences))
                 all_sentences.append(sentences) 
 
@@ -286,10 +282,7 @@ class PassivePyAnalyzer:
 
 
             
-            for doc in tq.tqdm(self.nlp.pipe(sentences, batch_size=batch_size, n_process=n_process), 
-                                    leave=True,
-                                    position=0,
-                                    total=len(sentences)):
+            for doc in self.nlp.pipe(sentences, batch_size=batch_size, n_process=n_process):
 
                 binary_f = 0
                 binary_t = 0
@@ -501,7 +494,7 @@ class PassivePyAnalyzer:
             ids_ = df_output.docId.unique()
             
 
-            for i in tq.tqdm(ids_, leave=True, position=0, total=len(ids_)):
+            for i in ids_:
 
                 # select all the sentences of a doc
                 rows = df_output[df_output['docId'] == i]
