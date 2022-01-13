@@ -42,8 +42,8 @@ class PassivePyAnalyzer:
             # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
             
             self.nlp, self.matcher = create_matcher(spacy_model)
-            self.matcher_t = create_matcher_truncated(self.nlp, spacy_model)
-            self.matcher_f = create_matcher_full(self.nlp, spacy_model)
+            self.matcher_t = create_matcher_truncated(self.nlp)
+            self.matcher_f = create_matcher_full(self.nlp)
 
         def print_matches(self, sentence, truncated_passive=False, full_passive=False):
             """
@@ -94,7 +94,6 @@ class PassivePyAnalyzer:
 
             all_sentences = []
             count_sents = []
-            unwanted = []
 
             # go through all the records
             m = 0
@@ -107,6 +106,8 @@ class PassivePyAnalyzer:
                 sentences = list(record_doc.sents)
                 sentences = [str(sentence) if len(sentence)>=2 else 'Not a Sentence' for sentence in sentences] 
 
+
+                unwanted = []
 
                 for sentence in sentences:
                     i = sentences.index(sentence)
@@ -163,14 +164,13 @@ class PassivePyAnalyzer:
                 m+=1
                 for index in sorted(set(unwanted), reverse=True):
                     del sentences[index]
-                unwanted = []
 
                 
                 count_sents.append(len(sentences))
                 all_sentences.append(sentences) 
 
-            all_sentences = list(chain.from_iterable(all_sentences))
-            print(f'Total number of sentences = {len(all_sentences)}')
+            # all_sentences = list(chain.from_iterable(all_sentences))
+            # print(f'Total number of sentences = {len(all_sentences)}')
 
 
             return np.array(count_sents, dtype='object'), np.array(all_sentences, dtype='object')
@@ -190,6 +190,7 @@ class PassivePyAnalyzer:
                     doc_indices.append(m)
                     n+=1
                 m+=1
+
             return pd.DataFrame(sent_indices), pd.DataFrame(doc_indices)
 
 
@@ -293,6 +294,7 @@ class PassivePyAnalyzer:
                 binary_f = 0
                 binary_t = 0
                 binary_i = 0
+                
                 # truncated passive voice ----------------------------------
                 if truncated_passive:
 
@@ -405,7 +407,7 @@ class PassivePyAnalyzer:
 
 
             # concatenating the results with the initial df -------------------
-            if add_other_columns==True:
+            if add_other_columns:
 
                 other_cols_df = self._add_other_cols(df, column_name, count_sents)
                 assert len(other_cols_df) == len(df_output)
@@ -462,22 +464,24 @@ class PassivePyAnalyzer:
                 truncated_passive, full_passive
                 )
 
-            # define parameters-----------------------------------------
+            # declare variables -----------------------------------------
             # full passive
-            full_passive_matches = []
-            full_passive_count = []
-            binary_full_passive = []
-            full_passive_percentages = []
-            full_passive_sents_count = []
+            if full_passive:
+                full_passive_matches = []
+                full_passive_count = []
+                binary_full_passive = []
+                full_passive_percentages = []
+                full_passive_sents_count = []
 
             # truncated
-            truncated_passive_matches = []
-            truncated_passive_count = []
-            binary_truncated_passive = []
-            truncated_passive_percentages = []
-            truncated_passive_sents_count = []
+            if truncated_passive:
+                truncated_passive_matches = []
+                truncated_passive_count = []
+                binary_truncated_passive = []
+                truncated_passive_percentages = []
+                truncated_passive_sents_count = []
             
-            # truncated
+            # all passives
             all_passives = []
             passive_count = []
             binary = []
@@ -492,6 +496,7 @@ class PassivePyAnalyzer:
                 document, count_sents, all_passives, passive_count, 
                 passive_sents_count, passive_percentages, binary
                 ]
+
             # list all the docs
             ids_ = df_output.docId.unique()
             
@@ -503,6 +508,7 @@ class PassivePyAnalyzer:
 
                 # concatenate all the proberties ------------------------------------
                 count_sents.append(len(rows))
+
                 # all_passives 
                 count_passive_s = sum(rows.binary)
                 passive_sents_count.append(count_passive_s)
@@ -570,7 +576,7 @@ class PassivePyAnalyzer:
             df_output = pd.DataFrame(output_dict)
                
             # add other columns in the initial df -------------------------------------------
-            if add_other_columns==True:
+            if add_other_columns:
                 
                 # create a list of all the col names
                 fields = df.columns.tolist()
