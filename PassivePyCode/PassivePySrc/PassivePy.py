@@ -169,7 +169,7 @@ class PassivePyAnalyzer:
                 count_sents.append(len(sentences))
                 all_sentences.append(sentences) 
 
-            # all_sentences = list(chain.from_iterable(all_sentences))
+            all_sentences = list(chain.from_iterable(all_sentences))
             # print(f'Total number of sentences = {len(all_sentences)}')
 
 
@@ -294,7 +294,7 @@ class PassivePyAnalyzer:
                 binary_f = 0
                 binary_t = 0
                 binary_i = 0
-                
+
                 # truncated passive voice ----------------------------------
                 if truncated_passive:
 
