@@ -76,7 +76,7 @@ raw_passive_count : Number of passive forms detected in the sentence
 
 ```
 
-If you needed to analyze each token of a sentence, i.g., print out the `DEP` (dependency), `POS` (coarse-grained POS tags), `TAG` (fine-grained part of speech tags), `LEMMA` (canonical form) of a word,  you can use the `parse_sentence` method of passivepy in the following way:
+If you needed to analyze each token of a sentence, i.g., print out the `DEP` (dependency), `POS` (coarse-grained part of speech tags), `TAG` (fine-grained part of speech tags), `LEMMA` (canonical form) of a word,  you can use the `parse_sentence` method of passivepy in the following way:
 
 ```
 sample_sentence = "She has been killed"
