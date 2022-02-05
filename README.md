@@ -99,3 +99,7 @@ If you do not need any columns to be appended to the main dataset, simply add `a
 
 Accuracy on the CoLA dataset: 0.97
 Accuracy on the CrowdSource Dataset: 0.98
+
+This repository is the code of the following paper, so if you use this package, please cite the work as:
+Sepehri, A., Markowitz, D. M., & Mir, M. (2022, February 3). PassivePy: A Tool to Automatically Identify Passive Voice in Big Text Data. Retrieved from psyarxiv.com/bwp3t
+
