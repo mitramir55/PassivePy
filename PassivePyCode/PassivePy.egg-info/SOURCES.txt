@@ -24,7 +24,5 @@ PassivePyCode/PassivePySrc/requirements_sm.txt
 PassivePyCode/PassivePySrc/rules_for_all_passives.py
 PassivePyCode/PassivePySrc/rules_for_full_passives.py
 PassivePyCode/PassivePySrc/rules_for_truncated_passives.py
-PassivePyCode/PassivePySrc/__pycache__/__init__.cpython-38.pyc
-PassivePyCode/PassivePySrc/__pycache__/rules_for_all_passives.cpython-38.pyc
-PassivePyCode/PassivePySrc/__pycache__/rules_for_full_passives.cpython-38.pyc
-PassivePyCode/PassivePySrc/__pycache__/rules_for_truncated_passives.cpython-38.pyc
+dist/PassivePy-0.1.68-py3-none-any.whl
+dist/PassivePy-0.1.68.tar.gz

@@ -4,8 +4,6 @@ import spacy
 from termcolor import colored
 import regex as re
 from itertools import chain 
-from tqdm import tqdm
-import tqdm.notebook as tq
 import os, sys, gc
 
 
@@ -39,8 +37,6 @@ class PassivePyAnalyzer:
             
             
             """
-            # os.system('pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements.txt')
-            
             self.nlp, self.matcher = create_matcher(spacy_model)
             self.matcher_t = create_matcher_truncated(self.nlp)
             self.matcher_f = create_matcher_full(self.nlp)
