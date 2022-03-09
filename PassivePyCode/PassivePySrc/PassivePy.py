@@ -358,7 +358,7 @@ class PassivePyAnalyzer:
         def match_sentence_level(self, df, column_name, n_process = 1,
                                 batch_size = 1000, add_other_columns=True,
                                 truncated_passive=False, full_passive=False):
-
+                                
             """
             Parameters
 
@@ -396,16 +396,14 @@ class PassivePyAnalyzer:
 
 
             # concatenating the results with the initial df -------------------
+            if len(df.columns) == 1: 
+                add_other_columns=False
             if add_other_columns:
 
                 other_cols_df = self._add_other_cols(df, column_name, count_sents)
                 assert len(other_cols_df) == len(df_output)
-                df_final = pd.concat([df_output, other_cols_df], axis = 1)
-
-                return df_final
-
-            else:
-                return df_output
+                df_output = pd.concat([df_output, other_cols_df], axis = 1)
+            return df_output
 
 
         def _all_elements_in_one_list(self, series_: pd.Series(list)) -> list:
@@ -565,6 +563,9 @@ class PassivePyAnalyzer:
             df_output = pd.DataFrame(output_dict)
                
             # add other columns in the initial df -------------------------------------------
+            if len(df.columns) == 1: 
+                add_other_columns=False
+
             if add_other_columns:
                 
                 # create a list of all the col names
@@ -574,11 +575,9 @@ class PassivePyAnalyzer:
                 del fields[fields.index(column_name)]
 
                 assert len(df[fields]) == len(df_output)
-
                 df_output = pd.concat([df_output, df[fields]], axis = 1)
             
             return df_output
-
 
 # for stopping the print statements in one sample sentences
 class HiddenPrints:
