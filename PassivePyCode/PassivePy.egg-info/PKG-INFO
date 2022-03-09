@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PassivePy
-Version: 0.2.14
+Version: 0.2.15
 Summary: A package for processing large corpora and detecting passive voice.
 Home-page: https://github.com/mitramir55/PassivePy
 Author: Mitra Mirshafiee
@@ -20,7 +20,7 @@ Description: # PassivePy: A Tool to Automatically Identify Passive Voice in Big 
         First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
         ```
         !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-        !pip install PassivePy==0.2.13
+        !pip install PassivePy==0.2.14
         
         ```
         Then, import PassivePy and initiate the analyzer:
@@ -85,7 +85,7 @@ Description: # PassivePy: A Tool to Automatically Identify Passive Voice in Big 
         
         ```
         
-        If you needed to analyze each token of a sentence, i.g., print out the `DEP` (dependency), `POS` (coarse-grained POS tags), `TAG` (fine-grained part of speech tags), `LEMMA` (canonical form) of a word,  you can use the `parse_sentence` method of passivepy in the following way:
+        If you needed to analyze each token of a sentence, i.g., print out the `DEP` (dependency), `POS` (coarse-grained part of speech tags), `TAG` (fine-grained part of speech tags), `LEMMA` (canonical form) of a word,  you can use the `parse_sentence` method of passivepy in the following way:
         
         ```
         sample_sentence = "She has been killed"
@@ -108,6 +108,10 @@ Description: # PassivePy: A Tool to Automatically Identify Passive Voice in Big 
         
         Accuracy on the CoLA dataset: 0.97
         Accuracy on the CrowdSource Dataset: 0.98
+        
+        This repository is the code of the following paper, so if you use this package, please cite the work as:
+        Sepehri, A., Markowitz, D. M., & Mir, M. (2022, February 3). PassivePy: A Tool to Automatically Identify Passive Voice in Big Text Data. Retrieved from psyarxiv.com/bwp3t
+        
         
 Keywords: passive voice,text analysis,spacy,dependency parsing,part of speech tagging
 Platform: UNKNOWN
