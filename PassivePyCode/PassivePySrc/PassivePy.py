@@ -4,7 +4,7 @@ import spacy
 from termcolor import colored
 import regex as re
 from itertools import chain 
-import os, sys, g
+import os, sys
 
 
 try: 
