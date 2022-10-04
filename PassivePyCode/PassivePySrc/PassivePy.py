@@ -4,7 +4,7 @@ import spacy
 from termcolor import colored
 import regex as re
 from itertools import chain 
-import os, sys, gc
+import os, sys
 
 
 try: 
@@ -26,7 +26,7 @@ class PassivePyAnalyzer:
             save the output to a file
 
         """
-        def __init__(self, spacy_model = "en_core_web_lg"):
+        def __init__(self, nlp:spacy.language.Language=None, spacy_model:str = "en_core_web_lg"):
 
             """
             Create the Detector
@@ -37,7 +37,7 @@ class PassivePyAnalyzer:
             
             
             """
-            self.nlp, self.matcher = create_matcher(spacy_model)
+            self.nlp, self.matcher = create_matcher(nlp=nlp, spacy_model=spacy_model)
             self.matcher_t = create_matcher_truncated(self.nlp)
             self.matcher_f = create_matcher_full(self.nlp)
 
