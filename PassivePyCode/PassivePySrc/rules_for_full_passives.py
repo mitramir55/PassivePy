@@ -2,10 +2,23 @@ from spacy.matcher import Matcher
 
 
 
-def create_matcher_full(nlp):
+def create_matcher(nlp:spacy.language.Language = None, spacy_model = "en_core_web_lg"):
 
     """creates a matcher on the following vocabulary"""
+    if not nlp:
+        if spacy_model == "en_core_web_lg":
+            import en_core_web_lg
+            nlp = en_core_web_lg.load(disable=["ner"])
+        elif spacy_model == "en_core_web_md":
+            import en_core_web_md
+            nlp = en_core_web_md.load(disable=["ner"])
+        elif spacy_model == "en_core_web_sm":
+            import en_core_web_sm
+            nlp = en_core_web_sm.load(disable=["ner"])
+        else:
+            nlp = spacy.load(spacy_model, disable=["ner"])
     matcher = Matcher(nlp.vocab)
+
 
     # list of verbs that their adjective form 
     # is sometimes mistaken as a verb
