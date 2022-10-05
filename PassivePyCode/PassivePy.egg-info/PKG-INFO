@@ -5,8 +5,10 @@ Summary: A package for processing large corpora and detecting passive voice.
 Home-page: https://github.com/mitramir55/PassivePy
 Author: Mitra Mirshafiee
 Author-email: mitra.mirshafiee@gmail.com
+License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
 Keywords: passive voice,text analysis,spacy,dependency parsing,part of speech tagging
+Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -119,4 +121,6 @@ Accuracy on the CrowdSource Dataset: 0.98
 
 This repository is the code of the following paper, so if you use this package, please cite the work as:
 Sepehri, A., Markowitz, D. M., & Mir, M. (2022, February 3). PassivePy: A Tool to Automatically Identify Passive Voice in Big Text Data. Retrieved from psyarxiv.com/bwp3t
+
+
 
