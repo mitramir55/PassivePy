@@ -1,5 +1,5 @@
+import spacy
 from spacy.matcher import Matcher
-
 
 
 def create_matcher(nlp:spacy.language.Language = None, spacy_model = "en_core_web_lg"):
