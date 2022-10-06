@@ -2,7 +2,7 @@ import spacy
 from spacy.matcher import Matcher
 
 
-def create_matcher(nlp:spacy.language.Language = None, spacy_model = "en_core_web_lg"):
+def create_matcher_truncated(nlp:spacy.language.Language = None, spacy_model = "en_core_web_lg"):
 
     """creates a matcher on the following vocabulary"""
     if not nlp:
