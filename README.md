@@ -11,7 +11,7 @@ If you haven't used Python before or need detailed instructions about how to use
 First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
 ```
 !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-!pip install PassivePy==0.2.15
+!pip install PassivePy==0.2.17
 
 ```
 Then, import PassivePy and initiate the analyzer:
