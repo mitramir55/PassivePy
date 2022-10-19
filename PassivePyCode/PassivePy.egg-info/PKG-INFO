@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: PassivePy
-Version: 0.2.17
+Version: 0.2.18
 Summary: A package for processing large corpora and detecting passive voice.
 Home-page: https://github.com/mitramir55/PassivePy
 Author: Mitra Mirshafiee
@@ -24,13 +24,13 @@ Our aim with this work is to create a reliable (e.g., passive voice judgments ar
 
 For accessing the datasets in our paper, please click on [this link](https://osf.io/j2b6u/?view_only=0e78d7f4028041b693d6b64547b514ca). 
 
-If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://mitramir55.github.io/PassivePyWeb/).
+If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://intense-hamlet-85007.herokuapp.com/).
 
 
 First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
 ```
 !pip install -r https://raw.githubusercontent.com/mitramir55/PassivePy/main/PassivePyCode/PassivePySrc/requirements_lg.txt
-!pip install PassivePy==0.2.15
+!pip install PassivePy==0.2.18
 
 ```
 Then, import PassivePy and initiate the analyzer:
@@ -38,8 +38,7 @@ Then, import PassivePy and initiate the analyzer:
 ```
 from PassivePySrc import PassivePy
 
-spacy_model = "en_core_web_lg"
-passivepy = PassivePy.PassivePyAnalyzer(spacy_model)
+passivepy = PassivePy.PassivePyAnalyzer(spacy_model = "en_core_web_lg")
 ```
 Use passivepy for single sentences:
 ```
