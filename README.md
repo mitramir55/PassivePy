@@ -19,8 +19,7 @@ Then, import PassivePy and initiate the analyzer:
 ```
 from PassivePySrc import PassivePy
 
-spacy_model = "en_core_web_lg"
-passivepy = PassivePy.PassivePyAnalyzer(spacy_model)
+passivepy = PassivePy.PassivePyAnalyzer(spacy_model = "en_core_web_lg")
 ```
 Use passivepy for single sentences:
 ```
