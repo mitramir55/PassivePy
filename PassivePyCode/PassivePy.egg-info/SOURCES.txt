@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PassivePyCode/PassivePy.egg-info/PKG-INFO
+PassivePyCode/PassivePy.egg-info/SOURCES.txt
+PassivePyCode/PassivePy.egg-info/dependency_links.txt
+PassivePyCode/PassivePy.egg-info/requires.txt
+PassivePyCode/PassivePy.egg-info/top_level.txt
+PassivePyCode/PassivePySrc/PassivePy.py
+PassivePyCode/PassivePySrc/__init__.py
+PassivePyCode/PassivePySrc/rules_for_all_passives.py
+PassivePyCode/PassivePySrc/rules_for_full_passives.py
+PassivePyCode/PassivePySrc/rules_for_truncated_passives.py
