@@ -2,11 +2,9 @@ import spacy
 from spacy.matcher import Matcher
 
 
-def create_matcher_full(spacy_model = "en_core_web_lg", nlp:spacy.language.Language = None):
+def create_matcher_full(nlp:spacy.language.Language = None):
 
     """creates a matcher on the following vocabulary"""
-    if not nlp:
-        nlp = spacy.load(spacy_model, disable=["ner"])
     matcher = Matcher(nlp.vocab)
 
 
