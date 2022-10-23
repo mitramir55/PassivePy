@@ -86,7 +86,7 @@ class PassivePyAnalyzer:
              and puts them in a list along side the count of sentences in each 
              document in another list
              """
-            document = [corpus.lower() for corpus in document]
+            # document = [corpus.lower() for corpus in document]
 
             all_sentences = []
             count_sents = []
@@ -493,7 +493,7 @@ class PassivePyAnalyzer:
                 # select all the sentences of a doc
                 rows = df_output[df_output['docId'] == i]
 
-                # concatenate all the proberties ------------------------------------
+                # concatenate all the properties ------------------------------------
                 count_sents.append(len(rows))
 
                 # all_passives 
@@ -557,7 +557,7 @@ class PassivePyAnalyzer:
             
             for element in columns:
                 # name of variables will be the name of columns 
-                element_name = [ k for k,v in locals().items() if v is element][0]
+                element_name = [ k for k,v in locals().items() if v is element ][0]
                 output_dict[str(element_name)] = pd.Series(element, dtype='object')
 
             df_output = pd.DataFrame(output_dict)
