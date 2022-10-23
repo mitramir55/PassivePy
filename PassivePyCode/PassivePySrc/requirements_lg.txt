@@ -1,4 +1,5 @@
 spacy==3.4.1
 spacy-legacy==3.0.10
 termcolor==1.1.0
+regex==2022.9.13
 https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.0/en_core_web_lg-3.4.0.tar.gz#egg=en_core_web_lg
