@@ -62,36 +62,11 @@ def create_matcher_truncated(nlp:spacy.language.Language = None):
         {"DEP":"agent", "OP":"!"}
     ]
 
-    """
-    Used for the second part with "and ..." 
-    sentence : it was determined and formed.
-    dependencies : ['nsubjpass', 'auxpass', 'ROOT', 'cc', 'conj', 'punct']
-    tags : ['PRP', 'VBD', 'VBN', 'CC', 'VBN', '.']
-    """
-
-
-    passive_rule_5 = [
-        {"DEP": "nsubj"},
-        {"DEP": "ROOT"},
-        {"DEP": "attr", "TAG": "VBN", "LEMMA":{"NOT_IN" : verbs_list}},
-        {"DEP": "prep", "TAG": "IN", "OP":"*"},
-        {"DEP":"agent", "OP":"!"}
-    ]
-
-    """
-    sentence : Bears are dreamt of in your fantasies!
-    dependencies : ['nsubjpass', 'auxpass', 'ROOT', 'prep', 'prep', 'poss', 'pobj', 'punct']
-    tags : ['NNS', 'VBP', 'VBN', 'IN', 'IN', 'PRP$', 'NNS', '.']
-    """
-
-
-
     # ------------------adding rules to the matcher----------#
 
     matcher.add("passive_rule_1", [passive_rule_1], greedy='LONGEST')
     matcher.add("passive_rule_2", [passive_rule_2], greedy='LONGEST')
     matcher.add("passive_rule_3", [passive_rule_3], greedy='LONGEST')
-    matcher.add("passive_rule_5", [passive_rule_5], greedy='LONGEST')
 
     # print('Matcher is built.')
 

@@ -81,19 +81,6 @@ def create_matcher_full(nlp:spacy.language.Language = None):
     tags : ['VBN', 'IN', 'DT', 'NN', ',', 'PRP', 'RB', 'VBD', 'DT', 'MD', 'VB', 'PRP$', 'NN']
     """
 
-    passive_rule_5 = [
-        {"DEP": "nsubj"},
-        {"DEP": "ROOT"},
-        {"DEP": "attr", "TAG": "VBN", "LEMMA":{"NOT_IN" : verbs_list}},
-        {"DEP": "prep", "TAG": "IN", "OP":"*"}
-    ]
-
-    """
-    sentence : Bears are dreamt of in your fantasies!
-    dependencies : ['nsubjpass', 'auxpass', 'ROOT', 'prep', 'prep', 'poss', 'pobj', 'punct']
-    tags : ['NNS', 'VBP', 'VBN', 'IN', 'IN', 'PRP$', 'NNS', '.']
-    """
-
 
     passive_rule_6 = [
         {"LEMMA": {"IN": verbs_list}},
@@ -118,7 +105,6 @@ def create_matcher_full(nlp:spacy.language.Language = None):
     matcher.add("passive_rule_2", [passive_rule_2], greedy='LONGEST')
     matcher.add("passive_rule_3", [passive_rule_3], greedy='LONGEST')
     matcher.add("passive_rule_4", [passive_rule_4], greedy='LONGEST')
-    matcher.add("passive_rule_5", [passive_rule_5], greedy='LONGEST')
     matcher.add("passive_rule_6", [passive_rule_6], greedy='LONGEST')
 
     # print('Matcher is built.')
