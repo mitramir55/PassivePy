@@ -5,7 +5,7 @@ Our aim with this work is to create a reliable (e.g., passive voice judgments ar
 
 For accessing the datasets in our paper, please click on [this link](https://osf.io/j2b6u/?view_only=0e78d7f4028041b693d6b64547b514ca). 
 
-If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://intense-hamlet-85007.herokuapp.com/).
+If you haven't used Python before or need detailed instructions about how to use this package please visit [our website](https://passivepy.streamlit.app/).
 
 
 First we have to install the requirements in the following way (all requirements are needed for spaCy or other libraries we use.):
