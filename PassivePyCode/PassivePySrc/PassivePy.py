@@ -20,8 +20,7 @@ class PassivePyAnalyzer:
     
         """
             Get the data from a dataframe.
-
-            Clean the dataset based on the given regex patterns.
+            identify sentences
             Match passive voice sentence level or corpus level.
             save the output to a file
 
@@ -31,11 +30,6 @@ class PassivePyAnalyzer:
             """
             Create the Detector
 
-            n_processses: number of core to use
-            batch_size: size of batches of records passed onto the matcher
-            regex_patterns: Patterns that should be detected and cleaned from the data
-            
-            
             """
             self.nlp, self.matcher = create_matcher(nlp=nlp, spacy_model=spacy_model)
             self.matcher_t = create_matcher_truncated(self.nlp)

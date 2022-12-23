@@ -3,7 +3,11 @@ from spacy.matcher import Matcher
 
 def create_matcher(spacy_model = "en_core_web_lg", nlp:spacy.language.Language = None):
 
-    """creates a matcher on the following vocabulary"""
+    """
+    creates a matcher with a SpaCy nlp model. The default model is:
+    https://spacy.io/models/en#en_core_web_lg
+    
+    """
     if not nlp:
         nlp = spacy.load(spacy_model, disable=["ner"])
     matcher = Matcher(nlp.vocab)
