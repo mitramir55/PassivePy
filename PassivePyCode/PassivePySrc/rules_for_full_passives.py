@@ -82,7 +82,7 @@ def create_matcher_full(nlp:spacy.language.Language = None):
     """
 
 
-    passive_rule_6 = [
+    passive_rule_5 = [
         {"LEMMA": {"IN": verbs_list}},
         {"LOWER":"by"}
     ]
@@ -105,7 +105,7 @@ def create_matcher_full(nlp:spacy.language.Language = None):
     matcher.add("passive_rule_2", [passive_rule_2], greedy='LONGEST')
     matcher.add("passive_rule_3", [passive_rule_3], greedy='LONGEST')
     matcher.add("passive_rule_4", [passive_rule_4], greedy='LONGEST')
-    matcher.add("passive_rule_6", [passive_rule_6], greedy='LONGEST')
+    matcher.add("passive_rule_5", [passive_rule_5], greedy='LONGEST')
 
     # print('Matcher is built.')
 
