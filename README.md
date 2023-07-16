@@ -28,7 +28,7 @@ Use passivepy for single sentences:
 ```
 # Try changing the sentence below:
 sample_text = "The painting has been drawn."
-passivepy.passivepy.match_text(sample_text, full_passive=True, truncated_passive=True)
+passivepy.match_text(sample_text, full_passive=True, truncated_passive=True)
 ```
 The output will be:
 ```
