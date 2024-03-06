@@ -14,10 +14,12 @@ try:
     from PassivePyCode.PassivePySrc.rules_for_all_passives import create_matcher
     from PassivePyCode.PassivePySrc.rules_for_full_passives import create_matcher_full
     from PassivePyCode.PassivePySrc.rules_for_truncated_passives import create_matcher_truncated
-except: 
+    from PassivePyCode.PassivePySrc.rules_for_passives_german import create_matcher_german
+except:
     from PassivePySrc.rules_for_all_passives import create_matcher
     from PassivePySrc.rules_for_full_passives import create_matcher_full
     from PassivePySrc.rules_for_truncated_passives  import create_matcher_truncated
+    from PassivePySrc.rules_for_passives_german  import create_matcher_german
 
 class PassivePyAnalyzer:
     
@@ -28,15 +30,21 @@ class PassivePyAnalyzer:
             save the output to a file
 
         """
-        def __init__(self, nlp:spacy.language.Language=None, spacy_model:str = "en_core_web_lg"):
+        def __init__(self, language:str="en", nlp:spacy.language.Language=None, spacy_model:str = "en_core_web_lg"):
 
             """
             Create the Detector
 
             """
-            self.nlp, self.matcher = create_matcher(nlp=nlp, spacy_model=spacy_model)
-            self.matcher_t = create_matcher_truncated(self.nlp)
-            self.matcher_f = create_matcher_full(self.nlp)
+            self.language = language
+            if language == "en":
+                self.nlp, self.matcher = create_matcher(nlp=nlp, spacy_model=spacy_model)
+                self.matcher_t = create_matcher_truncated(self.nlp)
+                self.matcher_f = create_matcher_full(self.nlp)
+            else:
+                self.nlp, self.matcher = create_matcher_german(nlp=nlp, spacy_model=spacy_model)
+                self.matcher_t = self.matcher
+                self.matcher_f = self.matcher
 
         def print_matches(self, sentence, truncated_passive=False, full_passive=False):
             """
